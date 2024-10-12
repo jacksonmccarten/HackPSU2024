@@ -1051,7 +1051,7 @@
   PrefabRemaps:
     []
   Name: four
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -1928,7 +1928,7 @@
   PrefabRemaps:
     []
   Name: two_finger_pointer
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -3124,7 +3124,7 @@
   PrefabRemaps:
     []
   Name: Telephone
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -3729,9 +3729,9 @@
       handType: 0
       checkType: 0
       jointGroupA: !<string[]>
-        - wrist
+        - right_wrist
       jointGroupB: !<string[]>
-        - mid-3
+        - left_mid-3
       targetObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       visualizeDistance: false
       checkDistance: true
@@ -3762,7 +3762,7 @@
   PrefabRemaps:
     []
   Name: palm_open
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -5714,7 +5714,7 @@
   PrefabRemaps:
     []
   Name: Palm Flat
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -5788,7 +5788,7 @@
   PrefabRemaps:
     []
   Name: Gesture Hints
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: -6.987363, z: -37.604622}
@@ -6594,7 +6594,7 @@
   PrefabRemaps:
     []
   Name: Three
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -7278,7 +7278,7 @@
   PrefabRemaps:
     []
   Name: three
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -7322,7 +7322,7 @@
 - !<SceneObject/59f283e0-9d2d-419e-9ea1-bef9bacb6e35>
   PrefabRemaps:
     []
-  Name: wrist
+  Name: right_wrist
   Enabled: true
   Layers: 1
   LocalTransform:
@@ -7342,7 +7342,7 @@
   PrefabRemaps:
     []
   Name: chefs_kiss
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -7487,7 +7487,7 @@
   PrefabRemaps:
     []
   Name: Palm Open
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -9319,7 +9319,7 @@
   PrefabRemaps:
     []
   Name: Two Finger Pointer
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -9403,7 +9403,7 @@
   PrefabRemaps:
     []
   Name: palm_flat
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -9555,7 +9555,7 @@
   PrefabRemaps:
     []
   Name: telephone
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -9630,7 +9630,7 @@
   PrefabRemaps:
     []
   Name: thumbs_up
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -11363,7 +11363,7 @@
   PrefabRemaps:
     []
   Name: Thumbs Up
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -11730,7 +11730,7 @@
   PrefabRemaps:
     []
   Name: Spock
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -13013,7 +13013,7 @@
 - !<SceneObject/9857966d-1a80-4140-92ed-742b571bf1bb>
   PrefabRemaps:
     []
-  Name: mid-3
+  Name: left_mid-3
   Enabled: true
   Layers: 1
   LocalTransform:
@@ -13905,7 +13905,7 @@
   PrefabRemaps:
     []
   Name: Four
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -19286,7 +19286,7 @@
   PrefabRemaps:
     []
   Name: Chefs_Kiss
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -23962,7 +23962,7 @@
   PrefabRemaps:
     []
   Name: spock
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
