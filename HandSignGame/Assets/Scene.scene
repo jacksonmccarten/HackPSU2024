@@ -3,8 +3,9 @@
   objects:
     - !<own> 00000000-0000-0065-0000-000000000064
     - !<own> 0005641c-028d-459a-0000-000000014b4d
-    - !<own> 694dfdbd-0df1-41e0-8104-1043dbdaadcf
     - !<own> dc32cb61-132c-4e5a-8c5d-a8e95cfd5c47
+    - !<own> adea452e-205c-4c46-982f-0fc01ca041b2
+    - !<own> 5c3b2475-6fc0-4824-b022-106fb515a81f
   layers: !<Layers/267ee9a7-aff2-4f9d-9a49-f71214747d03>
     userLayers:
       []
@@ -20,8 +21,8 @@
   Enabled: true
   Layers: 1
   LocalTransform:
-    position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    position: {x: 0.000000, y: 0.000000, z: 50.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
   Children:
@@ -35,7 +36,7 @@
   Name: Camera
   Enabled: true
   renderLayer: 1
-  MipmapLevel: 0
+  MipmapLevel: 727
   RenderOrder: 0
   Size: 20.000000
   Near: 1.000000
@@ -1854,7 +1855,6 @@
   Enabled: true
   ScriptAsset: !<reference> b1f8c052-6b77-4e53-907a-7e8e9e93c5f3
   ScriptInputsDefault:
-    showVisualizer: true
     setTextColor: true
     defaultColor: true
     passColor: true
@@ -1868,7 +1868,7 @@
       jointDistanceScripts: !<reference.ScriptComponent[]>
         - !<reference> 0c066e0b-3141-44b7-93db-47747937d4f6
       overwriteVisual: true
-      showVisualizer: false
+      showVisualizer: true
       setTextColor: false
       defaultColor: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
       passColor: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
@@ -3124,7 +3124,7 @@
   PrefabRemaps:
     []
   Name: Telephone
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -3718,7 +3718,7 @@
     checkType: true
     targetObject: true
     visualizeDistance: true
-    minDistance: true
+    maxDistance: true
     sendTriggers: true
     enterRangeTrigger: true
     exitRangeTrigger: true
@@ -3735,8 +3735,8 @@
       targetObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       visualizeDistance: false
       checkDistance: true
-      minDistance: !<float> 0.000000
-      maxDistance: !<float> 10.000000
+      minDistance: !<float> 11.000000
+      maxDistance: !<float> 100.000000
       sendTriggers: false
       enterRangeTrigger: ""
       exitRangeTrigger: ""
@@ -3898,6 +3898,21 @@
     - !<own> 5403bba0-4ef7-4b63-a134-b3491bb24bb7
   Components:
     []
+- !<SceneObject/31a40ad0-a148-4139-b666-4b39a02189be>
+  PrefabRemaps:
+    []
+  Name: IndexTip_to_Wrist
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> dcf34eb5-db08-4fd2-b078-b8013a033910
 - !<SceneObject/327f8f1d-4d4d-425b-9215-fb91a3be1e6d>
   PrefabRemaps:
     []
@@ -5714,7 +5729,7 @@
   PrefabRemaps:
     []
   Name: Palm Flat
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -5788,7 +5803,7 @@
   PrefabRemaps:
     []
   Name: Gesture Hints
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: -6.987363, z: -37.604622}
@@ -6492,7 +6507,7 @@
     - fe5b2470-8f75-4493-8db2-5e5399b2b052: d3d52b7f-40e3-40a9-b48e-50942844a65b
     - fed034b3-ffd7-4142-912f-893a52a96381: 70b9ccc1-6639-47ec-a41b-9d950421dd27
   Name: Gesture Trigger__PUT_UNDER_MAIN_CAM
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -6594,7 +6609,7 @@
   PrefabRemaps:
     []
   Name: Three
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -7468,6 +7483,38 @@
     []
   Components:
     - !<own> 4fa7edd7-1d60-4a89-9dc5-33b02a197770
+- !<SceneObject/5b6f4262-5549-43e4-a606-ba95f75f18de>
+  PrefabRemaps:
+    []
+  Name: PinkyTip_to_Wrist
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> fb8a6a54-4ba7-4bbe-b30a-8cd3b9f58d35
+- !<SceneObject/5c3b2475-6fc0-4824-b022-106fb515a81f>
+  PrefabRemaps:
+    []
+  Name: Fireball
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 50.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 10.000000, y: 10.000000, z: 10.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> a46cddb5-cd47-4fbf-b8d9-71b92d752da6
+    - !<own> c2a5d5de-b583-48b6-8780-716c575bb0b9
+    - !<own> c3cf7c6d-5f93-48b6-bfa3-d8b335efad6a
 - !<SceneObject/5c4aca5d-16b2-4762-971c-47072315c68e>
   PrefabRemaps:
     []
@@ -7487,7 +7534,7 @@
   PrefabRemaps:
     []
   Name: Palm Open
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -7606,7 +7653,7 @@
   PrefabRemaps:
     []
   Name: Trigger Sounds
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: -40.000000}
@@ -8389,21 +8436,6 @@
   ScriptTypes:
     "":
       {}
-- !<SceneObject/694dfdbd-0df1-41e0-8104-1043dbdaadcf>
-  PrefabRemaps:
-    []
-  Name: Box
-  Enabled: true
-  Layers: 1
-  LocalTransform:
-    position: {x: -2.587425, y: -6.169746, z: -46.067459}
-    rotation: {x: -4.043272, y: -0.077434, z: -3.220068}
-    scale: {x: 15.725279, y: 15.833977, z: 3.292345}
-    hasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> 8886e3e1-dd1a-404f-b4e1-c4be0340e584
 - !<ScriptComponent/69934cad-5a05-4d9e-9e60-1d0c82ba692e>
   PrefabRemaps:
     []
@@ -9319,7 +9351,7 @@
   PrefabRemaps:
     []
   Name: Two Finger Pointer
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -9669,6 +9701,9 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> baa491ba-dc4a-49f3-a4c6-5d9986f575ea
+    - !<own> 31a40ad0-a148-4139-b666-4b39a02189be
+    - !<own> 9c0788cc-0362-4bb8-8955-63d86cf47fa4
+    - !<own> 5b6f4262-5549-43e4-a606-ba95f75f18de
   Components:
     - !<own> 0c066e0b-3141-44b7-93db-47747937d4f6
 - !<SceneObject/7beb3f6f-edb1-4fa8-bb79-26977e5e8e26>
@@ -11363,7 +11398,7 @@
   PrefabRemaps:
     []
   Name: Thumbs Up
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -11490,26 +11525,6 @@
   ScriptTypes:
     "":
       {}
-- !<RenderMeshVisual/8886e3e1-dd1a-404f-b4e1-c4be0340e584>
-  PrefabRemaps:
-    []
-  Name: Render Mesh Visual
-  Enabled: true
-  RenderOrder: 0
-  StretchMode: Stretch
-  VerticalAlignment: Center
-  HorizontalAlignment: Center
-  MeshShadowMode: None
-  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-  ShadowDensity: 1.000000
-  Materials:
-    - !<reference> 52a874c1-9d94-4d86-9a08-8aef9db12948
-  Mesh: !<reference> e542623c-1432-4bfa-881d-a28905bd9e57
-  Skin: !<reference> 00000000-0000-0000-0000-000000000000
-  BlendShapesEnabled: true
-  BlendNormals: false
-  BlendShapes:
-    {}
 - !<SceneObject/88acc895-b08c-40a3-ab7e-e9f97bb4f282>
   PrefabRemaps:
     []
@@ -11730,7 +11745,7 @@
   PrefabRemaps:
     []
   Name: Spock
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -13739,6 +13754,21 @@
   ScriptTypes:
     "":
       {}
+- !<SceneObject/9c0788cc-0362-4bb8-8955-63d86cf47fa4>
+  PrefabRemaps:
+    []
+  Name: RingTip_to_Wrist
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> f7ebbaf6-c9cc-4384-ae21-ab2323356292
 - !<SceneObject/9c673861-9977-46bb-9770-c756a92a99a5>
   PrefabRemaps:
     []
@@ -13837,6 +13867,26 @@
   ScriptTypes:
     "":
       {}
+- !<RenderMeshVisual/a46cddb5-cd47-4fbf-b8d9-71b92d752da6>
+  PrefabRemaps:
+    []
+  Name: Render Mesh Visual
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> d0a9d350-0d31-4ff4-9cf2-6474500609df
+  Mesh: !<reference> 51d39227-df15-4b48-bab1-079a61247053
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
 - !<ScriptComponent/a47c8167-8fbf-4428-a175-179720e71e78>
   PrefabRemaps:
     []
@@ -13905,7 +13955,7 @@
   PrefabRemaps:
     []
   Name: Four
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -14121,6 +14171,21 @@
     - !<own> e024eb0f-5113-429b-b2d4-bb8a39cbb05e
   Components:
     []
+- !<SceneObject/adea452e-205c-4c46-982f-0fc01ca041b2>
+  PrefabRemaps:
+    []
+  Name: TestScript
+  Enabled: false
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> b85f9a8f-2c83-47a4-b268-3328ed4ba7b4
 - !<SceneObject/ae8c0a9e-8795-427b-b505-dbdd8194fdf2>
   PrefabRemaps:
     []
@@ -15867,6 +15932,22 @@
     - !<own> 206bff30-e41c-47d7-bc1b-6f9975ef17b3
   Components:
     []
+- !<ScriptComponent/b85f9a8f-2c83-47a4-b268-3328ed4ba7b4>
+  PrefabRemaps:
+    []
+  Name: TestScript
+  Enabled: true
+  ScriptAsset: !<reference> 1ae173ab-7c4c-48bb-8aa3-ca3bc0d5d255
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      fireball: !<reference.ObjectPrefab> cf101b8a-6959-49d9-bb9a-12ba44edfa58
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/b94038c7-ab11-4fd9-a954-e3e063bb5739>
   PrefabRemaps:
     []
@@ -16790,6 +16871,29 @@
     []
   Components:
     []
+- !<BodyComponent/c2a5d5de-b583-48b6-8780-716c575bb0b9>
+  PrefabRemaps:
+    []
+  Name: Physics Body
+  Enabled: true
+  Shape: !<Sphere/00000000-0000-0000-0000-000000000000>
+    FitVisual: true
+    Radius: 6.000000
+  Matter: !<reference> c5b4637c-db1a-41e7-b66d-5601f70808e5
+  Filter: !<reference> 00000000-0000-0000-0000-000000000000
+  OverlapFilter: !<reference> 00000000-0000-0000-0000-000000000000
+  WorldSettings: !<reference> 2b2f5dfe-6696-4db1-83b4-67772eeb1dc7
+  EnableSmoothing: false
+  PositionTension: 30.000000
+  RotationTension: 30.000000
+  ForceCompound: false
+  Intangible: false
+  ShowCollider: false
+  Dynamic: true
+  BodySetting: Density
+  BodySettingValue: 1.000000
+  Damping: 0.000000
+  AngularDamping: 0.000000
 - !<ScriptComponent/c3aa5d2b-3a3c-4398-97b8-4f1fc3f05e6b>
   PrefabRemaps:
     []
@@ -17403,6 +17507,22 @@
       setBlendshapesBlendshapes: !<reference.BlendShapes> 00000000-0000-0000-0000-000000000000
       setBlendshapesName: ""
       setBlendshapesWeight: !<float> 0.000000
+  ScriptTypes:
+    "":
+      {}
+- !<ScriptComponent/c3cf7c6d-5f93-48b6-bfa3-d8b335efad6a>
+  PrefabRemaps:
+    []
+  Name: Projectile
+  Enabled: true
+  ScriptAsset: !<reference> 45587723-89ff-4634-9cc0-b61fdb8a4c7d
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      travelDir: !<Vec3> {x: 0.000000, y: 0.000000, z: -1.000000}
   ScriptTypes:
     "":
       {}
@@ -19286,7 +19406,7 @@
   PrefabRemaps:
     []
   Name: Chefs_Kiss
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -20416,6 +20536,42 @@
     - !<own> cae3d6b1-1d5c-4226-bac0-5c07f5a5eccf
   Components:
     []
+- !<ScriptComponent/dcf34eb5-db08-4fd2-b078-b8013a033910>
+  PrefabRemaps:
+    []
+  Name: GetJointDistance
+  Enabled: true
+  ScriptAsset: !<reference> 1eb40896-318d-4f06-b675-881932129494
+  ScriptInputsDefault:
+    handType: true
+    checkType: true
+    targetObject: true
+    visualizeDistance: true
+    minDistance: true
+    sendTriggers: true
+    enterRangeTrigger: true
+    exitRangeTrigger: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      handType: 0
+      checkType: 0
+      jointGroupA: !<string[]>
+        - wrist
+      jointGroupB: !<string[]>
+        - index-3
+      targetObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      visualizeDistance: false
+      checkDistance: true
+      minDistance: !<float> 0.000000
+      maxDistance: !<float> 10.000000
+      sendTriggers: false
+      enterRangeTrigger: ""
+      exitRangeTrigger: ""
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/dd0623c3-3d9f-4e73-aa69-7310bf7b8bc7>
   PrefabRemaps:
     []
@@ -23150,6 +23306,42 @@
   Components:
     - !<own> 1defcf6b-ccdc-44db-a0d3-8183638cf651
     - !<own> 92492562-8767-46a7-9f0c-1912f9b6ccfd
+- !<ScriptComponent/f7ebbaf6-c9cc-4384-ae21-ab2323356292>
+  PrefabRemaps:
+    []
+  Name: GetJointDistance
+  Enabled: true
+  ScriptAsset: !<reference> 1eb40896-318d-4f06-b675-881932129494
+  ScriptInputsDefault:
+    handType: true
+    checkType: true
+    targetObject: true
+    visualizeDistance: true
+    minDistance: true
+    sendTriggers: true
+    enterRangeTrigger: true
+    exitRangeTrigger: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      handType: 0
+      checkType: 0
+      jointGroupA: !<string[]>
+        - wrist
+      jointGroupB: !<string[]>
+        - ring-3
+      targetObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      visualizeDistance: false
+      checkDistance: true
+      minDistance: !<float> 0.000000
+      maxDistance: !<float> 10.000000
+      sendTriggers: false
+      enterRangeTrigger: ""
+      exitRangeTrigger: ""
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/f80e709b-bb88-4c1e-9d85-ee12488bdfa5>
   PrefabRemaps:
     []
@@ -23955,6 +24147,42 @@
       setBlendshapesBlendshapes: !<reference.BlendShapes> 00000000-0000-0000-0000-000000000000
       setBlendshapesName: ""
       setBlendshapesWeight: !<float> 0.000000
+  ScriptTypes:
+    "":
+      {}
+- !<ScriptComponent/fb8a6a54-4ba7-4bbe-b30a-8cd3b9f58d35>
+  PrefabRemaps:
+    []
+  Name: GetJointDistance
+  Enabled: true
+  ScriptAsset: !<reference> 1eb40896-318d-4f06-b675-881932129494
+  ScriptInputsDefault:
+    handType: true
+    checkType: true
+    targetObject: true
+    visualizeDistance: true
+    minDistance: true
+    sendTriggers: true
+    enterRangeTrigger: true
+    exitRangeTrigger: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      handType: 0
+      checkType: 0
+      jointGroupA: !<string[]>
+        - wrist
+      jointGroupB: !<string[]>
+        - pinky-3
+      targetObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      visualizeDistance: false
+      checkDistance: true
+      minDistance: !<float> 0.000000
+      maxDistance: !<float> 10.000000
+      sendTriggers: false
+      enterRangeTrigger: ""
+      exitRangeTrigger: ""
   ScriptTypes:
     "":
       {}
