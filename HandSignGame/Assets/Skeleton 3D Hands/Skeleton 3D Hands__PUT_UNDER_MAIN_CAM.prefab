@@ -1,0 +1,654 @@
+- !<ObjectPrefab/cc2f7029-8092-45b8-96d6-4f3a7d30b88d>
+  PackagePath: ""
+  objects:
+    - !<own> ac96bb11-b51d-4ec8-abfd-f2314f96df91
+  LazyLoading: false
+  RetainAssets: true
+- !<SceneObject/00fd79a8-e7b5-442a-8484-591700d1321c>
+  PrefabRemaps:
+    []
+  Name: Pink
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 0.050000, y: 0.050000, z: 0.050000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 3ffb4113-bf61-4476-81e8-ce891ccf553c
+- !<SceneObject/0afcf981-84aa-4ac0-bdd0-048c8623a099>
+  PrefabRemaps:
+    []
+  Name: Basic Finger Bone
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> a355a5f2-aaf3-492c-aecc-1d3a533a8690
+  Components:
+    []
+- !<SceneObject/1a3f4cdf-3896-4bd4-bbf8-d331785feb0b>
+  PrefabRemaps:
+    []
+  Name: Yellow
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 0.050000, y: 0.050000, z: 0.050000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 8b534dc3-9ca8-4943-9a93-05c22642d2f6
+- !<SceneObject/1e4b6dd4-0fde-4bbf-b346-5ae617e16b95>
+  PrefabRemaps:
+    []
+  Name: Left
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> d3c9073d-b77b-4a14-8524-c042d9513b42
+- !<RenderMeshVisual/21947ded-b8e8-4546-9c97-ccd736a0ba78>
+  PrefabRemaps:
+    []
+  Name: Mesh Visual 1
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 9b689b9c-6108-4175-925a-1f299d01db5f
+  Mesh: !<reference> 085f8587-3a61-46c7-a992-765abb45f627
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/2fb0c561-e2cd-49d4-9d6d-f9c7c632ecc7>
+  PrefabRemaps:
+    []
+  Name: Indicators
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 74.314804}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 69284c2d-32fc-4f27-b82b-4adb414ac238
+    - !<own> def78131-703d-4d1e-aad2-10a4776db3f5
+  Components:
+    []
+- !<SceneObject/30883ba3-8bfd-4491-b117-ed1fb06f14d9>
+  PrefabRemaps:
+    []
+  Name: Cartoony Joint
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 74.314804}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 0.040590, y: 0.040590, z: 0.040590}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 4fc7c9da-04f7-466f-9ac9-494e2b442f02
+- !<RenderMeshVisual/31840d7e-6186-4aa3-940f-9cf044db8ed9>
+  PrefabRemaps:
+    []
+  Name: Mesh Visual 1
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 2440b9f9-3f67-4bf0-aee1-9384ff32432c
+  Mesh: !<reference> 085f8587-3a61-46c7-a992-765abb45f627
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<RenderMeshVisual/3ffb4113-bf61-4476-81e8-ce891ccf553c>
+  PrefabRemaps:
+    []
+  Name: Mesh Visual 1
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> c2dedf7c-3005-403a-a674-f78dc2be1b31
+  Mesh: !<reference> 085f8587-3a61-46c7-a992-765abb45f627
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/41d4f4e3-491c-473f-b696-14659fe682b9>
+  PrefabRemaps:
+    []
+  Name: Basic Palm Bone
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 671f64d1-f1df-4a78-8d32-ccec70365e11
+  Components:
+    []
+- !<SceneObject/42941e0c-7e63-4d88-b1e2-8f11e4ee84a4>
+  PrefabRemaps:
+    []
+  Name: Cartoony Palm Bone
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: -0.000003, z: 74.314804}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> b8ccb02d-2b48-44d4-a588-a7c9821bf6cd
+  Components:
+    []
+- !<RenderMeshVisual/4fa8dedf-a635-4e47-a4bd-80ab2285c254>
+  PrefabRemaps:
+    []
+  Name: component_1
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 01ab3467-df02-42ca-9db5-7bf4026c7ac5
+  Mesh: !<reference> 57b82610-b1ff-4b30-a248-6ae122bfc6ef
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<RenderMeshVisual/4fc7c9da-04f7-466f-9ac9-494e2b442f02>
+  PrefabRemaps:
+    []
+  Name: Mesh Visual 1
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 01ab3467-df02-42ca-9db5-7bf4026c7ac5
+  Mesh: !<reference> 085f8587-3a61-46c7-a992-765abb45f627
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/671f64d1-f1df-4a78-8d32-ccec70365e11>
+  PrefabRemaps:
+    []
+  Name: Basic Bone
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: -180.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 3.000000, y: 3.000000, z: 5.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 7f1b8513-723a-4b3b-b5fc-4706ca87c606
+- !<ScriptComponent/6912387b-a781-43f8-b2f7-e48b0211e57f>
+  PrefabRemaps:
+    []
+  Name: HandSkeletonController
+  Enabled: true
+  ScriptAsset: !<reference> 7f9e05c4-286d-4f6a-84e7-fd91eccdfc26
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      handTracking: !<reference.ObjectTracking3D> ceb1bbf6-4de8-447d-beb3-8e8c92cc41f7
+      showJoints: true
+      jointIndicator: !<reference.SceneObject> 6d78e3bf-1530-49c5-aa25-34ce67363ccc
+      colorMode: 1
+      showBones: true
+      fingerBoneIndicator: !<reference.SceneObject> 0afcf981-84aa-4ac0-bdd0-048c8623a099
+      palmBoneIndicator: !<reference.SceneObject> 41d4f4e3-491c-473f-b696-14659fe682b9
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/69284c2d-32fc-4f27-b82b-4adb414ac238>
+  PrefabRemaps:
+    []
+  Name: Cartoony Bones
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: -74.314804}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 30883ba3-8bfd-4491-b117-ed1fb06f14d9
+    - !<own> b6926964-bd33-4170-b44a-2006b8de1fe4
+    - !<own> 42941e0c-7e63-4d88-b1e2-8f11e4ee84a4
+  Components:
+    []
+- !<SceneObject/6d78e3bf-1530-49c5-aa25-34ce67363ccc>
+  PrefabRemaps:
+    []
+  Name: Basic Joints
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> a20487af-75c4-4846-9337-d03d96d216ee
+    - !<own> 9ccd93d0-1bac-434b-8c72-945f90c8f3ab
+    - !<own> 1a3f4cdf-3896-4bd4-bbf8-d331785feb0b
+    - !<own> e4ea63b6-a6db-45d3-9b62-911e967d4fc3
+    - !<own> 9d688c89-cdcd-49e4-85dd-23e3b496a269
+    - !<own> 00fd79a8-e7b5-442a-8484-591700d1321c
+  Components:
+    []
+- !<RenderMeshVisual/7cfb8c54-8522-403a-9759-85206bd84f01>
+  PrefabRemaps:
+    []
+  Name: Mesh Visual 1
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 2b302186-a1bf-40a7-92bc-12ba41c222be
+  Mesh: !<reference> 085f8587-3a61-46c7-a992-765abb45f627
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<RenderMeshVisual/7f1b8513-723a-4b3b-b5fc-4706ca87c606>
+  PrefabRemaps:
+    []
+  Name: component_0
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> fceb4a14-8b68-4d21-aeb1-b8bd674b6e56
+  Mesh: !<reference> 0d3108c2-1a65-4b47-960f-3aecf80ce543
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<RenderMeshVisual/8b534dc3-9ca8-4943-9a93-05c22642d2f6>
+  PrefabRemaps:
+    []
+  Name: Mesh Visual 1
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 9cb6145e-772e-4cbd-9c06-51462f42e503
+  Mesh: !<reference> 085f8587-3a61-46c7-a992-765abb45f627
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<RenderMeshVisual/8c715a4e-d687-46a1-93d6-6ad305443e12>
+  PrefabRemaps:
+    []
+  Name: component_0
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> fceb4a14-8b68-4d21-aeb1-b8bd674b6e56
+  Mesh: !<reference> 0d3108c2-1a65-4b47-960f-3aecf80ce543
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/8fb48a0d-163c-48ae-a3fe-5a0baf0f8f24>
+  PrefabRemaps:
+    []
+  Name: Bone_Finger
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: -4.607300}
+    rotation: {x: -180.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 18.610563, y: 18.610561, z: 18.610561}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> f8b457f7-e713-4334-99f2-b7f2e931aae3
+- !<SceneObject/9ccd93d0-1bac-434b-8c72-945f90c8f3ab>
+  PrefabRemaps:
+    []
+  Name: Orange
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 0.050000, y: 0.050000, z: 0.050000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 7cfb8c54-8522-403a-9759-85206bd84f01
+- !<SceneObject/9d688c89-cdcd-49e4-85dd-23e3b496a269>
+  PrefabRemaps:
+    []
+  Name: Blue
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 0.050000, y: 0.050000, z: 0.050000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> d2ab77d9-09f9-474c-9b1b-ac94d3823c6d
+- !<SceneObject/a20487af-75c4-4846-9337-d03d96d216ee>
+  PrefabRemaps:
+    []
+  Name: Red
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 0.110000, y: 0.110000, z: 0.110000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 21947ded-b8e8-4546-9c97-ccd736a0ba78
+- !<SceneObject/a355a5f2-aaf3-492c-aecc-1d3a533a8690>
+  PrefabRemaps:
+    []
+  Name: Basic Bone
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: -180.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 7.000000, y: 7.000000, z: 5.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 8c715a4e-d687-46a1-93d6-6ad305443e12
+- !<SceneObject/ac96bb11-b51d-4ec8-abfd-f2314f96df91>
+  PrefabRemaps:
+    []
+  Name: Skeleton 3D Hands__PUT_UNDER_MAIN_CAM
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 1e4b6dd4-0fde-4bbf-b346-5ae617e16b95
+    - !<own> fc22c386-8360-416f-b3b2-83a41e19a33a
+    - !<own> eedee305-a84e-42ab-a657-e530485a1e13
+  Components:
+    []
+- !<SceneObject/b6926964-bd33-4170-b44a-2006b8de1fe4>
+  PrefabRemaps:
+    []
+  Name: Cartoony Finger Bone
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: -0.000003, z: 74.314804}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 8fb48a0d-163c-48ae-a3fe-5a0baf0f8f24
+  Components:
+    []
+- !<SceneObject/b8ccb02d-2b48-44d4-a588-a7c9821bf6cd>
+  PrefabRemaps:
+    []
+  Name: Bone_Palm
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: -6.024582}
+    rotation: {x: -180.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 10.065552, y: 10.065552, z: 10.065552}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 4fa8dedf-a635-4e47-a4bd-80ab2285c254
+- !<ScriptComponent/c7ef4622-dd21-4913-8b8d-43fb05d27712>
+  PrefabRemaps:
+    []
+  Name: HandSkeletonController
+  Enabled: true
+  ScriptAsset: !<reference> 7f9e05c4-286d-4f6a-84e7-fd91eccdfc26
+  ScriptInputsDefault:
+    colorMode: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      handTracking: !<reference.ObjectTracking3D> d3c9073d-b77b-4a14-8524-c042d9513b42
+      showJoints: true
+      jointIndicator: !<reference.SceneObject> 30883ba3-8bfd-4491-b117-ed1fb06f14d9
+      colorMode: 0
+      showBones: true
+      fingerBoneIndicator: !<reference.SceneObject> b6926964-bd33-4170-b44a-2006b8de1fe4
+      palmBoneIndicator: !<reference.SceneObject> 42941e0c-7e63-4d88-b1e2-8f11e4ee84a4
+  ScriptTypes:
+    "":
+      {}
+- !<ObjectTracking3D/ceb1bbf6-4de8-447d-beb3-8e8c92cc41f7>
+  PrefabRemaps:
+    []
+  Name: Object Tracking 3D
+  Enabled: true
+  ObjectIndex: 0
+  TrackingMode: Attachment
+  TrackPosition: true
+  TrackingAsset: !<reference> 09acdd26-3d1a-4d54-b81e-2d91cbbed1ad
+  AttachmentLabels:
+    []
+  AttachedObjects:
+    []
+- !<RenderMeshVisual/d2ab77d9-09f9-474c-9b1b-ac94d3823c6d>
+  PrefabRemaps:
+    []
+  Name: Mesh Visual 1
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 7815e48d-ffa8-4e21-9ae4-772e5853ae9d
+  Mesh: !<reference> 085f8587-3a61-46c7-a992-765abb45f627
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<ObjectTracking3D/d3c9073d-b77b-4a14-8524-c042d9513b42>
+  PrefabRemaps:
+    []
+  Name: Object Tracking 3D
+  Enabled: true
+  ObjectIndex: 0
+  TrackingMode: Attachment
+  TrackPosition: true
+  TrackingAsset: !<reference> 0f7a0dfe-2a4c-4386-85d3-f85688f12ab2
+  AttachmentLabels:
+    []
+  AttachedObjects:
+    []
+- !<SceneObject/def78131-703d-4d1e-aad2-10a4776db3f5>
+  PrefabRemaps:
+    []
+  Name: Basic Bones
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 6d78e3bf-1530-49c5-aa25-34ce67363ccc
+    - !<own> 0afcf981-84aa-4ac0-bdd0-048c8623a099
+    - !<own> 41d4f4e3-491c-473f-b696-14659fe682b9
+  Components:
+    []
+- !<SceneObject/e4ea63b6-a6db-45d3-9b62-911e967d4fc3>
+  PrefabRemaps:
+    []
+  Name: Green
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 0.050000, y: 0.050000, z: 0.050000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 31840d7e-6186-4aa3-940f-9cf044db8ed9
+- !<SceneObject/eedee305-a84e-42ab-a657-e530485a1e13>
+  PrefabRemaps:
+    []
+  Name: Hand Skeleton Controller
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: -40.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 2fb0c561-e2cd-49d4-9d6d-f9c7c632ecc7
+  Components:
+    - !<own> 6912387b-a781-43f8-b2f7-e48b0211e57f
+    - !<own> c7ef4622-dd21-4913-8b8d-43fb05d27712
+- !<RenderMeshVisual/f8b457f7-e713-4334-99f2-b7f2e931aae3>
+  PrefabRemaps:
+    []
+  Name: component_0
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 01ab3467-df02-42ca-9db5-7bf4026c7ac5
+  Mesh: !<reference> 63931edd-7a51-478f-9b7b-1afb45318b16
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/fc22c386-8360-416f-b3b2-83a41e19a33a>
+  PrefabRemaps:
+    []
+  Name: Right
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> ceb1bbf6-4de8-447d-beb3-8e8c92cc41f7
