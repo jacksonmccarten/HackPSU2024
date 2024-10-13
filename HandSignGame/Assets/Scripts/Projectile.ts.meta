@@ -25,12 +25,15 @@
   MaxVisibility: Editable
   ScriptInputsHidden:
     travelDir: false
+    travelSpeed: false
   ScriptTypesHidden:
     {}
   DefaultScriptInputs:
     - travelDir: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
+      travelSpeed: !<float> 0.000000
   ScriptTypes:
     -
       {}
   InputLines:
+    - // @input float travelSpeed
     - // @input vec3 travelDir

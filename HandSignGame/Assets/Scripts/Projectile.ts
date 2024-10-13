@@ -1,11 +1,14 @@
 @component
 export class Projectile extends BaseScriptComponent {
     @input
+    travelSpeed: number;
+
+    @input
     travelDir: vec3;
 
     private body = this.getSceneObject().getComponent("Physics.BodyComponent");
 
-    onAwake() {
-        this.body.velocity = this.travelDir;
+    onUpdate() {
+        this.body.velocity = this.travelDir.normalize().uniformScale(this.travelSpeed);
     }
 }

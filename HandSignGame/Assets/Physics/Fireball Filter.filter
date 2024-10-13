@@ -1,0 +1,7 @@
+- !<Filter/439a04aa-e79f-4c79-8940-54f32bce4045>
+  PackagePath: ""
+  IncludeStatic: true
+  IncludeDynamic: true
+  IncludeIntangible: false
+  OnlyLayers: 1048577
+  SkipLayers: 1048577

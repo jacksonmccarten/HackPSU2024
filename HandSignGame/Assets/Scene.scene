@@ -5,10 +5,15 @@
     - !<own> 0005641c-028d-459a-0000-000000014b4d
     - !<own> dc32cb61-132c-4e5a-8c5d-a8e95cfd5c47
     - !<own> adea452e-205c-4c46-982f-0fc01ca041b2
-    - !<own> 5c3b2475-6fc0-4824-b022-106fb515a81f
+    - !<own> 00088a0c-6bcd-4e2e-8e1e-8b530033539e
+    - !<own> c3455caa-e8a9-46c8-9984-657a69057d3c
   layers: !<Layers/267ee9a7-aff2-4f9d-9a49-f71214747d03>
     userLayers:
-      []
+      - |
+        id: 1
+        name: Projectile
+        color: 0
+
     HasOrtho: true
   RenderOutput: !<reference> 923415f5-4245-4675-ade1-6d69d6d23e71
   RenderPreviewOutput: !<reference> 923415f5-4245-4675-ade1-6d69d6d23e71
@@ -176,6 +181,21 @@
   DecayType: None
   DecayLimit: false
   DecayRange: 40.000000
+- !<SceneObject/00088a0c-6bcd-4e2e-8e1e-8b530033539e>
+  PrefabRemaps:
+    []
+  Name: World Mesh
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> c1d39702-eeb8-4ca2-ab30-fa487f0d434e
 - !<ScriptComponent/008628f5-6412-4e43-a851-fd106f56dad3>
   PrefabRemaps:
     []
@@ -1803,6 +1823,13 @@
     - !<own> 4bd37175-a487-4fea-be03-64c610b137b4
   Components:
     []
+- !<WorldComponent/0921b6d5-b5f4-4a5f-826d-8e68510639cd>
+  PrefabRemaps:
+    []
+  Name: Physics World
+  Enabled: true
+  UpdateOrder: 0
+  Settings: !<reference> 80233210-5948-4b5e-8f49-a840399fa8ee
 - !<SceneObject/0958e695-fdeb-41fd-b7be-5941897f48af>
   PrefabRemaps:
     []
@@ -7498,23 +7525,6 @@
     []
   Components:
     - !<own> fb8a6a54-4ba7-4bbe-b30a-8cd3b9f58d35
-- !<SceneObject/5c3b2475-6fc0-4824-b022-106fb515a81f>
-  PrefabRemaps:
-    []
-  Name: Fireball
-  Enabled: true
-  Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 50.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
-    scale: {x: 10.000000, y: 10.000000, z: 10.000000}
-    hasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> a46cddb5-cd47-4fbf-b8d9-71b92d752da6
-    - !<own> c2a5d5de-b583-48b6-8780-716c575bb0b9
-    - !<own> c3cf7c6d-5f93-48b6-bfa3-d8b335efad6a
 - !<SceneObject/5c4aca5d-16b2-4762-971c-47072315c68e>
   PrefabRemaps:
     []
@@ -13867,26 +13877,6 @@
   ScriptTypes:
     "":
       {}
-- !<RenderMeshVisual/a46cddb5-cd47-4fbf-b8d9-71b92d752da6>
-  PrefabRemaps:
-    []
-  Name: Render Mesh Visual
-  Enabled: true
-  RenderOrder: 0
-  StretchMode: Stretch
-  VerticalAlignment: Center
-  HorizontalAlignment: Center
-  MeshShadowMode: None
-  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-  ShadowDensity: 1.000000
-  Materials:
-    - !<reference> d0a9d350-0d31-4ff4-9cf2-6474500609df
-  Mesh: !<reference> 51d39227-df15-4b48-bab1-079a61247053
-  Skin: !<reference> 00000000-0000-0000-0000-000000000000
-  BlendShapesEnabled: true
-  BlendNormals: false
-  BlendShapes:
-    {}
 - !<ScriptComponent/a47c8167-8fbf-4428-a175-179720e71e78>
   PrefabRemaps:
     []
@@ -14175,7 +14165,7 @@
   PrefabRemaps:
     []
   Name: TestScript
-  Enabled: false
+  Enabled: true
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -15944,7 +15934,7 @@
     {}
   ScriptInputs:
     "":
-      fireball: !<reference.ObjectPrefab> cf101b8a-6959-49d9-bb9a-12ba44edfa58
+      fireball: !<reference.ObjectPrefab> e2a86e28-0032-4ad7-9b81-e6f4dde6a91a
   ScriptTypes:
     "":
       {}
@@ -16871,29 +16861,40 @@
     []
   Components:
     []
-- !<BodyComponent/c2a5d5de-b583-48b6-8780-716c575bb0b9>
+- !<ColliderComponent/c1d39702-eeb8-4ca2-ab30-fa487f0d434e>
   PrefabRemaps:
     []
-  Name: Physics Body
+  Name: Physics Collider
   Enabled: true
-  Shape: !<Sphere/00000000-0000-0000-0000-000000000000>
-    FitVisual: true
-    Radius: 6.000000
-  Matter: !<reference> c5b4637c-db1a-41e7-b66d-5601f70808e5
+  Shape: !<Mesh/00000000-0000-0000-0000-000000000000>
+    Mesh: !<reference> 0663f1d9-ddc5-4ed2-a58c-427c06e503ab
+    Convex: false
+    Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  Matter: !<reference> 00000000-0000-0000-0000-000000000000
   Filter: !<reference> 00000000-0000-0000-0000-000000000000
   OverlapFilter: !<reference> 00000000-0000-0000-0000-000000000000
-  WorldSettings: !<reference> 2b2f5dfe-6696-4db1-83b4-67772eeb1dc7
+  WorldSettings: !<reference> 00000000-0000-0000-0000-000000000000
   EnableSmoothing: false
   PositionTension: 30.000000
   RotationTension: 30.000000
   ForceCompound: false
   Intangible: false
   ShowCollider: false
-  Dynamic: true
-  BodySetting: Density
-  BodySettingValue: 1.000000
-  Damping: 0.000000
-  AngularDamping: 0.000000
+- !<SceneObject/c3455caa-e8a9-46c8-9984-657a69057d3c>
+  PrefabRemaps:
+    []
+  Name: Physics World
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 0921b6d5-b5f4-4a5f-826d-8e68510639cd
 - !<ScriptComponent/c3aa5d2b-3a3c-4398-97b8-4f1fc3f05e6b>
   PrefabRemaps:
     []
@@ -17507,22 +17508,6 @@
       setBlendshapesBlendshapes: !<reference.BlendShapes> 00000000-0000-0000-0000-000000000000
       setBlendshapesName: ""
       setBlendshapesWeight: !<float> 0.000000
-  ScriptTypes:
-    "":
-      {}
-- !<ScriptComponent/c3cf7c6d-5f93-48b6-bfa3-d8b335efad6a>
-  PrefabRemaps:
-    []
-  Name: Projectile
-  Enabled: true
-  ScriptAsset: !<reference> 45587723-89ff-4634-9cc0-b61fdb8a4c7d
-  ScriptInputsDefault:
-    {}
-  ScriptTypesDefault:
-    {}
-  ScriptInputs:
-    "":
-      travelDir: !<Vec3> {x: 0.000000, y: 0.000000, z: -1.000000}
   ScriptTypes:
     "":
       {}

@@ -1,4 +1,6 @@
 import { SIK } from "SpectaclesInteractionKit/SIK"
+import { Projectile } from "Scripts/Projectile"
+
 
 @component
 export class TestScript extends BaseScriptComponent {
@@ -10,7 +12,13 @@ export class TestScript extends BaseScriptComponent {
     
     onAwake() {
         this.rightHand.onPinchDown(() => {
-            print(this.rightHand.indexTip.position.toString());
+            print("Something");
+
+            let fbInstance = this.fireball.instantiate(this.getSceneObject());
+            fbInstance.getTransform().setWorldPosition(this.rightHand.indexTip.position);
+            fbInstance.getComponent(Projectile.getTypeName()).travelDir = this.rightHand.wrist.forward;
+
+            print("Else");
         });
     }
 }
