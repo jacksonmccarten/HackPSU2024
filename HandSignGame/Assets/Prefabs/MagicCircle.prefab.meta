@@ -12,7 +12,89 @@
   ImporterSettings: !<AssetImporterSettings/9140b14f-5c3f-4686-ab38-adc809ceb032>
     {}
   CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
-- !<RenderMeshVisual/06c4204a-37e3-4884-a740-378c3c454a93>
+- !<ObjectPrefabAssetData/13a3e19b-339b-40ec-b291-cd4ffed8175e>
+  SourceRemaps:
+    - 3a3b51e1-0c02-4fc3-947f-882d347138bc: 141b1e3d-174a-4dfd-8244-35da1ec4a77b
+    - 88b0d72c-f59e-4dd5-93e9-89f2079122eb: 18dcdc54-5a34-4fcf-a4b6-1f996ac0fe5a
+    - 97dcf245-b653-4f0c-9b97-7ebbd1e9836f: 34d88bc1-3a32-43ac-90b3-39ff9e44a0ef
+    - a0172825-91d1-47d5-aeec-c68cb9b550c1: 789b3c35-31e4-4746-9fd6-8c15ef2457a5
+    - c0dffafb-902e-4576-8c70-4aef6cd48f0e: 9443a0db-3635-4895-9924-376a51e34c87
+  SourceState: !<own> e62f99c3-6417-44b2-8bee-5b556e7e3e5f
+- !<BodyComponent/141b1e3d-174a-4dfd-8244-35da1ec4a77b>
+  PrefabRemaps:
+    []
+  Name: Physics Body
+  Enabled: true
+  Shape: !<Sphere/00000000-0000-0000-0000-000000000000>
+    FitVisual: true
+    Radius: 6.000000
+  Matter: !<reference> 00000000-0000-0000-0000-000000000000
+  Filter: !<reference> 00000000-0000-0000-0000-000000000000
+  OverlapFilter: !<reference> 00000000-0000-0000-0000-000000000000
+  WorldSettings: !<reference> 00000000-0000-0000-0000-000000000000
+  EnableSmoothing: false
+  PositionTension: 30.000000
+  RotationTension: 30.000000
+  ForceCompound: false
+  Intangible: false
+  ShowCollider: false
+  Dynamic: true
+  BodySetting: Density
+  BodySettingValue: 1.000000
+  Damping: 0.000000
+  AngularDamping: 0.000000
+- !<SceneObject/18dcdc54-5a34-4fcf-a4b6-1f996ac0fe5a>
+  PrefabRemaps:
+    []
+  Name: MagicCircle
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 168.596100, y: 168.596100, z: 168.596100}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 9443a0db-3635-4895-9924-376a51e34c87
+    - !<own> 789b3c35-31e4-4746-9fd6-8c15ef2457a5
+    - !<own> 34d88bc1-3a32-43ac-90b3-39ff9e44a0ef
+    - !<own> 141b1e3d-174a-4dfd-8244-35da1ec4a77b
+- !<ScriptComponent/34d88bc1-3a32-43ac-90b3-39ff9e44a0ef>
+  PrefabRemaps:
+    []
+  Name: Projectile
+  Enabled: true
+  ScriptAsset: !<reference> 45587723-89ff-4634-9cc0-b61fdb8a4c7d
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      {}
+  ScriptTypes:
+    "":
+      {}
+- !<Image/789b3c35-31e4-4746-9fd6-8c15ef2457a5>
+  PrefabRemaps:
+    []
+  Name: Image
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Fit
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> df308cbe-59d6-4431-8e55-d8a761c8fa49
+  FlipX: false
+  FlipY: false
+  Pivot: {x: 0.000000, y: 0.000000}
+- !<RenderMeshVisual/9443a0db-3635-4895-9924-376a51e34c87>
   PrefabRemaps:
     []
   Name: Render Mesh Visual
@@ -32,48 +114,9 @@
   BlendNormals: false
   BlendShapes:
     {}
-- !<ObjectPrefabAssetData/13a3e19b-339b-40ec-b291-cd4ffed8175e>
-  SourceRemaps:
-    - 88b0d72c-f59e-4dd5-93e9-89f2079122eb: e96e16c7-abab-4d46-b052-c63b0d4a357b
-    - a0172825-91d1-47d5-aeec-c68cb9b550c1: d393511b-d6d5-4571-81c8-971f677f8a7e
-    - c0dffafb-902e-4576-8c70-4aef6cd48f0e: 06c4204a-37e3-4884-a740-378c3c454a93
-  SourceState: !<own> de0214da-6b65-4572-a279-b42772e1e369
-- !<Image/d393511b-d6d5-4571-81c8-971f677f8a7e>
-  PrefabRemaps:
-    []
-  Name: Image
-  Enabled: true
-  RenderOrder: 0
-  StretchMode: Fit
-  VerticalAlignment: Center
-  HorizontalAlignment: Center
-  MeshShadowMode: None
-  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-  ShadowDensity: 1.000000
-  Materials:
-    - !<reference> df308cbe-59d6-4431-8e55-d8a761c8fa49
-  FlipX: false
-  FlipY: false
-  Pivot: {x: 0.000000, y: 0.000000}
-- !<ObjectPrefab/de0214da-6b65-4572-a279-b42772e1e369>
+- !<ObjectPrefab/e62f99c3-6417-44b2-8bee-5b556e7e3e5f>
   PackagePath: ""
   objects:
-    - !<own> e96e16c7-abab-4d46-b052-c63b0d4a357b
+    - !<own> 18dcdc54-5a34-4fcf-a4b6-1f996ac0fe5a
   LazyLoading: false
   RetainAssets: true
-- !<SceneObject/e96e16c7-abab-4d46-b052-c63b0d4a357b>
-  PrefabRemaps:
-    []
-  Name: MagicCircle
-  Enabled: true
-  Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
-    scale: {x: 168.596100, y: 168.596100, z: 168.596100}
-    hasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> 06c4204a-37e3-4884-a740-378c3c454a93
-    - !<own> d393511b-d6d5-4571-81c8-971f677f8a7e

@@ -19,6 +19,10 @@
       handTracker: !<reference.ScriptComponent> d0627cf1-e2f2-44ac-b09d-40cb730bd36d
       spells: !<reference.ScriptComponent[]>
         - !<reference> afcfeba2-5ada-49d5-8cbe-3b93d00a823c
+        - !<reference> 2be5b5cc-d871-4393-8fa5-12795e4f954d
+        - !<reference> 2177f8bb-d285-4d33-b447-e2960caea4a9
+        - !<reference> 14f9d160-ddf3-43e8-aab6-d815ff69fdad
+        - !<reference> f44f8a54-5897-4215-b784-9a9534ee0085
   ScriptTypes:
     "":
       {}

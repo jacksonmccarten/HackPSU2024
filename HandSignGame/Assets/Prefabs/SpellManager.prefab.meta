@@ -12,18 +12,33 @@
   ImporterSettings: !<AssetImporterSettings/c08ef22e-2e4f-433c-b9de-db94667e982b>
     {}
   CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
-- !<ObjectPrefab/48cf9638-237a-4604-8ae0-e49c79e233e5>
+- !<ObjectPrefab/28e3b9ad-2583-49e8-8b14-6eb3d4933adc>
   PackagePath: ""
   objects:
-    - !<own> ba15ec85-ed11-410c-866a-fc91b891aa90
+    - !<own> b6a45fc7-20e5-4c39-bc60-0e3b88d077a0
   LazyLoading: false
   RetainAssets: true
 - !<ObjectPrefabAssetData/7bf96daa-8a79-43e3-915f-9fff0137a3b8>
   SourceRemaps:
-    - 24d19fa3-ce7a-4ddc-97e8-57f20987fac8: 9c634f0c-2c8b-4f93-b5e2-18d89efa5b98
-    - fdc32e1f-ac8f-4b32-9663-5d510b4be299: ba15ec85-ed11-410c-866a-fc91b891aa90
-  SourceState: !<own> 48cf9638-237a-4604-8ae0-e49c79e233e5
-- !<ScriptComponent/9c634f0c-2c8b-4f93-b5e2-18d89efa5b98>
+    - 24d19fa3-ce7a-4ddc-97e8-57f20987fac8: ee7c41b2-2234-4a21-a43f-83d0113fc77f
+    - fdc32e1f-ac8f-4b32-9663-5d510b4be299: b6a45fc7-20e5-4c39-bc60-0e3b88d077a0
+  SourceState: !<own> 28e3b9ad-2583-49e8-8b14-6eb3d4933adc
+- !<SceneObject/b6a45fc7-20e5-4c39-bc60-0e3b88d077a0>
+  PrefabRemaps:
+    []
+  Name: SpellManager
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> ee7c41b2-2234-4a21-a43f-83d0113fc77f
+- !<ScriptComponent/ee7c41b2-2234-4a21-a43f-83d0113fc77f>
   PrefabRemaps:
     []
   Name: SpellManager
@@ -38,21 +53,10 @@
       handTracker: !<reference.ScriptComponent> d0627cf1-e2f2-44ac-b09d-40cb730bd36d
       spells: !<reference.ScriptComponent[]>
         - !<reference> afcfeba2-5ada-49d5-8cbe-3b93d00a823c
+        - !<reference> 2be5b5cc-d871-4393-8fa5-12795e4f954d
+        - !<reference> 2177f8bb-d285-4d33-b447-e2960caea4a9
+        - !<reference> 14f9d160-ddf3-43e8-aab6-d815ff69fdad
+        - !<reference> f44f8a54-5897-4215-b784-9a9534ee0085
   ScriptTypes:
     "":
       {}
-- !<SceneObject/ba15ec85-ed11-410c-866a-fc91b891aa90>
-  PrefabRemaps:
-    []
-  Name: SpellManager
-  Enabled: true
-  Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> 9c634f0c-2c8b-4f93-b5e2-18d89efa5b98

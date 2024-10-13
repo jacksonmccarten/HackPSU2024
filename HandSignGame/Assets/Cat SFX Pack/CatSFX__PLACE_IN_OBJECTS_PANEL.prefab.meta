@@ -1,0 +1,178 @@
+- !<AssetImportMetadata/a9ffaf71-ad33-4d28-b257-d1cb024dc43c>
+  ImportedAssetIds:
+    ObjectPrefab: !<reference> 30d5d03f-591e-49e5-9770-5e490ff4147e
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> 30d5d03f-591e-49e5-9770-5e490ff4147e
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    ObjectPrefab: !<own> e136f599-f168-4ee7-ac63-90d103243b31
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/022dbb9d-c514-4c6d-bd61-c2c24145554c>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<AudioComponent/0bda4d60-d89e-4159-98c5-b72140c51614>
+  PrefabRemaps:
+    []
+  Name: Audio
+  Enabled: true
+  AudioTrack: !<reference> e36ba806-a6bc-4d61-acf3-100f6d5e999b
+  EnableAutoplayLoop: false
+  Volume: 1.000000
+  EnableMixToSnap: false
+  RecordVolume: 1.000000
+  EnableSpatialAudio: false
+  EnableDistanceEffect: false
+  CurveType: Inverse
+  MinDistance: 0.000000
+  MaxDistance: 100.000000
+  EnableDirectivityEffect: false
+  EnablePositionEffect: false
+- !<ObjectPrefab/0dfba2dc-f637-4fb5-97be-7847891fa519>
+  PackagePath: CatSFX__PLACE_IN_OBJECTS_PANEL
+  objects:
+    - !<own> fb77dc63-e726-4ed0-a217-2eaa70560cf4
+  LazyLoading: false
+  RetainAssets: true
+- !<AudioComponent/79e98442-e73d-4812-b80c-488f65a53b81>
+  PrefabRemaps:
+    []
+  Name: Audio
+  Enabled: true
+  AudioTrack: !<reference> bce80864-3568-4ef6-a695-0f55fbcbf540
+  EnableAutoplayLoop: false
+  Volume: 1.000000
+  EnableMixToSnap: false
+  RecordVolume: 1.000000
+  EnableSpatialAudio: false
+  EnableDistanceEffect: false
+  CurveType: Inverse
+  MinDistance: 0.000000
+  MaxDistance: 100.000000
+  EnableDirectivityEffect: false
+  EnablePositionEffect: false
+- !<SceneObject/7d69fedb-267c-4242-9c63-d1c8cb6b6b8a>
+  PrefabRemaps:
+    []
+  Name: Cat 1
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 79e98442-e73d-4812-b80c-488f65a53b81
+- !<AudioComponent/84d7dcde-ff25-448b-8b40-752aa3be9d16>
+  PrefabRemaps:
+    []
+  Name: Audio
+  Enabled: true
+  AudioTrack: !<reference> a54708e2-f28c-4f9f-a5c1-6510b50dad0a
+  EnableAutoplayLoop: false
+  Volume: 1.000000
+  EnableMixToSnap: false
+  RecordVolume: 1.000000
+  EnableSpatialAudio: false
+  EnableDistanceEffect: false
+  CurveType: Inverse
+  MinDistance: 0.000000
+  MaxDistance: 100.000000
+  EnableDirectivityEffect: false
+  EnablePositionEffect: false
+- !<SceneObject/960d4866-97bf-4235-bfcc-5931f3b0f0e2>
+  PrefabRemaps:
+    []
+  Name: Cat 2
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 84d7dcde-ff25-448b-8b40-752aa3be9d16
+- !<SceneObject/c6a70c9f-f6e3-4db1-84db-72ae436bec21>
+  PrefabRemaps:
+    []
+  Name: Cat 3
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 0bda4d60-d89e-4159-98c5-b72140c51614
+- !<AudioComponent/caab9df0-3d52-46cf-bfe9-4297e0f48ebd>
+  PrefabRemaps:
+    []
+  Name: Audio
+  Enabled: true
+  AudioTrack: !<reference> a04ad7fb-8ce0-4ab7-b5d7-07227950b6cc
+  EnableAutoplayLoop: false
+  Volume: 1.000000
+  EnableMixToSnap: false
+  RecordVolume: 1.000000
+  EnableSpatialAudio: false
+  EnableDistanceEffect: false
+  CurveType: Inverse
+  MinDistance: 0.000000
+  MaxDistance: 100.000000
+  EnableDirectivityEffect: false
+  EnablePositionEffect: false
+- !<SceneObject/df57446c-7d0d-4bc3-b084-5caf76ecfc70>
+  PrefabRemaps:
+    []
+  Name: Cat 4
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> caab9df0-3d52-46cf-bfe9-4297e0f48ebd
+- !<ObjectPrefabAssetData/e136f599-f168-4ee7-ac63-90d103243b31>
+  SourceRemaps:
+    - 551a789e-083b-4130-8a38-d1f393f3a4cf: fb77dc63-e726-4ed0-a217-2eaa70560cf4
+    - 6cf7c352-fe47-4608-9d51-dbf8b802ace2: caab9df0-3d52-46cf-bfe9-4297e0f48ebd
+    - 73ebfd6b-6bea-4242-9942-03ecd5c93445: 7d69fedb-267c-4242-9c63-d1c8cb6b6b8a
+    - 7a595945-f80a-4f62-b1a0-8def0a93f93e: 0bda4d60-d89e-4159-98c5-b72140c51614
+    - 810dcb93-6683-4e8e-93b3-fb9e8996287c: c6a70c9f-f6e3-4db1-84db-72ae436bec21
+    - 93dd9c47-31c2-410a-b21c-9d63c5b3d520: 960d4866-97bf-4235-bfcc-5931f3b0f0e2
+    - 951f6b08-d930-4220-98ed-a348649d1f8f: 84d7dcde-ff25-448b-8b40-752aa3be9d16
+    - ac06b69b-b351-4f96-8962-7c62108b427b: df57446c-7d0d-4bc3-b084-5caf76ecfc70
+    - cb23a475-124d-4c37-8620-c57e302385e2: 79e98442-e73d-4812-b80c-488f65a53b81
+  SourceState: !<own> 0dfba2dc-f637-4fb5-97be-7847891fa519
+- !<SceneObject/fb77dc63-e726-4ed0-a217-2eaa70560cf4>
+  PrefabRemaps:
+    []
+  Name: Cat_SFX_Pack
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 7d69fedb-267c-4242-9c63-d1c8cb6b6b8a
+    - !<own> 960d4866-97bf-4235-bfcc-5931f3b0f0e2
+    - !<own> c6a70c9f-f6e3-4db1-84db-72ae436bec21
+    - !<own> df57446c-7d0d-4bc3-b084-5caf76ecfc70
+  Components:
+    []

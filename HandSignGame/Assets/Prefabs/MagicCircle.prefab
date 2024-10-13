@@ -4,6 +4,29 @@
     - !<own> 88b0d72c-f59e-4dd5-93e9-89f2079122eb
   LazyLoading: false
   RetainAssets: true
+- !<BodyComponent/3a3b51e1-0c02-4fc3-947f-882d347138bc>
+  PrefabRemaps:
+    []
+  Name: Physics Body
+  Enabled: true
+  Shape: !<Sphere/00000000-0000-0000-0000-000000000000>
+    FitVisual: true
+    Radius: 6.000000
+  Matter: !<reference> 00000000-0000-0000-0000-000000000000
+  Filter: !<reference> 00000000-0000-0000-0000-000000000000
+  OverlapFilter: !<reference> 00000000-0000-0000-0000-000000000000
+  WorldSettings: !<reference> 00000000-0000-0000-0000-000000000000
+  EnableSmoothing: false
+  PositionTension: 30.000000
+  RotationTension: 30.000000
+  ForceCompound: false
+  Intangible: false
+  ShowCollider: false
+  Dynamic: true
+  BodySetting: Density
+  BodySettingValue: 1.000000
+  Damping: 0.000000
+  AngularDamping: 0.000000
 - !<SceneObject/88b0d72c-f59e-4dd5-93e9-89f2079122eb>
   PrefabRemaps:
     []
@@ -20,6 +43,24 @@
   Components:
     - !<own> c0dffafb-902e-4576-8c70-4aef6cd48f0e
     - !<own> a0172825-91d1-47d5-aeec-c68cb9b550c1
+    - !<own> 97dcf245-b653-4f0c-9b97-7ebbd1e9836f
+    - !<own> 3a3b51e1-0c02-4fc3-947f-882d347138bc
+- !<ScriptComponent/97dcf245-b653-4f0c-9b97-7ebbd1e9836f>
+  PrefabRemaps:
+    []
+  Name: Projectile
+  Enabled: true
+  ScriptAsset: !<reference> 45587723-89ff-4634-9cc0-b61fdb8a4c7d
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      {}
+  ScriptTypes:
+    "":
+      {}
 - !<Image/a0172825-91d1-47d5-aeec-c68cb9b550c1>
   PrefabRemaps:
     []

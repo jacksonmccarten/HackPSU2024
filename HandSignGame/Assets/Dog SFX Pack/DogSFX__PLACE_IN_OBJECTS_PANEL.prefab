@@ -1,0 +1,152 @@
+- !<ObjectPrefab/0ffb3de2-a70c-4dc1-8a09-0e309ea6d50f>
+  PackagePath: ""
+  objects:
+    - !<own> 503d5d28-c157-46c6-ab7d-42dc67de1d99
+  LazyLoading: false
+  RetainAssets: true
+- !<AudioComponent/113dcd23-a898-4c9f-a7df-0303b2c001c4>
+  PrefabRemaps:
+    []
+  Name: Audio
+  Enabled: true
+  AudioTrack: !<reference> a41048cb-2bcb-4a16-a7d8-3beaf10ef8ce
+  EnableAutoplayLoop: false
+  Volume: 1.000000
+  EnableMixToSnap: false
+  RecordVolume: 1.000000
+  EnableSpatialAudio: false
+  EnableDistanceEffect: false
+  CurveType: Inverse
+  MinDistance: 0.000000
+  MaxDistance: 100.000000
+  EnableDirectivityEffect: false
+  EnablePositionEffect: false
+- !<SceneObject/13fc8496-540b-4582-ba12-9857edbfd07a>
+  PrefabRemaps:
+    []
+  Name: Dog 4
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 3edfdab6-3a70-4591-9086-9e6563bc09e9
+- !<SceneObject/14471a89-24e7-425d-81ea-ca5085dae1ad>
+  PrefabRemaps:
+    []
+  Name: Dog 3
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 113dcd23-a898-4c9f-a7df-0303b2c001c4
+- !<AudioComponent/2f64497a-c843-4672-a868-d1a241abe4a1>
+  PrefabRemaps:
+    []
+  Name: Audio
+  Enabled: true
+  AudioTrack: !<reference> 704bfd78-5c63-49c9-808d-1911a09e478b
+  EnableAutoplayLoop: false
+  Volume: 1.000000
+  EnableMixToSnap: false
+  RecordVolume: 1.000000
+  EnableSpatialAudio: false
+  EnableDistanceEffect: false
+  CurveType: Inverse
+  MinDistance: 0.000000
+  MaxDistance: 100.000000
+  EnableDirectivityEffect: false
+  EnablePositionEffect: false
+- !<SceneObject/378cc472-bbc1-4939-8082-967e18b9020f>
+  PrefabRemaps:
+    []
+  Name: Dog 1
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> ff44cf4f-93e8-457e-a7f2-f3366a8d035d
+- !<AudioComponent/3edfdab6-3a70-4591-9086-9e6563bc09e9>
+  PrefabRemaps:
+    []
+  Name: Audio
+  Enabled: true
+  AudioTrack: !<reference> 367d68ff-2165-4314-a465-1b897c0c5d2c
+  EnableAutoplayLoop: false
+  Volume: 1.000000
+  EnableMixToSnap: false
+  RecordVolume: 1.000000
+  EnableSpatialAudio: false
+  EnableDistanceEffect: false
+  CurveType: Inverse
+  MinDistance: 0.000000
+  MaxDistance: 100.000000
+  EnableDirectivityEffect: false
+  EnablePositionEffect: false
+- !<SceneObject/503d5d28-c157-46c6-ab7d-42dc67de1d99>
+  PrefabRemaps:
+    []
+  Name: DogSFX__PLACE_IN_OBJECTS_PANEL
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 378cc472-bbc1-4939-8082-967e18b9020f
+    - !<own> d28b1faa-57e9-4d8d-bae7-7cbedf4219fb
+    - !<own> 14471a89-24e7-425d-81ea-ca5085dae1ad
+    - !<own> 13fc8496-540b-4582-ba12-9857edbfd07a
+  Components:
+    []
+- !<SceneObject/d28b1faa-57e9-4d8d-bae7-7cbedf4219fb>
+  PrefabRemaps:
+    []
+  Name: Dog 2
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 2f64497a-c843-4672-a868-d1a241abe4a1
+- !<AudioComponent/ff44cf4f-93e8-457e-a7f2-f3366a8d035d>
+  PrefabRemaps:
+    []
+  Name: Audio
+  Enabled: true
+  AudioTrack: !<reference> 86a77c97-a173-4824-99a7-ee3c7914a326
+  EnableAutoplayLoop: false
+  Volume: 1.000000
+  EnableMixToSnap: false
+  RecordVolume: 1.000000
+  EnableSpatialAudio: false
+  EnableDistanceEffect: false
+  CurveType: Inverse
+  MinDistance: 0.000000
+  MaxDistance: 100.000000
+  EnableDirectivityEffect: false
+  EnablePositionEffect: false

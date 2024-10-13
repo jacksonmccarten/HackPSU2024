@@ -1,0 +1,152 @@
+- !<ObjectPrefab/30d5d03f-591e-49e5-9770-5e490ff4147e>
+  PackagePath: ""
+  objects:
+    - !<own> 551a789e-083b-4130-8a38-d1f393f3a4cf
+  LazyLoading: false
+  RetainAssets: true
+- !<SceneObject/551a789e-083b-4130-8a38-d1f393f3a4cf>
+  PrefabRemaps:
+    []
+  Name: Cat_SFX_Pack
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 73ebfd6b-6bea-4242-9942-03ecd5c93445
+    - !<own> 93dd9c47-31c2-410a-b21c-9d63c5b3d520
+    - !<own> 810dcb93-6683-4e8e-93b3-fb9e8996287c
+    - !<own> ac06b69b-b351-4f96-8962-7c62108b427b
+  Components:
+    []
+- !<AudioComponent/6cf7c352-fe47-4608-9d51-dbf8b802ace2>
+  PrefabRemaps:
+    []
+  Name: Audio
+  Enabled: true
+  AudioTrack: !<reference> a04ad7fb-8ce0-4ab7-b5d7-07227950b6cc
+  EnableAutoplayLoop: false
+  Volume: 1.000000
+  EnableMixToSnap: false
+  RecordVolume: 1.000000
+  EnableSpatialAudio: false
+  EnableDistanceEffect: false
+  CurveType: Inverse
+  MinDistance: 0.000000
+  MaxDistance: 100.000000
+  EnableDirectivityEffect: false
+  EnablePositionEffect: false
+- !<SceneObject/73ebfd6b-6bea-4242-9942-03ecd5c93445>
+  PrefabRemaps:
+    []
+  Name: Cat 1
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> cb23a475-124d-4c37-8620-c57e302385e2
+- !<AudioComponent/7a595945-f80a-4f62-b1a0-8def0a93f93e>
+  PrefabRemaps:
+    []
+  Name: Audio
+  Enabled: true
+  AudioTrack: !<reference> e36ba806-a6bc-4d61-acf3-100f6d5e999b
+  EnableAutoplayLoop: false
+  Volume: 1.000000
+  EnableMixToSnap: false
+  RecordVolume: 1.000000
+  EnableSpatialAudio: false
+  EnableDistanceEffect: false
+  CurveType: Inverse
+  MinDistance: 0.000000
+  MaxDistance: 100.000000
+  EnableDirectivityEffect: false
+  EnablePositionEffect: false
+- !<SceneObject/810dcb93-6683-4e8e-93b3-fb9e8996287c>
+  PrefabRemaps:
+    []
+  Name: Cat 3
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 7a595945-f80a-4f62-b1a0-8def0a93f93e
+- !<SceneObject/93dd9c47-31c2-410a-b21c-9d63c5b3d520>
+  PrefabRemaps:
+    []
+  Name: Cat 2
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 951f6b08-d930-4220-98ed-a348649d1f8f
+- !<AudioComponent/951f6b08-d930-4220-98ed-a348649d1f8f>
+  PrefabRemaps:
+    []
+  Name: Audio
+  Enabled: true
+  AudioTrack: !<reference> a54708e2-f28c-4f9f-a5c1-6510b50dad0a
+  EnableAutoplayLoop: false
+  Volume: 1.000000
+  EnableMixToSnap: false
+  RecordVolume: 1.000000
+  EnableSpatialAudio: false
+  EnableDistanceEffect: false
+  CurveType: Inverse
+  MinDistance: 0.000000
+  MaxDistance: 100.000000
+  EnableDirectivityEffect: false
+  EnablePositionEffect: false
+- !<SceneObject/ac06b69b-b351-4f96-8962-7c62108b427b>
+  PrefabRemaps:
+    []
+  Name: Cat 4
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 6cf7c352-fe47-4608-9d51-dbf8b802ace2
+- !<AudioComponent/cb23a475-124d-4c37-8620-c57e302385e2>
+  PrefabRemaps:
+    []
+  Name: Audio
+  Enabled: true
+  AudioTrack: !<reference> bce80864-3568-4ef6-a695-0f55fbcbf540
+  EnableAutoplayLoop: false
+  Volume: 1.000000
+  EnableMixToSnap: false
+  RecordVolume: 1.000000
+  EnableSpatialAudio: false
+  EnableDistanceEffect: false
+  CurveType: Inverse
+  MinDistance: 0.000000
+  MaxDistance: 100.000000
+  EnableDirectivityEffect: false
+  EnablePositionEffect: false
