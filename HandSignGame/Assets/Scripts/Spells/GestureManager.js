@@ -16,10 +16,9 @@ var triggerTimerMax = 0.2;
 initialize();
 
 function initialize() {
-    
-    for (var i = 0; i < script.scriptContainer.getChildrenCount(); i++) {
-        if (script.scriptContainer.getChild(i).getComponent("Component.ScriptComponent")) {
-            gestureRules.push(script.scriptContainer.getChild(i).getComponent("Component.ScriptComponent"));
+    for (var i = 0; i < script.getSceneObject().getChildrenCount(); i++) {
+        if (script.getSceneObject().getChild(i).getComponent("Component.ScriptComponent")) {
+            gestureRules.push(script.getSceneObject().getChild(i).getComponent("Component.ScriptComponent"));
         }
     }
 
@@ -27,7 +26,7 @@ function initialize() {
 }
 
 function onUpdate() {   
-    gestureMade = checkIfAllWithinRange();    
+    gestureMade = checkIfAllWithinRange();
     
     if (gestureMade) {
         lostTimer = 0;
@@ -75,8 +74,8 @@ function triggerGesture(isStarting) {
 
 function checkIfAllWithinRange() {
     var isInRange = true;    
-    for (var i=0; i < distanceScripts.length; i++) {
-        if (!distanceScripts[i].api.isWithinThreshold()) {
+    for (var i = 0; i < gestureRules.length; i++) {
+        if (!gestureRules[i].api.isWithinThreshold()) {
             isInRange = false;
             break;
         }

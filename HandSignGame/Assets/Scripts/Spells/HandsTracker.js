@@ -3,7 +3,7 @@
 
 const JOINT_NAMES = ["wrist","thumb-0","thumb-1","thumb-2","thumb-3","index-0","index-1","index-2","index-3","mid-0","mid-1","mid-2","mid-3","ring-0","ring-1","ring-2","ring-3","pinky-0","pinky-1","pinky-2","pinky-3","wrist_to_thumb","wrist_to_index","wrist_to_mid","wrist_to_ring","wrist_to_pinky"];
 
-const HAND {
+const HAND = {
     LEFT: 0,
     RIGHT: 1
 };
@@ -24,9 +24,9 @@ function Joint(hand, jointName) {
             this.object = script.leftHandTracking.createAttachmentPoint(jointName);
             break;
         case HAND.RIGHT:
-            this.Object = script.rightHandTracking.createAttachmentPoint(jointName);
+            this.object = script.rightHandTracking.createAttachmentPoint(jointName);
             break;
-    }    
+    }
     
     if (this.object) {
         this.objectTransform = this.object.getTransform();
@@ -44,6 +44,9 @@ function initialize() {
     if (initialized) {
         return;
     }
+
+    print("Initializing hand tracker");
+    
     initializeJoints();
     initialized = true;
     
@@ -52,8 +55,8 @@ function initialize() {
 
 function initializeJoints() {
     for(var i = 0; i < JOINT_NAMES.length; i++) {
-        left_joints[JOINT_NAMES[i]] = new Joint(HAND.LEFT, JOINT_NAMES[k]);
-        right_joints[JOINT_NAMES[i]] = new Joint(HAND.RIGHT, JOINT_NAMES[k]);
+        left_joints[JOINT_NAMES[i]] = new Joint(HAND.LEFT, JOINT_NAMES[i]);
+        right_joints[JOINT_NAMES[i]] = new Joint(HAND.RIGHT, JOINT_NAMES[i]);
     }
 }
 
@@ -95,12 +98,7 @@ function getJoint(hand, jointName) {
 }
 
 function getJointDistance(hand1, jointName1, hand2, jointName2) {
-    var vec3arr = [];
-    
-    vec3arr.push(getJoint(hand1, jointName1));
-    vec3arr.push(getJoint(hand2, jointName2));
-    
-    return getAverageVec3(vec3arr);   
+    return getJoint(hand1, jointName1).position.distance(getJoint(hand2, jointName2).position);
 }
 
 function isLeftTracking() {
@@ -111,19 +109,9 @@ function isRightTracking() {
     return script.rightHandTracking.isTracking();
 }
 
-function getAverageVec3(vecs) {
-    var result = new vec3(0, 0, 0);
-    
-    for (var i=0; i < vecs.length; i ++) {
-        result = result.add(vecs[i]);
-    }
-    
-    result = result.uniformScale(1 / vecs.length);
-    
-    return result;
-}
-
 script.api.getJointDistance = getJointDistance;
 script.api.getHand = getHand;
 
-global.handTracker = script;
+global.handTracking = function() {
+    return script;
+};

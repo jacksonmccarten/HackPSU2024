@@ -69,7 +69,7 @@
   PrefabRemaps:
     []
   Name: Lighting
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -185,7 +185,7 @@
   PrefabRemaps:
     []
   Name: World Mesh
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -4776,7 +4776,7 @@
 - !<SceneObject/59f283e0-9d2d-419e-9ea1-bef9bacb6e35>
   PrefabRemaps:
     []
-  Name: right_wrist
+  Name: wrist
   Enabled: true
   Layers: 1
   LocalTransform:
@@ -5336,18 +5336,15 @@
   Enabled: true
   ScriptAsset: !<reference> 9ed8e01e-5032-4f24-9e90-f6dc376714a3
   ScriptInputsDefault:
-    jointStringA: true
-    jointStringB: true
     minDistance: true
-    maxDistance: true
   ScriptTypesDefault:
     {}
   ScriptInputs:
     "":
-      jointStringA: ""
-      jointStringB: ""
+      jointStringA: left;index-3
+      jointStringB: right;index-3
       minDistance: !<float> 0.000000
-      maxDistance: !<float> 0.000000
+      maxDistance: !<float> 4.000000
   ScriptTypes:
     "":
       {}
@@ -8019,7 +8016,7 @@
 - !<SceneObject/9857966d-1a80-4140-92ed-742b571bf1bb>
   PrefabRemaps:
     []
-  Name: left_mid-3
+  Name: mid-3
   Enabled: true
   Layers: 1
   LocalTransform:
@@ -8345,7 +8342,7 @@
   PrefabRemaps:
     []
   Name: TestScript
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -8867,7 +8864,7 @@
   PrefabRemaps:
     []
   Name: Physics World
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}

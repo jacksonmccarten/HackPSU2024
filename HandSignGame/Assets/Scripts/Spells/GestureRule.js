@@ -3,11 +3,9 @@
 // @input float minDistance
 // @input float maxDistance
 
-var jointA = null;
-var jointB = null;
+var jointA, jointB;
 
-var getHand = global.handTracking.api.getHand;
-var getJointDistance = global.handTracking.api.getJointDistance;
+var getHand, getJointDistance;
 
 initialize();
 
@@ -19,15 +17,16 @@ function Joint(jointString) {
 }
 
 function initialize() {
-    jointA = Joint(script.jointStringA);
-    jointB = Joint(script.jointStringB);
+    jointA = new Joint(script.jointStringA);
+    jointB = new Joint(script.jointStringB);
+    
+    getHand = global.handTracking().api.getHand;
+    getJointDistance = global.handTracking().api.getJointDistance;
 }
 
 
 function isWithinThreshold() {
     var dist = getJointDistance(getHand(jointA.hand), jointA.joint, getHand(jointB.hand), jointB.joint);
-    
-    print(dist);    
     
     return dist >= script.minDistance && dist <= script.maxDistance;
 }
