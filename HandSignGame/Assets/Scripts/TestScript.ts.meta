@@ -25,12 +25,15 @@
   MaxVisibility: Editable
   ScriptInputsHidden:
     fireball: false
+    skeleton: false
   ScriptTypesHidden:
     {}
   DefaultScriptInputs:
     - fireball: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
+      skeleton: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}
   InputLines:
     - // @input Asset.ObjectPrefab fireball
+    - // @input Asset.ObjectPrefab skeleton

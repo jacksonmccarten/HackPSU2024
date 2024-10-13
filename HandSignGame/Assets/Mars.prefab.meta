@@ -1,0 +1,83 @@
+- !<AssetImportMetadata/404b1c55-e7c5-4d0b-9731-436dc2c83d61>
+  ImportedAssetIds:
+    ObjectPrefab: !<reference> 640a281e-c16b-43e3-90fa-781c3fb5866b
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> 640a281e-c16b-43e3-90fa-781c3fb5866b
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    ObjectPrefab: !<own> 6a24c6ca-d414-495c-8010-525bdf5f0353
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/6d63e874-c8a9-4017-83c0-c4afe4238767>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<RenderMeshVisual/21c64d0c-bb45-44a6-8e65-cbfd931b9021>
+  PrefabRemaps:
+    []
+  Name: Mesh
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> a6e9f7b2-63e5-4295-9230-94d1fb95c9c7
+  Mesh: !<reference> 216c3afa-c9d6-44bb-961a-b39b75cef437
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  RayTracing: !<RayTracingVisualSettings/00000000-0000-0000-0000-000000000000>
+    Reflections:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+      planar:
+        enabled: false
+        roughHarden: -1.000000
+        roughCurve: -1.000000
+    IndirectDiffuse:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    AmbientOcclusion:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    Shadows:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    Material: !<reference> 00000000-0000-0000-0000-000000000000
+    HideFromCamera: false
+- !<ObjectPrefabAssetData/6a24c6ca-d414-495c-8010-525bdf5f0353>
+  SourceRemaps:
+    - 490e2a2e-7f7a-49ba-80dc-9908677c359c: e6b3a960-7d03-45c9-9d91-d11b15757976
+    - 75717cb7-e236-499e-9890-010fdabee0b3: 21c64d0c-bb45-44a6-8e65-cbfd931b9021
+  SourceState: !<own> ed2a4df9-c2d0-48b9-8409-17895f5fa6d2
+- !<SceneObject/e6b3a960-7d03-45c9-9d91-d11b15757976>
+  PrefabRemaps:
+    []
+  Name: Mars
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 1.050000, y: -1.050000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 0.300000, y: 0.300000, z: 0.300000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 21c64d0c-bb45-44a6-8e65-cbfd931b9021
+- !<ObjectPrefab/ed2a4df9-c2d0-48b9-8409-17895f5fa6d2>
+  PackagePath: ""
+  objects:
+    - !<own> e6b3a960-7d03-45c9-9d91-d11b15757976
+  LazyLoading: false
+  RetainAssets: true

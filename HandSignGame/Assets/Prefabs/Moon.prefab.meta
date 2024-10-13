@@ -1,0 +1,83 @@
+- !<AssetImportMetadata/0422f641-58ea-4627-9b96-1abd086c7bd4>
+  ImportedAssetIds:
+    ObjectPrefab: !<reference> 6f7d9da3-15e2-49ce-8e76-e64176d05469
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> 6f7d9da3-15e2-49ce-8e76-e64176d05469
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    ObjectPrefab: !<own> a7821834-562a-4f95-8694-d9f5fa03a1c2
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/dcc7d4ba-1da3-4c1a-9f77-ea8f4aa98202>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ObjectPrefab/15736b9d-8753-43bf-88fb-85c570a93d8a>
+  PackagePath: ""
+  objects:
+    - !<own> eb00cbef-f4be-4342-b2b6-73486f94abbe
+  LazyLoading: false
+  RetainAssets: true
+- !<RenderMeshVisual/1c50b057-f4a7-4450-8415-6ad5bf485f59>
+  PrefabRemaps:
+    []
+  Name: Mesh
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> f56d6568-5052-44a2-bc98-d513a21e11ff
+  Mesh: !<reference> 8643c99e-0928-46dd-8d36-99b315bba28d
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  RayTracing: !<RayTracingVisualSettings/00000000-0000-0000-0000-000000000000>
+    Reflections:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+      planar:
+        enabled: false
+        roughHarden: -1.000000
+        roughCurve: -1.000000
+    IndirectDiffuse:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    AmbientOcclusion:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    Shadows:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    Material: !<reference> 00000000-0000-0000-0000-000000000000
+    HideFromCamera: false
+- !<ObjectPrefabAssetData/a7821834-562a-4f95-8694-d9f5fa03a1c2>
+  SourceRemaps:
+    - d571e51f-2c39-456e-85ef-74572dfa81c1: eb00cbef-f4be-4342-b2b6-73486f94abbe
+    - fbafcfeb-166d-483f-996e-d73675ab798b: 1c50b057-f4a7-4450-8415-6ad5bf485f59
+  SourceState: !<own> 15736b9d-8753-43bf-88fb-85c570a93d8a
+- !<SceneObject/eb00cbef-f4be-4342-b2b6-73486f94abbe>
+  PrefabRemaps:
+    []
+  Name: Moon
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 2.200000, y: 0.000000, z: 0.000000}
+    rotation: {x: -180.000000, y: 50.000015, z: -180.000000}
+    scale: {x: 0.300000, y: 0.300000, z: 0.300000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 1c50b057-f4a7-4450-8415-6ad5bf485f59

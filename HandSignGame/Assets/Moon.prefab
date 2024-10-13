@@ -1,0 +1,64 @@
+- !<ObjectPrefab/70db64f2-d8ae-4566-8a4f-d8c2ecbd7b2e>
+  PackagePath: ""
+  objects:
+    - !<own> 27f4a56b-d5d3-492b-bd0b-651c194625bd
+  LazyLoading: false
+  RetainAssets: true
+- !<RenderMeshVisual/0a88d9b9-000e-464b-a207-2235bfcea5b1>
+  PrefabRemaps:
+    []
+  Name: Mesh
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> f56d6568-5052-44a2-bc98-d513a21e11ff
+  Mesh: !<reference> 8643c99e-0928-46dd-8d36-99b315bba28d
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  RayTracing: !<RayTracingVisualSettings/00000000-0000-0000-0000-000000000000>
+    Reflections:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+      planar:
+        enabled: false
+        roughHarden: -1.000000
+        roughCurve: -1.000000
+    IndirectDiffuse:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    AmbientOcclusion:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    Shadows:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    Material: !<reference> 00000000-0000-0000-0000-000000000000
+    HideFromCamera: false
+- !<SceneObject/27f4a56b-d5d3-492b-bd0b-651c194625bd>
+  PrefabRemaps:
+    []
+  Name: Moon
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 2.200000, y: 0.000000, z: 0.000000}
+    rotation: {x: -180.000000, y: 50.000015, z: -180.000000}
+    scale: {x: 0.300000, y: 0.300000, z: 0.300000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 0a88d9b9-000e-464b-a207-2235bfcea5b1

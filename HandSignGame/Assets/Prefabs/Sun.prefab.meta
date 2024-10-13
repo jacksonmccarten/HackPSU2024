@@ -1,0 +1,83 @@
+- !<AssetImportMetadata/68ec27de-757f-4fed-a980-bd1c0e828ccb>
+  ImportedAssetIds:
+    ObjectPrefab: !<reference> 51047c19-1799-44b6-96c0-0506e69269ae
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> 51047c19-1799-44b6-96c0-0506e69269ae
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    ObjectPrefab: !<own> 5c079a3b-56e9-47b7-ae1b-10398ce62457
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/2cd5e5de-4583-4c89-9dc4-b26d3cdc4a34>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ObjectPrefab/01c9fcb4-d863-4839-9377-aab96bfacea5>
+  PackagePath: ""
+  objects:
+    - !<own> c5bebe3d-af83-4a33-b263-e53c02669965
+  LazyLoading: false
+  RetainAssets: true
+- !<ObjectPrefabAssetData/5c079a3b-56e9-47b7-ae1b-10398ce62457>
+  SourceRemaps:
+    - ea4e4ae7-1451-4b91-b787-dc1b937a44d3: cee8e33a-e053-4cb2-a6dc-07224f4b79d5
+    - fdfbdd77-7c9f-452c-aeb7-daa20cc1bb63: c5bebe3d-af83-4a33-b263-e53c02669965
+  SourceState: !<own> 01c9fcb4-d863-4839-9377-aab96bfacea5
+- !<SceneObject/c5bebe3d-af83-4a33-b263-e53c02669965>
+  PrefabRemaps:
+    []
+  Name: Sun
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> cee8e33a-e053-4cb2-a6dc-07224f4b79d5
+- !<RenderMeshVisual/cee8e33a-e053-4cb2-a6dc-07224f4b79d5>
+  PrefabRemaps:
+    []
+  Name: Mesh
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 1ed03860-6135-45f3-bc6e-f2234cb2b1ac
+  Mesh: !<reference> dc278dd4-56bf-4557-824a-2cc6880bb1b3
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  RayTracing: !<RayTracingVisualSettings/00000000-0000-0000-0000-000000000000>
+    Reflections:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+      planar:
+        enabled: false
+        roughHarden: -1.000000
+        roughCurve: -1.000000
+    IndirectDiffuse:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    AmbientOcclusion:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    Shadows:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    Material: !<reference> 00000000-0000-0000-0000-000000000000
+    HideFromCamera: false

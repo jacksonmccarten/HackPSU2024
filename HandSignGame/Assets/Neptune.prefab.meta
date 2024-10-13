@@ -1,0 +1,83 @@
+- !<AssetImportMetadata/0e1ed451-af9a-4d00-912b-b5b9bb16c82d>
+  ImportedAssetIds:
+    ObjectPrefab: !<reference> 16868a95-8832-46c0-8606-d2422a4464ed
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> 16868a95-8832-46c0-8606-d2422a4464ed
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    ObjectPrefab: !<own> 7434bb65-8135-4cdc-862c-8f2e707fd2d5
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/acb94452-c3b8-4d00-be6a-fc8894550445>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ObjectPrefab/50ea93b4-32dd-4bfb-acb0-894839fd8364>
+  PackagePath: ""
+  objects:
+    - !<own> f5f15722-5c16-4226-8f86-9f364f7af896
+  LazyLoading: false
+  RetainAssets: true
+- !<ObjectPrefabAssetData/7434bb65-8135-4cdc-862c-8f2e707fd2d5>
+  SourceRemaps:
+    - 7e944cfe-ae24-47ba-86c6-33510bbd56c3: f5f15722-5c16-4226-8f86-9f364f7af896
+    - b6491bfe-aded-4bc3-841d-d07ca6ac99f1: ac9af8e5-20a7-48e9-8415-037b40ed995e
+  SourceState: !<own> 50ea93b4-32dd-4bfb-acb0-894839fd8364
+- !<RenderMeshVisual/ac9af8e5-20a7-48e9-8415-037b40ed995e>
+  PrefabRemaps:
+    []
+  Name: Mesh
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> b4687618-41d8-4abc-80e8-96180468f857
+  Mesh: !<reference> 6c1918d4-a412-469e-9f41-dab8de188d9f
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  RayTracing: !<RayTracingVisualSettings/00000000-0000-0000-0000-000000000000>
+    Reflections:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+      planar:
+        enabled: false
+        roughHarden: -1.000000
+        roughCurve: -1.000000
+    IndirectDiffuse:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    AmbientOcclusion:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    Shadows:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    Material: !<reference> 00000000-0000-0000-0000-000000000000
+    HideFromCamera: false
+- !<SceneObject/f5f15722-5c16-4226-8f86-9f364f7af896>
+  PrefabRemaps:
+    []
+  Name: Neptune
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -1.050000, y: 1.050000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 0.300000, y: 0.300000, z: 0.300000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> ac9af8e5-20a7-48e9-8415-037b40ed995e

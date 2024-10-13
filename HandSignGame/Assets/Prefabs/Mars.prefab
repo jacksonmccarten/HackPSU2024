@@ -1,0 +1,64 @@
+- !<ObjectPrefab/0e73c022-99dc-4f67-b25d-8d6a9bb472de>
+  PackagePath: ""
+  objects:
+    - !<own> 8fc43916-a2b9-4eb4-aa2f-f9d2f9aaddad
+  LazyLoading: false
+  RetainAssets: true
+- !<RenderMeshVisual/25b93f52-d7d9-4413-acea-b11edcc213e4>
+  PrefabRemaps:
+    []
+  Name: Mesh
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> a6e9f7b2-63e5-4295-9230-94d1fb95c9c7
+  Mesh: !<reference> 216c3afa-c9d6-44bb-961a-b39b75cef437
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  RayTracing: !<RayTracingVisualSettings/00000000-0000-0000-0000-000000000000>
+    Reflections:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+      planar:
+        enabled: false
+        roughHarden: -1.000000
+        roughCurve: -1.000000
+    IndirectDiffuse:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    AmbientOcclusion:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    Shadows:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    Material: !<reference> 00000000-0000-0000-0000-000000000000
+    HideFromCamera: false
+- !<SceneObject/8fc43916-a2b9-4eb4-aa2f-f9d2f9aaddad>
+  PrefabRemaps:
+    []
+  Name: Mars
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 1.050000, y: -1.050000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 0.300000, y: 0.300000, z: 0.300000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 25b93f52-d7d9-4413-acea-b11edcc213e4
