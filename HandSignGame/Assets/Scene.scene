@@ -2554,6 +2554,21 @@
   WorldUpVector: SceneY
   Target: !<reference> 00000000-0000-0065-0000-000000000064
   OffsetRotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+- !<SceneObject/1eed20b5-7c34-4d9d-a1cf-1f6d9e2ee607>
+  PrefabRemaps:
+    []
+  Name: RightThumbToIndex
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> fc1f8a8c-343d-40c2-b840-75b17b62eb3f
 - !<ScriptComponent/1f2046cc-9e3f-4338-96b0-063057fb513a>
   PrefabRemaps:
     []
@@ -4734,6 +4749,7 @@
     - 1d9663f6-5e20-41f0-bdf0-d14b93b03e36: bc8e6aed-f2af-4993-bc68-ce2f2b14e4d7
     - 1db01b13-a189-43e8-9ac2-545bba14439c: 2adf0dbe-b182-42c7-acba-3ad98bbfcaa3
     - 1defcf6b-ccdc-44db-a0d3-8183638cf651: 0fe4219a-7e71-4a99-8cee-8b29568bd864
+    - 1eed20b5-7c34-4d9d-a1cf-1f6d9e2ee607: a7dbb7c9-cf1f-4aaa-b87d-56d47921ae49
     - 1f2b06fc-e300-41de-8e7c-75cdea84d936: 4ac95d95-deae-4329-9eef-b282e080bcbf
     - 206bff30-e41c-47d7-bc1b-6f9975ef17b3: 0d09b092-94a5-487b-93be-1261d6cc46b2
     - 209910e5-d189-43c2-b30d-3d6fef0d35d2: 0fcc6d27-4c6b-427b-82be-9fee7dd9567a
@@ -4798,6 +4814,7 @@
     - 491d938c-e426-4c51-9213-6b0833098e09: 1bd88921-0334-447f-9199-fea5c4655910
     - 492c40e4-1243-4805-8100-f48564f1d573: 780b69fd-a71b-4212-921a-665497a000e7
     - 49b81922-5449-4704-a785-80d6604205fe: 56cab295-47d2-4317-900d-267564faa9f1
+    - 49e817d8-0c45-408f-a6fd-18d24352773a: 4cd1c13f-d87f-4208-b54d-339854b5338a
     - 4a13eead-8ccf-474d-989a-d4e3e7b44ca8: d0bcccfc-bc6d-45e3-b561-ba93056556a7
     - 4a65fc43-ce9c-4024-9c92-01a8387cf852: 4229ec75-8463-4cb6-b491-3946beb872dd
     - 4a6a206b-8056-4496-abce-f2801b895a7a: 47a435e2-6a78-4719-b73a-9aa4514e7cf8
@@ -4973,6 +4990,7 @@
     - 99e14535-fc14-406e-983d-ee934226de1a: aa0ff4f5-9623-4435-9dfd-e61b59e697dc
     - 9a310d7f-fd34-4db3-b5b7-5c3d1002c725: 0ca19947-b876-43e5-aabe-548d52f23399
     - 9ad54119-c751-49dc-954f-6d86ff55ac50: 195728c6-bf96-4713-976c-20927e8a0c6b
+    - 9adb8f5c-d7fc-4146-9a83-83a4beee66ea: d00c76b1-d108-4b37-93e8-de31bcf3d81b
     - 9aed4d8b-b410-440a-b052-4ca7aff582cb: 506ce4da-471d-4091-b925-fc126c6276b3
     - 9c673861-9977-46bb-9770-c756a92a99a5: 6c51c349-62ad-4022-99a6-52a41d98abce
     - 9cbd3c38-2ac7-4b73-b905-834a4a840e5e: ea338275-0469-4404-a5f8-e1d4f492a4c4
@@ -5006,6 +5024,7 @@
     - b1fb8017-6778-43dd-bb66-f40938adc223: 52e77f55-8db4-4e2d-ac02-b3f78d29a026
     - b22ff4fa-4afd-4a17-8622-75f44d444979: 8c82fb80-f2e9-4fb7-8d31-433032ee8156
     - b2fbda42-17b9-40e7-8dea-0df507981828: da2898d1-8360-4670-b549-1e1439899821
+    - b36bd729-8764-43fe-aca2-b7418778d10f: 1233744d-8622-421f-a46a-e75df6ba5ddc
     - b3c7fb97-8b5a-4ca2-8361-b8065c57609e: 984d3c3b-6edc-4b31-93f7-1ffb26c59764
     - b3f5d188-8195-465e-bcb9-695aec8735d9: af6bfe8c-ca9d-4228-ac8f-660212584420
     - b48eb359-d3dc-4ea6-9221-5f36e586b860: 84f35d46-3a3b-4a81-b17b-93160c94fdec
@@ -5019,6 +5038,7 @@
     - b7c8ab73-f133-47ec-b99c-3a1dd4a5f5ca: 2988b2ec-6d31-4f42-919c-78cb43633183
     - b821e8f0-bdab-4290-a5f3-dbe3bfa97977: c455354c-e0e4-4684-b759-9f10895bbd36
     - b94038c7-ab11-4fd9-a954-e3e063bb5739: 00b1a259-bbec-48f1-a148-96a2e55684ca
+    - b96af84a-5604-4278-a93d-f1aa4a63a8f6: ab0d720b-937d-462d-bf6a-5903126bdb31
     - b9ce6d72-43d6-4100-bb66-c68e3eef8be9: d02d7513-2c12-4851-909c-254af2f38dc9
     - babbb376-5f1d-440d-90b4-812f9b900e78: 29d1c6eb-64ab-454b-8de0-a06327b40c11
     - bb8e50c6-f57b-4404-8d94-76a38e78efce: 6dfd1290-6d24-44ed-bea2-50a1d6331df1
@@ -5055,6 +5075,7 @@
     - cac014bf-f7f7-426c-bede-a0369ecb0beb: 981f64d2-2617-4dbe-a984-4b3e1bb1bdb2
     - cb3ae304-3add-4249-9392-9fd55e387e49: ac3b0d59-6a8a-4460-bcaa-1ea07e447795
     - cdda5819-09d1-4f58-b4a2-0ffc79b2e67e: 8b1336d9-c01f-4ff7-aebc-aa849aaea001
+    - ce28b8dc-08da-4bf7-a5fa-282b171ab6ea: c9d09dfe-836e-4377-9d6c-90e457a029d0
     - ce47247b-92df-4c1b-9b00-9684c8e9d393: 1850b036-7c35-4e07-aa21-7ebc18e73ab1
     - ce67336b-5941-4749-8852-495fd2be1e18: 403ba34a-5369-43a1-a49f-4673e28d451e
     - cf0954bf-3536-434a-bb63-48044ed23174: 4e59d067-2cd8-446f-bef8-08392acd5a78
@@ -5100,11 +5121,14 @@
     - e4de86ed-0e75-4269-90f1-93f36c28b939: 1bd0052d-54ca-4fcd-8fbe-acc58d11dc96
     - e6299637-fec6-4903-8702-add8ceb272a3: 43b30bfa-3299-47d9-9526-2fc1fb1dab18
     - e7c21caf-79dc-49ad-bbbe-c664384979ab: d2861129-42e7-422b-9441-f8d2b5898c5b
+    - e88ca8a3-b4ef-4459-92d4-fdfb19f740ed: 54a70a06-165d-46d2-b4f2-ef80c709534b
     - e95c7500-48ad-4d27-8c98-c34541ff9e77: 6f146490-7136-40f8-9b58-9d2b2404b320
+    - e97901c5-3116-4587-8570-eb396a50c567: 2c03edfd-f7a0-4564-a812-4827d167f939
     - e9d42b01-1037-4c56-a38f-705975ce5460: 2ed6d6fe-6141-4200-a250-d3543c769b93
     - ea153ca6-55b7-40a1-ada9-111f0297ab37: 00c3309b-28e2-43a5-989f-2803d8bbd364
     - ea35c8f2-6414-491b-bdc7-52079c6c36c4: ee1a5173-8da5-43f6-8571-fe0b47449201
     - ea7dff29-0ce4-4ad5-af20-7d7c168be5f9: 91d41d55-7702-4d13-a122-046873dcdf9e
+    - eb1c28d2-565c-4841-951d-25b1860cd5da: fbabd8a3-4101-4f12-97c0-5754202b2371
     - ebc63fd7-d599-405f-be15-c81bd7791e75: cbf43457-9fa0-4634-9f6e-3cb7aa30fb05
     - ed37fd6e-94aa-4472-95d0-24200002d2e7: 11b5aa88-9baf-4fc5-93c7-cd50c5f599ab
     - ed8f750b-0d50-4739-be31-3b55a7c6faaa: 72f787c1-6b9d-468c-9acf-545c2f95bf03
@@ -5125,6 +5149,7 @@
     - f75c82d2-2ad6-48ea-996a-f4a8580a7405: 83063691-7035-4c0f-a253-ac6933859f1d
     - fb5c721f-ff16-4ff8-8224-04b0161de327: 2ecdc8c3-04bd-4f02-9c00-ef5d14ad76ea
     - fbcffb19-6dea-48b0-a1fc-19e8034239d8: 68c7cdc9-0279-45b3-95ea-12647541f3e2
+    - fc1f8a8c-343d-40c2-b840-75b17b62eb3f: b573e179-7175-4dd4-ac62-82bf1d1e4a6d
     - fd88006d-937c-4582-8685-b69f485b54b0: 0e554532-e9ea-4d14-bbae-99884908de3c
     - fdb20d63-3ad2-48f8-b5eb-a1fa59ef940f: c3114501-d5a0-4c7e-a417-0167a79cfe5e
     - fdd52ac5-0c46-437e-ad95-b1b4a417f016: f23706d4-9d43-4464-ba38-f1fa65eab94f
@@ -5183,6 +5208,25 @@
     - !<own> 4ad3f72f-8203-47e6-b8ab-0b6b6e2b4b5f
   Components:
     []
+- !<ScriptComponent/49e817d8-0c45-408f-a6fd-18d24352773a>
+  PrefabRemaps:
+    []
+  Name: GestureRule
+  Enabled: true
+  ScriptAsset: !<reference> 9ed8e01e-5032-4f24-9e90-f6dc376714a3
+  ScriptInputsDefault:
+    minDistance: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      jointStringA: right;mid-1
+      jointStringB: left;mid-1
+      minDistance: !<float> 0.000000
+      maxDistance: !<float> 4.000000
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/4a42ccef-48e1-4945-8eb7-a108bbcefe48>
   PrefabRemaps:
     []
@@ -9852,6 +9896,24 @@
     - !<own> 031aaa5d-17aa-484f-b411-8e02ba9d9c24
   Components:
     []
+- !<SceneObject/9adb8f5c-d7fc-4146-9a83-83a4beee66ea>
+  PrefabRemaps:
+    []
+  Name: Triangle
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> b36bd729-8764-43fe-aca2-b7418778d10f
+    - !<own> eb1c28d2-565c-4841-951d-25b1860cd5da
+    - !<own> e97901c5-3116-4587-8570-eb396a50c567
+    - !<own> 1eed20b5-7c34-4d9d-a1cf-1f6d9e2ee607
+  Components:
+    - !<own> b96af84a-5604-4278-a93d-f1aa4a63a8f6
 - !<SceneObject/9cbd3c38-2ac7-4b73-b905-834a4a840e5e>
   PrefabRemaps:
     []
@@ -10520,6 +10582,21 @@
   ScriptTypes:
     "":
       {}
+- !<SceneObject/b36bd729-8764-43fe-aca2-b7418778d10f>
+  PrefabRemaps:
+    []
+  Name: Thumbs
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> e88ca8a3-b4ef-4459-92d4-fdfb19f740ed
 - !<SceneObject/b3c7fb97-8b5a-4ca2-8361-b8065c57609e>
   PrefabRemaps:
     []
@@ -10730,6 +10807,26 @@
     - !<own> b555d03e-8e15-4d13-83d3-051103a6c07e
   Components:
     []
+- !<ScriptComponent/b96af84a-5604-4278-a93d-f1aa4a63a8f6>
+  PrefabRemaps:
+    []
+  Name: GestureManager
+  Enabled: true
+  ScriptAsset: !<reference> c9c115e6-157d-4f9b-bf9d-fa3a64ac2380
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      spellManager: !<reference.ScriptComponent> d9a9c33e-68bd-416c-8351-4f9089177b70
+      gestureName: Triangle
+      gestureDetectedTrigger: triangle_made
+      gestureLostTrigger: triangle_lost
+      logMessage: true
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/b9ce6d72-43d6-4100-bb66-c68e3eef8be9>
   PrefabRemaps:
     []
@@ -11873,6 +11970,25 @@
     - !<own> f2bca00a-8b03-46c7-9229-ac6af5d12605
   Components:
     []
+- !<ScriptComponent/ce28b8dc-08da-4bf7-a5fa-282b171ab6ea>
+  PrefabRemaps:
+    []
+  Name: GestureRule
+  Enabled: true
+  ScriptAsset: !<reference> 9ed8e01e-5032-4f24-9e90-f6dc376714a3
+  ScriptInputsDefault:
+    minDistance: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      jointStringA: right;index-1
+      jointStringB: left;index-1
+      minDistance: !<float> 0.000000
+      maxDistance: !<float> 4.000000
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/ce47247b-92df-4c1b-9b00-9684c8e9d393>
   PrefabRemaps:
     []
@@ -12020,6 +12136,7 @@
     - !<own> e0ac29bd-113d-4541-ad2e-acc79b2966c8
     - !<own> a22c5cce-1deb-4058-8ab6-7bb04b2ee98c
     - !<own> 0fc108c5-e5a5-4dda-9d4b-50135a5f53bd
+    - !<own> 9adb8f5c-d7fc-4146-9a83-83a4beee66ea
   Components:
     []
 - !<ScriptComponent/d0627cf1-e2f2-44ac-b09d-40cb730bd36d>
@@ -15812,6 +15929,25 @@
     - !<own> 7b2611f6-229f-42c8-9300-75a9396d467e
   Components:
     []
+- !<ScriptComponent/e88ca8a3-b4ef-4459-92d4-fdfb19f740ed>
+  PrefabRemaps:
+    []
+  Name: GestureRule
+  Enabled: true
+  ScriptAsset: !<reference> 9ed8e01e-5032-4f24-9e90-f6dc376714a3
+  ScriptInputsDefault:
+    minDistance: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      jointStringA: right;thumb-3
+      jointStringB: left;thumb-3
+      minDistance: !<float> 0.000000
+      maxDistance: !<float> 4.000000
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/e95c7500-48ad-4d27-8c98-c34541ff9e77>
   PrefabRemaps:
     []
@@ -15827,6 +15963,21 @@
     []
   Components:
     - !<own> 7f42aeea-e41d-4fc8-a23d-450e85e61852
+- !<SceneObject/e97901c5-3116-4587-8570-eb396a50c567>
+  PrefabRemaps:
+    []
+  Name: Middles
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 49e817d8-0c45-408f-a6fd-18d24352773a
 - !<RenderMeshVisual/e9aae4c4-015f-46ee-aff4-1924c9e14739>
   PrefabRemaps:
     []
@@ -15926,6 +16077,21 @@
     - !<own> b4cc1471-f4fc-40f4-980b-d19214ea9df6
   Components:
     - !<own> 1d80715f-bffa-4ab2-91f8-f9a83972b09b
+- !<SceneObject/eb1c28d2-565c-4841-951d-25b1860cd5da>
+  PrefabRemaps:
+    []
+  Name: Indexes
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> ce28b8dc-08da-4bf7-a5fa-282b171ab6ea
 - !<Animation/eb860181-f0a3-4dd2-ab59-d3a29e37a9f5>
   PrefabRemaps:
     []
@@ -17705,6 +17871,25 @@
       setBlendshapesBlendshapes: !<reference.BlendShapes> 00000000-0000-0000-0000-000000000000
       setBlendshapesName: ""
       setBlendshapesWeight: !<float> 0.000000
+  ScriptTypes:
+    "":
+      {}
+- !<ScriptComponent/fc1f8a8c-343d-40c2-b840-75b17b62eb3f>
+  PrefabRemaps:
+    []
+  Name: GestureRule
+  Enabled: true
+  ScriptAsset: !<reference> 9ed8e01e-5032-4f24-9e90-f6dc376714a3
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      jointStringA: right;thumb-3
+      jointStringB: right;index-3
+      minDistance: !<float> 6.000000
+      maxDistance: !<float> 100.000000
   ScriptTypes:
     "":
       {}
