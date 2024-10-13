@@ -10,12 +10,19 @@ export class SpellManager extends BaseScriptComponent {
 
     private combo: string[] = [];
 
+    private comboTimer: number;
+
+    @input
+    private comboTimeout: number = 3;
+
     onAwake() {
         this.combo = [];
     }
 
     onGestureMade(gestureName: string) {
         this.combo.push(gestureName);
+
+        this.comboTimer = this.comboTimeout;
 
         this.checkForCombo();
     }

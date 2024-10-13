@@ -30,7 +30,7 @@
   Enabled: true
   ScriptAsset: !<reference> a55f1b0a-23fd-4382-bb37-c9d02136181b
   ScriptInputsDefault:
-    {}
+    comboTimeout: true
   ScriptTypesDefault:
     {}
   ScriptInputs:
@@ -38,6 +38,7 @@
       handTracker: !<reference.ScriptComponent> d0627cf1-e2f2-44ac-b09d-40cb730bd36d
       spells: !<reference.ScriptComponent[]>
         - !<reference> afcfeba2-5ada-49d5-8cbe-3b93d00a823c
+      comboTimeout: !<float> 3.000000
   ScriptTypes:
     "":
       {}
