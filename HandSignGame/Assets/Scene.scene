@@ -12,6 +12,7 @@
     - !<own> 68b61ff0-8158-47bf-9a4e-075cb395be37
     - !<own> 738d6e8a-2bd9-4661-a263-5ed632924216
     - !<own> 0fd71c1a-d34e-4931-9810-cc9f7343c9af
+    - !<own> bdfaa962-2ee0-42ba-9b29-02886a488f1a
   layers: !<Layers/267ee9a7-aff2-4f9d-9a49-f71214747d03>
     userLayers:
       - |
@@ -6344,12 +6345,12 @@
   Enabled: true
   ScriptAsset: !<reference> d5b2365c-30ca-45f3-a10a-0735a2eec3a9
   ScriptInputsDefault:
-    {}
+    boneHolder: true
   ScriptTypesDefault:
     {}
   ScriptInputs:
     "":
-      {}
+      boneHolder: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     "":
       {}
@@ -10928,7 +10929,7 @@
       gestures: !<string[]>
         - Bird
         - Tiger
-      fireball: !<reference.ObjectPrefab> e2a86e28-0032-4ad7-9b81-e6f4dde6a91a
+      fireball: !<reference.ObjectPrefab> 27e3bb3f-0155-41ff-86d0-5cea24b8379e
       projectileSpeed: !<float> 250.000000
   ScriptTypes:
     "":
@@ -11481,6 +11482,22 @@
   ScriptTypes:
     "":
       {}
+- !<SceneObject/bdfaa962-2ee0-42ba-9b29-02886a488f1a>
+  PrefabRemaps:
+    - bdfaa962-2ee0-42ba-9b29-02886a488f1a: f2a0cf47-e26c-4b05-8521-5ac06f4fbdc9
+    - f44f8a54-5897-4215-b784-9a9534ee0085: 43234596-ef54-49d2-9422-80f53fa7be0b
+  Name: BarrierSpell
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> f44f8a54-5897-4215-b784-9a9534ee0085
 - !<SceneObject/be220a06-ef26-40e1-822d-2324f95660e5>
   PrefabRemaps:
     []
@@ -17537,6 +17554,27 @@
     - !<own> 9dc3cc7e-97ca-43f5-b85a-d86e922b02c4
   Components:
     []
+- !<ScriptComponent/f44f8a54-5897-4215-b784-9a9534ee0085>
+  PrefabRemaps:
+    []
+  Name: ProjectileSpell
+  Enabled: true
+  ScriptAsset: !<reference> 941a4ad6-08f0-4b8d-aa86-362334f35a4d
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      cam: !<reference.SceneObject> 00000000-0000-0065-0000-000000000064
+      gestures: !<string[]>
+        - Ox
+        - Reverse Ox
+      fireball: !<reference.ObjectPrefab> 27e3bb3f-0155-41ff-86d0-5cea24b8379e
+      projectileSpeed: !<float> 50.000000
+  ScriptTypes:
+    "":
+      {}
 - !<RenderMeshVisual/f5448091-5cc1-482f-aee3-21a6369cf089>
   PrefabRemaps:
     []
