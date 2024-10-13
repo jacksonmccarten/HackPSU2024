@@ -1,0 +1,83 @@
+- !<Material/ab00f996-76e5-4340-91f5-b60245852f00>
+  PackagePath: Magma Resources/Materials/Heightmap Normals
+  PassesInfo:
+    - !<own> 188515f3-efc8-4ee0-a5e1-624faf485f32
+- !<PassInfo/188515f3-efc8-4ee0-a5e1-624faf485f32>
+  DepthWrite: false
+  DepthTest: false
+  DepthFunction: LessEqual
+  TwoSided: false
+  ColorMask: {x: true, y: true, z: true, w: true}
+  CullMode: Back
+  PolygonOffset: {x: 0.000000, y: 0.000000}
+  FrustumCulling: Auto
+  FrustumCullPad: 0.000000
+  InstanceCount: 1
+  Defines:
+    []
+  BlendMode: Disabled
+  Properties:
+    Port_Input0_N104:
+      typeIdx: 3
+      value: {x: -1.000000, y: 0.000000}
+    Port_Input0_N107:
+      typeIdx: 3
+      value: {x: 1.000000, y: 0.000000}
+    Port_Input0_N112:
+      typeIdx: 3
+      value: {x: 0.000000, y: -1.000000}
+    Port_Input0_N115:
+      typeIdx: 3
+      value: {x: 0.000000, y: 1.000000}
+    Port_RangeMaxA_N007:
+      typeIdx: 1
+      value: 1.000000
+    Port_RangeMaxB_N007:
+      typeIdx: 1
+      value: 1.000000
+    Port_RangeMinA_N007:
+      typeIdx: 1
+      value: -1.000000
+    Port_RangeMinB_N007:
+      typeIdx: 1
+      value: 0.000000
+    Port_Value3_N120:
+      typeIdx: 1
+      value: 0.300000
+    PreviewEnabled:
+      typeIdx: 0
+      value: 0
+    baseTex:
+      typeIdx: 9
+      value:
+        id: 2ef51660-d3ae-408c-8c29-d55d88250d77
+        sampler:
+          filteringMode: Trilinear
+          wrapModeU: Repeat
+          wrapModeV: Repeat
+          wrapModeW: ClampToEdge
+          borderColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+          mipmaps: false
+        type: Texture2D
+    baseTexBorderColor:
+      typeIdx: 5
+      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    baseTexDims:
+      typeIdx: 5
+      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    baseTexSize:
+      typeIdx: 5
+      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    baseTexTransform:
+      typeIdx: 7
+      value:
+        0: {x: 1.000000, y: 0.000000, z: 0.000000}
+        1: {x: 0.000000, y: 1.000000, z: 0.000000}
+        2: {x: 0.000000, y: 0.000000, z: 1.000000}
+    baseTexUvMinMax:
+      typeIdx: 5
+      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    stepSize:
+      typeIdx: 1
+      value: 2.000000
+  Pass: !<reference> 4eb88b36-7774-4b1a-adff-f7465c8c7371

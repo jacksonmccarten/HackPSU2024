@@ -12,27 +12,7 @@
   ImporterSettings: !<AssetImporterSettings/165b01c5-a2bc-4dc2-a05e-695e02843977>
     {}
   CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
-- !<ScriptComponent/3632ad35-0047-42d2-9871-a0b0f76cdd91>
-  PrefabRemaps:
-    []
-  Name: ProjectileSpell
-  Enabled: true
-  ScriptAsset: !<reference> 941a4ad6-08f0-4b8d-aa86-362334f35a4d
-  ScriptInputsDefault:
-    projectileSpeed: true
-  ScriptTypesDefault:
-    {}
-  ScriptInputs:
-    "":
-      cam: !<reference.SceneObject> 00000000-0000-0065-0000-000000000064
-      gestures: !<string[]>
-        - TouchTips
-      fireball: !<reference.ObjectPrefab> e2a86e28-0032-4ad7-9b81-e6f4dde6a91a
-      projectileSpeed: !<float> 0.000000
-  ScriptTypes:
-    "":
-      {}
-- !<SceneObject/ad4b7dc5-994a-4a53-90e3-e4b7e2a6588f>
+- !<SceneObject/7719e5ca-f36a-4790-9617-3ddaac8d20f7>
   PrefabRemaps:
     []
   Name: FireballSpell
@@ -46,15 +26,37 @@
   Children:
     []
   Components:
-    - !<own> 3632ad35-0047-42d2-9871-a0b0f76cdd91
-- !<ObjectPrefabAssetData/dcda7fb5-3100-40b3-9215-56e546aa4a50>
-  SourceRemaps:
-    - 43234596-ef54-49d2-9422-80f53fa7be0b: 3632ad35-0047-42d2-9871-a0b0f76cdd91
-    - f2a0cf47-e26c-4b05-8521-5ac06f4fbdc9: ad4b7dc5-994a-4a53-90e3-e4b7e2a6588f
-  SourceState: !<own> f762de96-70f5-469c-8ab6-acf8e367a6be
-- !<ObjectPrefab/f762de96-70f5-469c-8ab6-acf8e367a6be>
+    - !<own> cdf6251a-65c8-490a-89b0-5db814e24556
+- !<ObjectPrefab/90de2ea8-7cff-4158-bf93-a7331fd36b28>
   PackagePath: ""
   objects:
-    - !<own> ad4b7dc5-994a-4a53-90e3-e4b7e2a6588f
+    - !<own> 7719e5ca-f36a-4790-9617-3ddaac8d20f7
   LazyLoading: false
   RetainAssets: true
+- !<ScriptComponent/cdf6251a-65c8-490a-89b0-5db814e24556>
+  PrefabRemaps:
+    []
+  Name: ProjectileSpell
+  Enabled: true
+  ScriptAsset: !<reference> 941a4ad6-08f0-4b8d-aa86-362334f35a4d
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      cam: !<reference.SceneObject> 00000000-0000-0065-0000-000000000064
+      gestures: !<string[]>
+        - Bird
+        - Ox
+        - Tiger
+      fireball: !<reference.ObjectPrefab> a1574f31-8540-4fb5-a82c-fece6cf9d1f6
+      projectileSpeed: !<float> 100.000000
+  ScriptTypes:
+    "":
+      {}
+- !<ObjectPrefabAssetData/dcda7fb5-3100-40b3-9215-56e546aa4a50>
+  SourceRemaps:
+    - 43234596-ef54-49d2-9422-80f53fa7be0b: cdf6251a-65c8-490a-89b0-5db814e24556
+    - f2a0cf47-e26c-4b05-8521-5ac06f4fbdc9: 7719e5ca-f36a-4790-9617-3ddaac8d20f7
+  SourceState: !<own> 90de2ea8-7cff-4158-bf93-a7331fd36b28

@@ -11,16 +11,18 @@
   Enabled: true
   ScriptAsset: !<reference> 941a4ad6-08f0-4b8d-aa86-362334f35a4d
   ScriptInputsDefault:
-    projectileSpeed: true
+    {}
   ScriptTypesDefault:
     {}
   ScriptInputs:
     "":
       cam: !<reference.SceneObject> 00000000-0000-0065-0000-000000000064
       gestures: !<string[]>
-        - TouchTips
-      fireball: !<reference.ObjectPrefab> e2a86e28-0032-4ad7-9b81-e6f4dde6a91a
-      projectileSpeed: !<float> 0.000000
+        - Bird
+        - Ox
+        - Tiger
+      fireball: !<reference.ObjectPrefab> a1574f31-8540-4fb5-a82c-fece6cf9d1f6
+      projectileSpeed: !<float> 100.000000
   ScriptTypes:
     "":
       {}

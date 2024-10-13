@@ -1,0 +1,95 @@
+- !<Material/6e4dbc18-8fed-4c60-9462-ee331d8a5b2e>
+  PackagePath: Magma Resources/Materials/Make Tileable
+  PassesInfo:
+    - !<own> 7a6ad5cc-1be4-4835-83f0-761ba92439d2
+- !<PassInfo/7a6ad5cc-1be4-4835-83f0-761ba92439d2>
+  DepthWrite: false
+  DepthTest: false
+  DepthFunction: LessEqual
+  TwoSided: false
+  ColorMask: {x: true, y: true, z: true, w: true}
+  CullMode: Back
+  PolygonOffset: {x: 0.000000, y: 0.000000}
+  FrustumCulling: Auto
+  FrustumCullPad: 0.000000
+  InstanceCount: 1
+  Defines:
+    []
+  BlendMode: Disabled
+  Properties:
+    Port_Import_N023:
+      typeIdx: 1
+      value: 2.000000
+    Port_Input1_N006:
+      typeIdx: 3
+      value: {x: 2.000000, y: 2.000000}
+    Port_Input1_N024:
+      typeIdx: 1
+      value: 0.500000
+    Port_Input1_N029:
+      typeIdx: 1
+      value: 2.000000
+    Port_Input1_N031:
+      typeIdx: 1
+      value: 0.500000
+    Port_LODValue_N001:
+      typeIdx: 1
+      value: 0.000000
+    Port_LODValue_N005:
+      typeIdx: 1
+      value: 5.000000
+    Port_Offset_N003:
+      typeIdx: 3
+      value: {x: 0.500000, y: 0.500000}
+    Port_RangeMaxA_N011:
+      typeIdx: 1
+      value: 0.300000
+    Port_RangeMaxB_N011:
+      typeIdx: 1
+      value: 0.000000
+    Port_RangeMinA_N011:
+      typeIdx: 1
+      value: 0.000000
+    Port_RangeMinB_N011:
+      typeIdx: 1
+      value: 1.000000
+    PreviewEnabled:
+      typeIdx: 0
+      value: 0
+    Tweak_N0:
+      typeIdx: 9
+      value:
+        id: 2ef51660-d3ae-408c-8c29-d55d88250d77
+        sampler:
+          filteringMode: Trilinear
+          wrapModeU: Repeat
+          wrapModeV: Repeat
+          wrapModeW: ClampToEdge
+          borderColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+          mipmaps: true
+        type: Texture2D
+    Tweak_N0BorderColor:
+      typeIdx: 5
+      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    Tweak_N0Dims:
+      typeIdx: 5
+      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    Tweak_N0Transform:
+      typeIdx: 7
+      value:
+        0: {x: 1.000000, y: 0.000000, z: 0.000000}
+        1: {x: 0.000000, y: 1.000000, z: 0.000000}
+        2: {x: 0.000000, y: 0.000000, z: 1.000000}
+    Tweak_N0UvMinMax:
+      typeIdx: 5
+      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    overrideTimeDelta:
+      typeIdx: 1
+      value: 0.000000
+    overrideTimeElapsed:
+      typeIdx: 1
+      value: 0.000000
+    overrideTimeEnabled:
+      typeIdx: 0
+      value: 0
+  Pass: !<reference> ddc2d8ed-5bec-4021-93fd-1c2583da39e1

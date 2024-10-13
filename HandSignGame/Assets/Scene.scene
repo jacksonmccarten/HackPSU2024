@@ -12,6 +12,7 @@
     - !<own> 68b61ff0-8158-47bf-9a4e-075cb395be37
     - !<own> 738d6e8a-2bd9-4661-a263-5ed632924216
     - !<own> 0fd71c1a-d34e-4931-9810-cc9f7343c9af
+    - !<own> 109a335d-3648-46c7-bbcb-51bfb94ec7b6
   layers: !<Layers/267ee9a7-aff2-4f9d-9a49-f71214747d03>
     userLayers:
       - |
@@ -2170,6 +2171,22 @@
     - !<own> cfb2feae-85c3-430c-a978-65a1ccba5aa8
   Components:
     []
+- !<SceneObject/109a335d-3648-46c7-bbcb-51bfb94ec7b6>
+  PrefabRemaps:
+    - 109a335d-3648-46c7-bbcb-51bfb94ec7b6: f2a0cf47-e26c-4b05-8521-5ac06f4fbdc9
+    - 3e72d484-a244-49e5-bf71-2d1ef51dbc22: 43234596-ef54-49d2-9422-80f53fa7be0b
+  Name: BarrierSpell
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 3e72d484-a244-49e5-bf71-2d1ef51dbc22
 - !<SceneObject/10a24b44-7f47-49dc-8506-72fdd2f51ee2>
   PrefabRemaps:
     []
@@ -2819,7 +2836,7 @@
         - ReverseOx
         - Bird
         - Diamond
-      fireball: !<reference.ObjectPrefab> ccc20b29-c7b3-495f-a7fc-a9412099fe6c
+      fireball: !<reference.ObjectPrefab> c7d0af6e-eecd-4be3-8a99-3e53580d644c
       projectileSpeed: !<float> 200.000000
   ScriptTypes:
     "":
@@ -3195,7 +3212,7 @@
         - Bird
         - Ox
         - Tiger
-      fireball: !<reference.ObjectPrefab> e68bac5c-bc43-4c1c-9518-eeb2dd9d2cbe
+      fireball: !<reference.ObjectPrefab> a1574f31-8540-4fb5-a82c-fece6cf9d1f6
       projectileSpeed: !<float> 100.000000
   ScriptTypes:
     "":
@@ -3690,6 +3707,28 @@
     - !<own> 073b0810-14f0-493d-b42c-b29078ac4668
   Components:
     - !<own> db629dde-a126-43d9-81d4-76b40fb2d6b7
+- !<ScriptComponent/3e72d484-a244-49e5-bf71-2d1ef51dbc22>
+  PrefabRemaps:
+    []
+  Name: ProjectileSpell
+  Enabled: true
+  ScriptAsset: !<reference> 941a4ad6-08f0-4b8d-aa86-362334f35a4d
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      cam: !<reference.SceneObject> 00000000-0000-0065-0000-000000000064
+      gestures: !<string[]>
+        - Bird
+        - Ox
+        - Tiger
+      fireball: !<reference.ObjectPrefab> a1574f31-8540-4fb5-a82c-fece6cf9d1f6
+      projectileSpeed: !<float> 100.000000
+  ScriptTypes:
+    "":
+      {}
 - !<Skin/3ed0aaec-234e-4ca2-bb20-cbcf752ecffb>
   PrefabRemaps:
     []
@@ -7236,7 +7275,7 @@
   PrefabRemaps:
     - 6d0929cc-8427-4def-bc74-f804cebe96ed: f2a0cf47-e26c-4b05-8521-5ac06f4fbdc9
     - afcfeba2-5ada-49d5-8cbe-3b93d00a823c: 43234596-ef54-49d2-9422-80f53fa7be0b
-  Name: FireballSpell
+  Name: RockSpell
   Enabled: true
   Layers: 1
   LocalTransform:
@@ -10671,7 +10710,7 @@
   PrefabRemaps:
     - 2be5b5cc-d871-4393-8fa5-12795e4f954d: 43234596-ef54-49d2-9422-80f53fa7be0b
     - a86f6086-ceb9-4999-b5cd-c415b030ae09: f2a0cf47-e26c-4b05-8521-5ac06f4fbdc9
-  Name: MassiveFireballSpell
+  Name: FireballSpell
   Enabled: true
   Layers: 1
   LocalTransform:
@@ -10927,9 +10966,10 @@
       cam: !<reference.SceneObject> 00000000-0000-0065-0000-000000000064
       gestures: !<string[]>
         - Bird
+        - Ox
         - Tiger
-      fireball: !<reference.ObjectPrefab> e2a86e28-0032-4ad7-9b81-e6f4dde6a91a
-      projectileSpeed: !<float> 250.000000
+      fireball: !<reference.ObjectPrefab> a1574f31-8540-4fb5-a82c-fece6cf9d1f6
+      projectileSpeed: !<float> 100.000000
   ScriptTypes:
     "":
       {}

@@ -1,0 +1,200 @@
+- !<Material/29d0c823-aa34-4d75-8b5b-b3d55793fa37>
+  PackagePath: Magma Resources/Materials/Magma PBR
+  PassesInfo:
+    - !<own> b0aedc6f-6143-4152-9d03-cbefc88ae632
+- !<PassInfo/b0aedc6f-6143-4152-9d03-cbefc88ae632>
+  DepthWrite: true
+  DepthTest: true
+  DepthFunction: LessEqual
+  TwoSided: false
+  ColorMask: {x: true, y: true, z: true, w: true}
+  CullMode: Back
+  PolygonOffset: {x: 0.000000, y: 0.000000}
+  FrustumCulling: Auto
+  FrustumCullPad: 0.000000
+  InstanceCount: 1
+  Defines:
+    []
+  BlendMode: Disabled
+  Properties:
+    Port_AO_N026:
+      typeIdx: 4
+      value: {x: 0.987701, y: 1.000000, z: 0.999969}
+    Port_Import_N056:
+      typeIdx: 4
+      value: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Port_Import_N116:
+      typeIdx: 1
+      value: 1.000000
+    Port_Import_N119:
+      typeIdx: 1
+      value: 0.600000
+    Port_Import_N121:
+      typeIdx: 1
+      value: 1.300000
+    Port_Import_N206:
+      typeIdx: 4
+      value: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Port_Import_N209:
+      typeIdx: 1
+      value: 10.000000
+    Port_Input0_N126:
+      typeIdx: 5
+      value: {x: 0.500000, y: 0.500000, z: 0.500000, w: 0.000000}
+    Port_Input1_N003:
+      typeIdx: 1
+      value: 0.010000
+    Port_Input1_N028:
+      typeIdx: 1
+      value: 0.010000
+    Port_Input1_N035:
+      typeIdx: 1
+      value: 0.400000
+    Port_Input1_N036:
+      typeIdx: 1
+      value: 1.000000
+    Port_Input1_N055:
+      typeIdx: 1
+      value: 0.100000
+    Port_Input1_N118:
+      typeIdx: 5
+      value: {x: 0.212500, y: 0.715400, z: 0.072100, w: 0.000000}
+    Port_Input1_N208:
+      typeIdx: 1
+      value: 0.100000
+    Port_Input2_N003:
+      typeIdx: 1
+      value: 0.990000
+    Port_Input2_N028:
+      typeIdx: 1
+      value: 0.990000
+    Port_Opacity_N026:
+      typeIdx: 1
+      value: 1.000000
+    Port_RangeMaxA_N037:
+      typeIdx: 1
+      value: 0.500000
+    Port_RangeMaxA_N075:
+      typeIdx: 1
+      value: 1.000000
+    Port_RangeMaxA_N087:
+      typeIdx: 1
+      value: 1.000000
+    Port_RangeMaxA_N089:
+      typeIdx: 1
+      value: 1.000000
+    Port_RangeMaxB_N037:
+      typeIdx: 1
+      value: 0.000000
+    Port_RangeMaxB_N075:
+      typeIdx: 1
+      value: 1.000000
+    Port_RangeMaxB_N087:
+      typeIdx: 1
+      value: 1.000000
+    Port_RangeMaxB_N089:
+      typeIdx: 1
+      value: 1.000000
+    Port_RangeMinA_N037:
+      typeIdx: 1
+      value: 0.000000
+    Port_RangeMinA_N075:
+      typeIdx: 1
+      value: 0.000000
+    Port_RangeMinA_N087:
+      typeIdx: 1
+      value: 0.000000
+    Port_RangeMinA_N089:
+      typeIdx: 1
+      value: 0.000000
+    Port_RangeMinB_N037:
+      typeIdx: 1
+      value: 1.000000
+    Port_RangeMinB_N075:
+      typeIdx: 1
+      value: -1.000000
+    Port_RangeMinB_N087:
+      typeIdx: 1
+      value: -1.000000
+    Port_RangeMinB_N089:
+      typeIdx: 1
+      value: -1.000000
+    Port_Value2_N164:
+      typeIdx: 1
+      value: 0.500000
+    Port_Value2_N165:
+      typeIdx: 1
+      value: 0.500000
+    PreviewEnabled:
+      typeIdx: 0
+      value: 0
+    Tweak_N128:
+      typeIdx: 1
+      value: 0.500000
+    colorRamp:
+      typeIdx: 9
+      value:
+        id: e21c1961-d13d-4cd8-8ec4-a440ba2a8358
+        sampler:
+          filteringMode: Trilinear
+          wrapModeU: Repeat
+          wrapModeV: Repeat
+          wrapModeW: ClampToEdge
+          borderColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+          mipmaps: false
+        type: Texture2D
+    colorRampBorderColor:
+      typeIdx: 5
+      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    colorRampDims:
+      typeIdx: 5
+      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    colorRampTransform:
+      typeIdx: 7
+      value:
+        0: {x: 1.000000, y: 0.000000, z: 0.000000}
+        1: {x: 0.000000, y: 1.000000, z: 0.000000}
+        2: {x: 0.000000, y: 0.000000, z: 1.000000}
+    colorRampUvMinMax:
+      typeIdx: 5
+      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    colorrampExponent:
+      typeIdx: 1
+      value: 1.050000
+    displace:
+      typeIdx: 1
+      value: 4.250000
+    metallic:
+      typeIdx: 1
+      value: 0.000000
+    noiseTex:
+      typeIdx: 9
+      value:
+        id: b70f2647-dc58-4ee0-b6f3-858afb624098
+        sampler:
+          filteringMode: Trilinear
+          wrapModeU: Repeat
+          wrapModeV: Repeat
+          wrapModeW: ClampToEdge
+          borderColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+          mipmaps: false
+        type: Texture2D
+    noiseTexBorderColor:
+      typeIdx: 5
+      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    noiseTexDims:
+      typeIdx: 5
+      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    noiseTexTransform:
+      typeIdx: 7
+      value:
+        0: {x: 1.000000, y: 0.000000, z: 0.000000}
+        1: {x: 0.000000, y: 1.000000, z: 0.000000}
+        2: {x: 0.000000, y: 0.000000, z: 1.000000}
+    noiseTexUvMinMax:
+      typeIdx: 5
+      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    roughness:
+      typeIdx: 1
+      value: 0.130000
+  Pass: !<reference> 8d70dc53-70e3-413c-af26-70ffb0ecf04f
