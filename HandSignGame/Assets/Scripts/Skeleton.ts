@@ -1,37 +1,12 @@
 @component
 export class Skeleton extends BaseScriptComponent {
-
-    @input
-    boneHolder: SceneObject;
-
-    private body: BodyComponent;
-
-    private defaultTransforms: Transform[];
+    private defaultTransform: mat4;
 
     onAwake() {
-        this.body = this.getSceneObject().getComponent("Physics.BodyComponent");
-        this.body.onCollisionEnter.add(this.onCollision);
-
-        for (var i = 0; i < this.boneHolder.getChildrenCount(); i++) {
-            var newTransform = Object.create(this.boneHolder.children[i].getTransform());
-            this.defaultTransforms.push(newTransform);
-        }
+        this.defaultTransform = mat4.fromRotation(this.getTransform().getLocalRotation()).mult(mat4.fromTranslation(this.getTransform().getLocalPosition())).mult(mat4.fromScale(this.getTransform().getLocalScale()));
     }
 
-    onCollision(e: CollisionEnterEventArgs) {
-
-    }
-
-    break() {
-        
-    }
-
-    revive() {
-        for (var i = 0; i < this.boneHolder.getChildrenCount(); i++) {
-            this.boneHolder.children[i].getComponent("Physics.BodyComponent")
-
-            var newTransform = Object.create(this.boneHolder.children[i].getTransform());
-            this.defaultTransforms.push(newTransform);
-        }
+    reviveSkeleton() {
+        this.getSceneObject().getTransform().setLocalTransform(this.defaultTransform);
     }
 }
