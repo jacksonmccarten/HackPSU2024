@@ -26,7 +26,9 @@ initialize();
 
 function initialize() {
     for (var i = 0; i < script.getSceneObject().getChildrenCount(); i++) {
-        if (script.getSceneObject().getChild(i).getComponent("Component.ScriptComponent")) {
+        let comp = script.getSceneObject().getChild(i).getComponent("Component.ScriptComponent");
+
+        if (comp && comp.enabled) {
             gestureRules.push(script.getSceneObject().getChild(i).getComponent("Component.ScriptComponent"));
         }
     }

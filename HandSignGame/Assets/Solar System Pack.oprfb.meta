@@ -2,23 +2,22 @@
   ImportedAssetIds:
     .hidden/Earth Material: !<reference> 722bff9e-1ffd-4f75-b624-d11acb236587
     .hidden/Saturn Rings Material: !<reference> 540ccebe-df3c-46ec-ba9a-b0ad8f48d27d
-    0048cd85a4bc3df4: !<reference> 10326ca6-8c14-4c51-8244-30a9d31d4914
-    05278cc105bb35ef: !<reference> 794be559-c09e-4b6e-9fd8-b809a25dd13c
-    0ba677d7e9236ad8: !<reference> ff6fb445-213f-4b2b-af36-e81d3707a58e
-    1044136307169fe6: !<reference> 16d5eb17-5fca-4f72-91b6-dba9c3c4fc9f
-    27438ca280bededb: !<reference> dc114c84-f5d8-4be5-aa91-26cd035b2431
-    2a0f44700b948c68: !<reference> 96acd0c4-dd8b-4dd3-811c-1b31847cb9a1
-    309adfc6217ef733: !<reference> e77259bd-866f-4286-90a1-0af3b782b959
-    38c141830f9aff57: !<reference> d7909162-8e3f-4c3e-b8f0-1e43573cc074
-    3d915a7ccf0e91a2: !<reference> 8cfdc3d9-94f7-46e9-8c16-b0fa5e1b0846
-    4683fa4a5ea1c62a: !<reference> 1b4af900-f154-466a-856d-be27b6bc7f34
-    509dde86e4bde1a0: !<reference> 9d8644ab-8877-4781-b01e-b1b4e51e9f38
-    5312bc95e3e9faf7: !<reference> d1efe201-c737-445d-b598-7f7ba2ced786
-    5b22463e1738b2da: !<reference> 1c2cfa10-dcaf-4dfe-8ddb-131e44823acf
-    5f47422433a89f89: !<reference> fd114080-8d03-46bd-b411-fbbdb17183d2
-    606284b560760f2e: !<reference> 8f834878-150e-46ed-b079-d888981b01d1
-    770b8f87a47f21b8: !<reference> 6b1d3b10-ad07-45c8-9829-c9888b855ba5
-    7e0bfc4154a06677: !<reference> e6909565-3a18-4604-aa16-168c43f3cc9a
+    0e0d25670fe348a7: !<reference> 8a75f846-b059-4d75-b2cf-beddb29fe621
+    2200a79c8cff4214: !<reference> 092ab8cb-4e7f-4455-ac83-692ca4f0ae80
+    39442af311296c47: !<reference> 5b4eb79e-11fa-4dd3-8bdd-9084173ab889
+    3a794b6a21e76659: !<reference> 1b27aba7-3136-4875-a552-3b4cb071ad8e
+    4955729a9533c655: !<reference> 1032b203-1765-4f88-b04f-8a7bb65a7e7e
+    4c722a512db64395: !<reference> df398d14-6697-4932-9b8b-e50061a39315
+    54b803b326d27f19: !<reference> b6c4503d-8dcc-4495-8c02-782e81a06e5c
+    54dfdfe0bd199445: !<reference> f3e1a447-fdb3-43b9-93f0-c17604edf04e
+    669eb59fd2e53141: !<reference> 8f0489d3-5c60-4ea2-94ea-53d8a3ecf11d
+    69e72a7411b6dea0: !<reference> d096bea6-b2f6-4cb7-a167-d9250d22d8df
+    6eb43923301e1d50: !<reference> 86be7b6d-7cea-4e0d-8d4a-09515088121e
+    864574faa6355b5d: !<reference> 5a24c406-2c81-4337-b5d1-ff8bdb007120
+    88dc19cda8f01387: !<reference> bb890582-f7f3-4687-ad95-8d5c8c7b60e1
+    8977bcdf1ef62f7d: !<reference> 2ff0c66d-7d5f-4f2e-a025-8a6a2c3f8569
+    8c161bfe12c64b0a: !<reference> c05a66cd-e8d3-4b2f-bba0-6e912426b035
+    9d18bd7f87f231aa: !<reference> 9bcab42c-2e73-48b5-8a39-36a44b771ab8
     Solar System Pack Resources/Materials/Earth Material: !<reference> 0b22f59e-e2ce-476f-924d-472f20ec8af7
     Solar System Pack Resources/Materials/Earth Material|Earth Material|GraphPassInfo: !<reference> 4310f131-2083-4ee4-957c-084f7252a73c
     Solar System Pack Resources/Materials/Jupiter Material: !<reference> bc45a023-9248-42ff-8f4a-353945540b46
@@ -87,18 +86,19 @@
     Solar System Pack Resources/Textures/Venus/Venus_Params: !<reference> b7c3303e-54b4-4a4a-a880-a04a619155a6
     Solar System Pack Resources/Textures/Venus/Venus_base: !<reference> ef12b4b1-3b1c-4903-b9a1-412248506890
     Solar_System_Pack__PLACE_IN_OBJECTS_PANEL: !<reference> fe1d956a-5c54-4f87-8547-0515d1833bcc
-    a72d0c2bd70fd190: !<reference> e239a6d3-dccf-4c5e-ac97-50eb9349408f
-    b1315dff1a0fcebd: !<reference> 57c849f8-e441-4502-9ef1-aa8418b345f9
-    bfefc306d0f883ba: !<reference> b1a67c74-1e0a-4960-823c-32ee1dcd2d78
-    c2601bcfc1aa299c: !<reference> 1c343aab-f5a4-47da-bba6-bb844515f587
-    c801a36fd1d0b860: !<reference> f1b559dc-2f8f-4c79-b3b9-f7a2f8479870
-    ccf77f57a1a282e1: !<reference> c0a16838-fee6-47f8-a079-591cb72a53d3
-    dbae284d67718c27: !<reference> 11b8ff34-22a4-42f5-b27a-72a02634b437
-    e0a21db58d89bed5: !<reference> 2d855b23-6a24-4b5d-b727-b211684d3dca
-    e56c5f782dc88e81: !<reference> c3c51197-2e49-4ee8-a9f2-fc4ddaffb7c3
-    ea4ad19cb8dc5126: !<reference> 2c6ae765-1afa-40e2-9c7a-7072c656aa51
-    fc331eef8c9a1f74: !<reference> 2bf9efce-f339-4716-9d2f-5f7d3f94ebd8
-    ff985c7692e64280: !<reference> 31be2c3c-2c54-47b4-a6ea-3411a4340700
+    a053c339793f9b7f: !<reference> be95d750-b1de-46e2-942a-d5927507da8d
+    a0e6cf8ded013f52: !<reference> eedb14c7-5a39-403b-b0ae-76eb9d264ffa
+    a4894259a245cdfd: !<reference> 63293a1f-426c-458a-9da0-c687ed6ff321
+    a83ced1a1416f3bf: !<reference> 722e51b5-8dd6-4230-901d-30b264d4aa7d
+    aa78189600ebadc4: !<reference> b87b2f20-bd28-451e-bb28-3fb07d7d80ad
+    aaa616cbaa9234c4: !<reference> d6967562-52d1-4357-915d-7de12552f1d5
+    b2755ab185b8ec7a: !<reference> 9dc90dd6-d312-4653-ba0e-27bf26dd95b7
+    b2923e221122531d: !<reference> b129bf19-a542-4c93-bc31-f572240f0a9f
+    b463c34dad597dbb: !<reference> f2eb676c-ac5a-4ab3-82d0-e0946754fc62
+    bb8fc73a3f7cb3f1: !<reference> ed690a98-2acc-44e4-ba9b-b026505b2d91
+    dbc7996d653e6841: !<reference> 0e5b33c2-5ff7-4893-931c-27a0b3240834
+    f1fe235c575a9bc1: !<reference> ddbc0987-eda4-4a76-a25a-60c4dfe2a639
+    f2fb5e0e431dd786: !<reference> c171fd03-eeab-40c9-b63d-30c351eb0b73
   ImporterName: LensCoreImporter
   PrimaryAsset: !<reference> fe1d956a-5c54-4f87-8547-0515d1833bcc
   PackageType: LegacyPackage

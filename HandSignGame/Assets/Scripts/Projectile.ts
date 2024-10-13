@@ -14,6 +14,6 @@ export class Projectile extends BaseScriptComponent {
     }
 
     onCollision(col: CollisionEnterEventArgs) {
-        this.getSceneObject().getTransform().setWorldPosition(new vec3(9999, 9999, 9999));
+        //this.getSceneObject().getTransform().setWorldPosition(new vec3(9999, 9999, 9999));
     }
 }

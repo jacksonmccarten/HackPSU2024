@@ -27,6 +27,7 @@
     cam: false
     fireball: false
     gestures: false
+    projectileSpeed: false
   ScriptTypesHidden:
     {}
   DefaultScriptInputs:
@@ -34,6 +35,7 @@
       fireball: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
       gestures: !<string[]>
         []
+      projectileSpeed: !<float> 0.000000
   ScriptTypes:
     -
       {}
@@ -41,3 +43,4 @@
     - // @input SceneObject cam
     - "// @input string[] gestures"
     - // @input Asset.ObjectPrefab fireball
+    - // @input float projectileSpeed

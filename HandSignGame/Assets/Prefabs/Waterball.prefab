@@ -4,6 +4,45 @@
     - !<own> b96bc441-e8e4-4d9c-be7b-e0f2a386b982
   LazyLoading: false
   RetainAssets: true
+- !<ScriptComponent/5a8d54e7-c6a8-4a2f-b5b3-a1d81f99b54c>
+  PrefabRemaps:
+    []
+  Name: Projectile
+  Enabled: true
+  ScriptAsset: !<reference> 45587723-89ff-4634-9cc0-b61fdb8a4c7d
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      {}
+  ScriptTypes:
+    "":
+      {}
+- !<BodyComponent/6095ff3a-7052-4b2c-a8b4-67833ee36557>
+  PrefabRemaps:
+    []
+  Name: Physics Body
+  Enabled: true
+  Shape: !<Sphere/00000000-0000-0000-0000-000000000000>
+    FitVisual: true
+    Radius: 6.000000
+  Matter: !<reference> 1fbbe0c7-ac4a-4984-bc29-a69c001c9d5d
+  Filter: !<reference> 00000000-0000-0000-0000-000000000000
+  OverlapFilter: !<reference> 00000000-0000-0000-0000-000000000000
+  WorldSettings: !<reference> df776bd3-ece9-4498-938f-e01dd8e3c6c1
+  EnableSmoothing: false
+  PositionTension: 30.000000
+  RotationTension: 30.000000
+  ForceCompound: false
+  Intangible: false
+  ShowCollider: false
+  Dynamic: true
+  BodySetting: Density
+  BodySettingValue: 1.000000
+  Damping: 0.000000
+  AngularDamping: 0.000000
 - !<SceneObject/b96bc441-e8e4-4d9c-be7b-e0f2a386b982>
   PrefabRemaps:
     []
@@ -19,6 +58,8 @@
     []
   Components:
     - !<own> faefaf51-3f2c-4dbb-b3d8-92adbfc2d766
+    - !<own> 6095ff3a-7052-4b2c-a8b4-67833ee36557
+    - !<own> 5a8d54e7-c6a8-4a2f-b5b3-a1d81f99b54c
 - !<RenderMeshVisual/faefaf51-3f2c-4dbb-b3d8-92adbfc2d766>
   PrefabRemaps:
     []
@@ -28,8 +69,8 @@
   StretchMode: Stretch
   VerticalAlignment: Center
   HorizontalAlignment: Center
-  MeshShadowMode: None
-  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  MeshShadowMode: Caster
+  ShadowColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
   ShadowDensity: 1.000000
   Materials:
     - !<reference> c5caac37-63db-4e8b-8157-c0064052a9bb

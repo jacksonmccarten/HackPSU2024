@@ -12,7 +12,7 @@
   ImporterSettings: !<AssetImporterSettings/c2d36ddc-cc9b-40ec-ab91-ba1c0b2346d5>
     {}
   CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
-- !<SceneObject/0302e7b9-161a-40d8-b575-527c69eddeb4>
+- !<SceneObject/54cb87c1-530a-46ca-bef1-cc8a2f00693a>
   PrefabRemaps:
     []
   Name: Fireball2
@@ -26,14 +26,55 @@
   Children:
     []
   Components:
-    - !<own> b1f251e0-5775-45e3-87d2-086c54cbf214
-- !<ObjectPrefab/2bc053e0-5b99-48db-b7e7-45959efe5d15>
+    - !<own> 9592e3f7-f558-4bdd-b304-09388d531723
+    - !<own> 65399901-f7e9-4365-9811-a2d7cfa1acbc
+    - !<own> 614bd8af-d2a2-4e4f-b2dc-1dd2dbf81cdc
+- !<ObjectPrefab/554ecd48-1780-4bcb-bfa4-a92dca919963>
   PackagePath: ""
   objects:
-    - !<own> 0302e7b9-161a-40d8-b575-527c69eddeb4
+    - !<own> 54cb87c1-530a-46ca-bef1-cc8a2f00693a
   LazyLoading: false
   RetainAssets: true
-- !<RenderMeshVisual/b1f251e0-5775-45e3-87d2-086c54cbf214>
+- !<ScriptComponent/614bd8af-d2a2-4e4f-b2dc-1dd2dbf81cdc>
+  PrefabRemaps:
+    []
+  Name: Projectile
+  Enabled: true
+  ScriptAsset: !<reference> 45587723-89ff-4634-9cc0-b61fdb8a4c7d
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      {}
+  ScriptTypes:
+    "":
+      {}
+- !<BodyComponent/65399901-f7e9-4365-9811-a2d7cfa1acbc>
+  PrefabRemaps:
+    []
+  Name: Physics Body
+  Enabled: true
+  Shape: !<Sphere/00000000-0000-0000-0000-000000000000>
+    FitVisual: true
+    Radius: 6.000000
+  Matter: !<reference> c5b4637c-db1a-41e7-b66d-5601f70808e5
+  Filter: !<reference> 00000000-0000-0000-0000-000000000000
+  OverlapFilter: !<reference> 00000000-0000-0000-0000-000000000000
+  WorldSettings: !<reference> 2b2f5dfe-6696-4db1-83b4-67772eeb1dc7
+  EnableSmoothing: false
+  PositionTension: 30.000000
+  RotationTension: 30.000000
+  ForceCompound: false
+  Intangible: false
+  ShowCollider: false
+  Dynamic: true
+  BodySetting: Density
+  BodySettingValue: 1.000000
+  Damping: 0.000000
+  AngularDamping: 0.000000
+- !<RenderMeshVisual/9592e3f7-f558-4bdd-b304-09388d531723>
   PrefabRemaps:
     []
   Name: Mesh
@@ -78,6 +119,8 @@
     HideFromCamera: false
 - !<ObjectPrefabAssetData/ccb1e890-31f8-4745-b4ec-663451794cbc>
   SourceRemaps:
-    - 1c435e84-5e3d-4d33-9b5b-2995724f9ece: b1f251e0-5775-45e3-87d2-086c54cbf214
-    - b3a1c616-a387-46b5-b69d-d2f95e88d020: 0302e7b9-161a-40d8-b575-527c69eddeb4
-  SourceState: !<own> 2bc053e0-5b99-48db-b7e7-45959efe5d15
+    - 1c435e84-5e3d-4d33-9b5b-2995724f9ece: 9592e3f7-f558-4bdd-b304-09388d531723
+    - 61bb7de3-a7dd-4c5f-8430-2feb139ee41e: 65399901-f7e9-4365-9811-a2d7cfa1acbc
+    - b3a1c616-a387-46b5-b69d-d2f95e88d020: 54cb87c1-530a-46ca-bef1-cc8a2f00693a
+    - be9952cb-949e-4e28-b5a3-c34317d9f1b8: 614bd8af-d2a2-4e4f-b2dc-1dd2dbf81cdc
+  SourceState: !<own> 554ecd48-1780-4bcb-bfa4-a92dca919963

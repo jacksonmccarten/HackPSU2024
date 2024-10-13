@@ -8,6 +8,8 @@
     - !<own> 00088a0c-6bcd-4e2e-8e1e-8b530033539e
     - !<own> c3455caa-e8a9-46c8-9984-657a69057d3c
     - !<own> 6d0929cc-8427-4def-bc74-f804cebe96ed
+    - !<own> a86f6086-ceb9-4999-b5cd-c415b030ae09
+    - !<own> 68b61ff0-8158-47bf-9a4e-075cb395be37
     - !<own> 738d6e8a-2bd9-4661-a263-5ed632924216
     - !<own> 0fd71c1a-d34e-4931-9810-cc9f7343c9af
   layers: !<Layers/267ee9a7-aff2-4f9d-9a49-f71214747d03>
@@ -960,13 +962,36 @@
   ScriptInputs:
     "":
       jointStringA: right;wrist
-      jointStringB: left;mid-0
+      jointStringB: left;pinky-2
       minDistance: !<float> 0.000000
-      maxDistance: !<float> 4.000000
+      maxDistance: !<float> 8.000000
   ScriptTypes:
     "":
       {}
-- !<ScriptComponent/03d1c78a-95b6-48b7-b723-d9b9faf7bcf4>
+- !<SceneObject/043a3c94-6758-4aba-99b4-ce2a51cf4ec7>
+  PrefabRemaps:
+    []
+  Name: Thumb2s
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 528eb60b-2aa9-4cdb-9ada-bdc3dea3d75c
+- !<Animation/045346de-6141-4af6-af6f-09f14dd81cec>
+  PrefabRemaps:
+    []
+  Name: component_46
+  Enabled: true
+  AnimationLayers:
+    BaseLayer: !<reference> 1bdb74dc-62c2-4198-9ef8-e6e61f87e7e5
+    animation: !<reference> bf1e7cb2-9f96-4f7d-8b44-b44d52d5388a
+- !<ScriptComponent/0480ce3e-a990-472c-a9c4-a5fa70837d1b>
   PrefabRemaps:
     []
   Name: GestureRule
@@ -978,21 +1003,13 @@
     {}
   ScriptInputs:
     "":
-      jointStringA: left;wrist
-      jointStringB: left;thumb-3
-      minDistance: !<float> 4.000000
+      jointStringA: right;thumb-3
+      jointStringB: right;mid-3
+      minDistance: !<float> 10.000000
       maxDistance: !<float> 100.000000
   ScriptTypes:
     "":
       {}
-- !<Animation/045346de-6141-4af6-af6f-09f14dd81cec>
-  PrefabRemaps:
-    []
-  Name: component_46
-  Enabled: true
-  AnimationLayers:
-    BaseLayer: !<reference> 1bdb74dc-62c2-4198-9ef8-e6e61f87e7e5
-    animation: !<reference> bf1e7cb2-9f96-4f7d-8b44-b44d52d5388a
 - !<SceneObject/05e0fe08-180b-41a9-8908-103ba0447d1c>
   PrefabRemaps:
     []
@@ -1951,21 +1968,6 @@
     - !<own> 7e6dde67-75f5-4d45-aa7a-479727078c42
   Components:
     []
-- !<SceneObject/0d079f33-da81-49db-84af-9b8b82f189f0>
-  PrefabRemaps:
-    []
-  Name: LeftThumb
-  Enabled: true
-  Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> ea153ca6-55b7-40a1-ada9-111f0297ab37
 - !<ScriptComponent/0daed5a3-5fb1-491a-b566-734c647c8795>
   PrefabRemaps:
     []
@@ -2048,6 +2050,25 @@
     []
   Components:
     - !<own> 5724fad9-9f17-4ffd-b0ec-1684a24c747d
+- !<ScriptComponent/0e9ce325-2a38-4fe7-afa5-caeb9ecf13db>
+  PrefabRemaps:
+    []
+  Name: GestureRule
+  Enabled: true
+  ScriptAsset: !<reference> 9ed8e01e-5032-4f24-9e90-f6dc376714a3
+  ScriptInputsDefault:
+    minDistance: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      jointStringA: right;wrist
+      jointStringB: right;mid-3
+      minDistance: !<float> 0.000000
+      maxDistance: !<float> 8.000000
+  ScriptTypes:
+    "":
+      {}
 - !<ScriptComponent/0f221a4a-7418-4548-98a9-9e9fdacec991>
   PrefabRemaps:
     []
@@ -2109,7 +2130,6 @@
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
   Children:
-    - !<own> 0d079f33-da81-49db-84af-9b8b82f189f0
     - !<own> 12b15f33-5e79-4a75-b262-44aaeef46585
     - !<own> 6ad1c347-13f9-4425-b4fb-551b726322ac
     - !<own> 4a65fc43-ce9c-4024-9c92-01a8387cf852
@@ -2245,7 +2265,7 @@
       jointStringA: left;wrist
       jointStringB: left;mid-3
       minDistance: !<float> 0.000000
-      maxDistance: !<float> 4.000000
+      maxDistance: !<float> 8.000000
   ScriptTypes:
     "":
       {}
@@ -2573,6 +2593,21 @@
   WorldUpVector: SceneY
   Target: !<reference> 00000000-0000-0065-0000-000000000064
   OffsetRotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+- !<SceneObject/1ecde1df-9ee1-4e8d-aaf4-fc8687a25f6a>
+  PrefabRemaps:
+    []
+  Name: RightMiddle
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 90e8628d-03b9-4108-9ad9-a642e1221481
 - !<SceneObject/1eed20b5-7c34-4d9d-a1cf-1f6d9e2ee607>
   PrefabRemaps:
     []
@@ -2626,25 +2661,6 @@
   BlendNormals: false
   BlendShapes:
     {}
-- !<ScriptComponent/1fe99de2-c57d-4dce-9ef9-049f9e9972d2>
-  PrefabRemaps:
-    []
-  Name: GestureRule
-  Enabled: true
-  ScriptAsset: !<reference> 9ed8e01e-5032-4f24-9e90-f6dc376714a3
-  ScriptInputsDefault:
-    minDistance: true
-  ScriptTypesDefault:
-    {}
-  ScriptInputs:
-    "":
-      jointStringA: right;wrist
-      jointStringB: right;index-3
-      minDistance: !<float> 0.000000
-      maxDistance: !<float> 4.000000
-  ScriptTypes:
-    "":
-      {}
 - !<RenderMeshVisual/202810c9-d83e-460e-b8d4-5f89f942208a>
   PrefabRemaps:
     []
@@ -2665,6 +2681,25 @@
   BlendNormals: false
   BlendShapes:
     {}
+- !<ScriptComponent/2030bd83-abe7-4ee8-81bf-fb5a154b6694>
+  PrefabRemaps:
+    []
+  Name: GestureRule
+  Enabled: true
+  ScriptAsset: !<reference> 9ed8e01e-5032-4f24-9e90-f6dc376714a3
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      jointStringA: left;thumb-3
+      jointStringB: left;mid-3
+      minDistance: !<float> 10.000000
+      maxDistance: !<float> 100.000000
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/2031ace3-5b05-415f-8184-625e2ea5b63e>
   PrefabRemaps:
     []
@@ -2746,6 +2781,28 @@
     - !<own> 9857966d-1a80-4140-92ed-742b571bf1bb
   Components:
     []
+- !<ScriptComponent/2177f8bb-d285-4d33-b447-e2960caea4a9>
+  PrefabRemaps:
+    []
+  Name: ProjectileSpell
+  Enabled: true
+  ScriptAsset: !<reference> 941a4ad6-08f0-4b8d-aa86-362334f35a4d
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      cam: !<reference.SceneObject> 00000000-0000-0065-0000-000000000064
+      gestures: !<string[]>
+        - ReverseOx
+        - Bird
+        - Diamond
+      fireball: !<reference.ObjectPrefab> ccc20b29-c7b3-495f-a7fc-a9412099fe6c
+      projectileSpeed: !<float> 200.000000
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/222fc263-da55-4368-869d-c0d92af6a471>
   PrefabRemaps:
     []
@@ -2873,6 +2930,21 @@
     - !<own> 2031ace3-5b05-415f-8184-625e2ea5b63e
   Components:
     - !<own> ef5b8e8e-f69d-4c8a-8021-9427789dbdf8
+- !<SceneObject/245def7f-13e5-4ec4-a48a-426c74c10fa5>
+  PrefabRemaps:
+    []
+  Name: Thumb2s
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 4b3e8469-994c-49e1-917b-f00028276058
 - !<SceneObject/24653e7a-6c34-43b7-bfce-6c3ba0c376e4>
   PrefabRemaps:
     []
@@ -3085,6 +3157,28 @@
     - !<own> 29e767a8-b316-48ab-b7d1-4b6c5c9286a7
   Components:
     []
+- !<ScriptComponent/2be5b5cc-d871-4393-8fa5-12795e4f954d>
+  PrefabRemaps:
+    []
+  Name: ProjectileSpell
+  Enabled: true
+  ScriptAsset: !<reference> 941a4ad6-08f0-4b8d-aa86-362334f35a4d
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      cam: !<reference.SceneObject> 00000000-0000-0065-0000-000000000064
+      gestures: !<string[]>
+        - Bird
+        - Ox
+        - Tiger
+      fireball: !<reference.ObjectPrefab> e68bac5c-bc43-4c1c-9518-eeb2dd9d2cbe
+      projectileSpeed: !<float> 100.000000
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/2dea1096-4e6c-46df-8d85-bf37934da7a1>
   PrefabRemaps:
     []
@@ -3212,26 +3306,11 @@
     "":
       jointStringA: right;wrist
       jointStringB: right;index-3
-      minDistance: !<float> 6.000000
+      minDistance: !<float> 8.000000
       maxDistance: !<float> 100.000000
   ScriptTypes:
     "":
       {}
-- !<SceneObject/3244f501-2e0d-4fbd-89e6-a06f1da37c89>
-  PrefabRemaps:
-    []
-  Name: WristToKnuckle
-  Enabled: true
-  Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> 5ae08eab-73ed-4269-bbc7-87958cbf045a
 - !<SceneObject/326c7930-19e1-40bf-80af-54bcf7701179>
   PrefabRemaps:
     []
@@ -3506,21 +3585,6 @@
     - !<own> fa949eb9-5f69-471d-8a54-b75f9d0dfe1d
   Components:
     []
-- !<SceneObject/3b634d5a-d237-491e-8851-0a15bf24cc68>
-  PrefabRemaps:
-    []
-  Name: RightIndex
-  Enabled: true
-  Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> 1fe99de2-c57d-4dce-9ef9-049f9e9972d2
 - !<SceneObject/3baaa9db-e436-4dad-b816-009c8fa2faa8>
   PrefabRemaps:
     []
@@ -4353,21 +4417,6 @@
     []
   Components:
     - !<own> 8ad3e2ed-6503-450d-960a-f81f5c2b3746
-- !<SceneObject/4162eefc-bfa5-486e-93c5-b365e0dabcb7>
-  PrefabRemaps:
-    []
-  Name: RightMiddle
-  Enabled: true
-  Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> bae5a17b-4084-4dfa-859f-ca517d36959e
 - !<SceneObject/4259000f-e0d0-4afc-930c-854496b915bf>
   PrefabRemaps:
     []
@@ -5411,6 +5460,25 @@
     - !<own> 25cdf54d-334a-4f5a-a9d5-d4716e1dc899
   Components:
     []
+- !<ScriptComponent/4b3e8469-994c-49e1-917b-f00028276058>
+  PrefabRemaps:
+    []
+  Name: GestureRule
+  Enabled: true
+  ScriptAsset: !<reference> 9ed8e01e-5032-4f24-9e90-f6dc376714a3
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      jointStringA: right;thumb-2
+      jointStringB: left;thumb-2
+      minDistance: !<float> 3.000000
+      maxDistance: !<float> 100.000000
+  ScriptTypes:
+    "":
+      {}
 - !<Animation/4b7d2743-2589-429d-837f-ac7eda7bf496>
   PrefabRemaps:
     []
@@ -5453,6 +5521,21 @@
   ScriptTypes:
     "":
       {}
+- !<SceneObject/4c60a129-83e8-44eb-8ee8-f112ff294768>
+  PrefabRemaps:
+    []
+  Name: WristToKnuckle
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 88d29a67-2808-4d06-bb7c-30114cea2c04
 - !<SceneObject/4cbcc17c-f1a3-4ec3-947e-9054c58537e6>
   PrefabRemaps:
     []
@@ -5608,27 +5691,6 @@
     - !<own> f97e0b79-f337-466f-9800-510ed303d120
   Components:
     []
-- !<SceneObject/50f58f9a-4661-43e6-99cd-8c93fb144016>
-  PrefabRemaps:
-    []
-  Name: ReverseOx
-  Enabled: true
-  Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  Children:
-    - !<own> 7cfee3a7-19fc-454b-ae07-e577b02823d7
-    - !<own> 3b634d5a-d237-491e-8851-0a15bf24cc68
-    - !<own> 4162eefc-bfa5-486e-93c5-b365e0dabcb7
-    - !<own> 3244f501-2e0d-4fbd-89e6-a06f1da37c89
-    - !<own> d4c085b4-a55b-4074-a5ba-ec972bab80de
-    - !<own> 8f8b339e-c2a4-4df5-b44b-62e727d8233a
-    - !<own> faf18ed9-63f6-4a6d-80c4-49481ecf9bce
-  Components:
-    - !<own> eb71db4b-583c-490b-86e7-6d57b94881a0
 - !<SceneObject/512615fd-be57-48d4-8050-d87b36dbb692>
   PrefabRemaps:
     []
@@ -5689,6 +5751,25 @@
     - !<own> ea35c8f2-6414-491b-bdc7-52079c6c36c4
   Components:
     []
+- !<ScriptComponent/528eb60b-2aa9-4cdb-9ada-bdc3dea3d75c>
+  PrefabRemaps:
+    []
+  Name: GestureRule
+  Enabled: true
+  ScriptAsset: !<reference> 9ed8e01e-5032-4f24-9e90-f6dc376714a3
+  ScriptInputsDefault:
+    minDistance: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      jointStringA: right;thumb-2
+      jointStringB: left;thumb-2
+      minDistance: !<float> 0.000000
+      maxDistance: !<float> 4.000000
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/53a9c11f-0138-4045-9f2b-53e96245831e>
   PrefabRemaps:
     []
@@ -5954,6 +6035,21 @@
     - !<own> 71f0e242-b7b6-4182-936d-0567fb29c400
   Components:
     []
+- !<SceneObject/575ee28c-963f-4611-a559-f6d02856d462>
+  PrefabRemaps:
+    []
+  Name: RightThumbToMiddle
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 0480ce3e-a990-472c-a9c4-a5fa70837d1b
 - !<SceneObject/576ee237-b5ad-434d-aedd-343d64d97574>
   PrefabRemaps:
     []
@@ -6022,25 +6118,6 @@
     []
   Components:
     - !<own> 65684fd5-223e-4b47-b780-5154d42063e3
-- !<ScriptComponent/589a0620-9e5c-42a9-85c2-1b896cf7d952>
-  PrefabRemaps:
-    []
-  Name: GestureRule
-  Enabled: true
-  ScriptAsset: !<reference> 9ed8e01e-5032-4f24-9e90-f6dc376714a3
-  ScriptInputsDefault:
-    {}
-  ScriptTypesDefault:
-    {}
-  ScriptInputs:
-    "":
-      jointStringA: left;wrist
-      jointStringB: left;mid-3
-      minDistance: !<float> 6.000000
-      maxDistance: !<float> 100.000000
-  ScriptTypes:
-    "":
-      {}
 - !<SceneObject/5917eb55-beb5-47c4-94ab-541dfa38a86f>
   PrefabRemaps:
     []
@@ -6090,25 +6167,6 @@
     []
   Components:
     - !<own> 01ba51c3-b51f-4cbe-9de5-426a0c7e6c81
-- !<ScriptComponent/5ae08eab-73ed-4269-bbc7-87958cbf045a>
-  PrefabRemaps:
-    []
-  Name: GestureRule
-  Enabled: true
-  ScriptAsset: !<reference> 9ed8e01e-5032-4f24-9e90-f6dc376714a3
-  ScriptInputsDefault:
-    minDistance: true
-  ScriptTypesDefault:
-    {}
-  ScriptInputs:
-    "":
-      jointStringA: left;wrist
-      jointStringB: right;mid-0
-      minDistance: !<float> 0.000000
-      maxDistance: !<float> 4.000000
-  ScriptTypes:
-    "":
-      {}
 - !<RenderMeshVisual/5b184531-7602-45c2-bc03-71b80ef580bb>
   PrefabRemaps:
     []
@@ -6374,6 +6432,21 @@
     index-2: !<reference> 950a9560-49d8-453e-807f-9d8db7982ca6
     thumb-3_end_end_end_end: !<reference> 803d8301-8c79-49a9-9126-b1de9ee5b145
     wrist_to_pinky: !<reference> 6e971892-9092-4c4c-8baf-162cd14b28dd
+- !<SceneObject/5fd18d27-5e52-493a-bbc1-074cfd64ab6f>
+  PrefabRemaps:
+    []
+  Name: LeftThumbToMiddle
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 2030bd83-abe7-4ee8-81bf-fb5a154b6694
 - !<SceneObject/602e8d73-58ef-47a9-bf8e-86c1a2e28d75>
   PrefabRemaps:
     []
@@ -6813,6 +6886,25 @@
     - !<own> f75c82d2-2ad6-48ea-996a-f4a8580a7405
   Components:
     []
+- !<ColliderComponent/681fa3ae-2dee-4dfa-b3fe-929c02ebe387>
+  PrefabRemaps:
+    []
+  Name: Physics Collider
+  Enabled: true
+  Shape: !<Cylinder/00000000-0000-0000-0000-000000000000>
+    Axis: Y
+    Length: 25.000000
+    Radius: 6.000000
+  Matter: !<reference> 00000000-0000-0000-0000-000000000000
+  Filter: !<reference> 00000000-0000-0000-0000-000000000000
+  OverlapFilter: !<reference> 00000000-0000-0000-0000-000000000000
+  WorldSettings: !<reference> 00000000-0000-0000-0000-000000000000
+  EnableSmoothing: false
+  PositionTension: 30.000000
+  RotationTension: 30.000000
+  ForceCompound: false
+  Intangible: false
+  ShowCollider: false
 - !<SceneObject/682c7d5d-9fee-442d-9345-285f664df5ed>
   PrefabRemaps:
     []
@@ -6927,6 +7019,22 @@
   ScriptTypes:
     "":
       {}
+- !<SceneObject/68b61ff0-8158-47bf-9a4e-075cb395be37>
+  PrefabRemaps:
+    - 2177f8bb-d285-4d33-b447-e2960caea4a9: 43234596-ef54-49d2-9422-80f53fa7be0b
+    - 68b61ff0-8158-47bf-9a4e-075cb395be37: f2a0cf47-e26c-4b05-8521-5ac06f4fbdc9
+  Name: WaterballSpell
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 2177f8bb-d285-4d33-b447-e2960caea4a9
 - !<SceneObject/6a1f53ad-d9fb-4d34-beae-0af9e967f8f4>
   PrefabRemaps:
     []
@@ -7022,6 +7130,29 @@
     - !<own> 632137ef-3822-449a-b906-8fc2549a6653
   Components:
     []
+- !<BodyComponent/6b9a0c17-74ee-4a1f-9406-277aca9a80a3>
+  PrefabRemaps:
+    []
+  Name: Physics Body
+  Enabled: true
+  Shape: !<Sphere/00000000-0000-0000-0000-000000000000>
+    FitVisual: false
+    Radius: 0.000000
+  Matter: !<reference> 00000000-0000-0000-0000-000000000000
+  Filter: !<reference> 00000000-0000-0000-0000-000000000000
+  OverlapFilter: !<reference> 00000000-0000-0000-0000-000000000000
+  WorldSettings: !<reference> 00000000-0000-0000-0000-000000000000
+  EnableSmoothing: false
+  PositionTension: 30.000000
+  RotationTension: 30.000000
+  ForceCompound: false
+  Intangible: false
+  ShowCollider: false
+  Dynamic: true
+  BodySetting: Density
+  BodySettingValue: 1.000000
+  Damping: 0.000000
+  AngularDamping: 0.000000
 - !<Animation/6c9f3677-8a18-40a7-9212-e8f57aea43c2>
   PrefabRemaps:
     []
@@ -7711,6 +7842,21 @@
     - !<own> eba0ee5e-d201-47f2-8df4-dd28ff92a2cf
   Components:
     []
+- !<SceneObject/6eb63e39-5945-41d0-a48f-da5555f03be2>
+  PrefabRemaps:
+    []
+  Name: RightThumb
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 84fc3768-bcf1-4e03-a58a-39fc0c3d8b44
 - !<Animation/6fbe3d4c-8c5e-4bb1-8c61-0aa85664ebdc>
   PrefabRemaps:
     []
@@ -7886,9 +8032,9 @@
   ScriptInputs:
     "":
       jointStringA: left;wrist
-      jointStringB: left;index-3
+      jointStringB: left;ring-2
       minDistance: !<float> 0.000000
-      maxDistance: !<float> 4.000000
+      maxDistance: !<float> 8.000000
   ScriptTypes:
     "":
       {}
@@ -8212,21 +8358,6 @@
     []
   Components:
     - !<own> 7909edf1-cada-4811-9f21-6ffde891d884
-- !<SceneObject/7cfee3a7-19fc-454b-ae07-e577b02823d7>
-  PrefabRemaps:
-    []
-  Name: RightThumb
-  Enabled: true
-  Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> a4ed4578-68b3-4d73-a52b-77303efed3dd
 - !<SceneObject/7d8ffd4b-a136-4d23-ab41-66ec84193da3>
   PrefabRemaps:
     []
@@ -9076,6 +9207,25 @@
     []
   Components:
     - !<own> 322108b4-3b57-44fb-b29f-c225330480b6
+- !<ScriptComponent/84fc3768-bcf1-4e03-a58a-39fc0c3d8b44>
+  PrefabRemaps:
+    []
+  Name: GestureRule
+  Enabled: true
+  ScriptAsset: !<reference> 9ed8e01e-5032-4f24-9e90-f6dc376714a3
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      jointStringA: left;wrist
+      jointStringB: left;thumb-3
+      minDistance: !<float> 4.000000
+      maxDistance: !<float> 100.000000
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/85b3818d-9d2e-4d99-8e6e-56d4816ee996>
   PrefabRemaps:
     []
@@ -9111,25 +9261,6 @@
   BlendNormals: false
   BlendShapes:
     {}
-- !<ScriptComponent/863a3246-574d-407f-9254-360dba72ea6f>
-  PrefabRemaps:
-    []
-  Name: GestureRule
-  Enabled: true
-  ScriptAsset: !<reference> 9ed8e01e-5032-4f24-9e90-f6dc376714a3
-  ScriptInputsDefault:
-    {}
-  ScriptTypesDefault:
-    {}
-  ScriptInputs:
-    "":
-      jointStringA: left;wrist
-      jointStringB: left;index-3
-      minDistance: !<float> 6.000000
-      maxDistance: !<float> 100.000000
-  ScriptTypes:
-    "":
-      {}
 - !<Text/87826452-d99c-46fa-bfb6-ef90300cff59>
   PrefabRemaps:
     []
@@ -9249,6 +9380,25 @@
     - !<own> fdb20d63-3ad2-48f8-b5eb-a1fa59ef940f
   Components:
     []
+- !<ScriptComponent/88d29a67-2808-4d06-bb7c-30114cea2c04>
+  PrefabRemaps:
+    []
+  Name: GestureRule
+  Enabled: true
+  ScriptAsset: !<reference> 9ed8e01e-5032-4f24-9e90-f6dc376714a3
+  ScriptInputsDefault:
+    minDistance: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      jointStringA: left;wrist
+      jointStringB: right;pinky-2
+      minDistance: !<float> 0.000000
+      maxDistance: !<float> 8.000000
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/890fc8fe-68f8-419e-808b-a811f8b42b2e>
   PrefabRemaps:
     []
@@ -9307,6 +9457,26 @@
       directColliderEnterRadius: !<float> 1.000000
       directColliderExitRadius: 1.500000
       directDragThreshold: !<float> 3.000000
+  ScriptTypes:
+    "":
+      {}
+- !<ScriptComponent/8921ea2e-0a70-469b-840c-11f20b1060da>
+  PrefabRemaps:
+    []
+  Name: GestureManager
+  Enabled: true
+  ScriptAsset: !<reference> c9c115e6-157d-4f9b-bf9d-fa3a64ac2380
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      spellManager: !<reference.ScriptComponent> d9a9c33e-68bd-416c-8351-4f9089177b70
+      gestureName: ReverseOx
+      gestureDetectedTrigger: reverse_ox_made
+      gestureLostTrigger: reverse_ox_lost
+      logMessage: true
   ScriptTypes:
     "":
       {}
@@ -9524,21 +9694,6 @@
   ScriptTypes:
     "":
       {}
-- !<SceneObject/8f8b339e-c2a4-4df5-b44b-62e727d8233a>
-  PrefabRemaps:
-    []
-  Name: LeftIndex
-  Enabled: true
-  Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> 863a3246-574d-407f-9254-360dba72ea6f
 - !<SceneObject/8fdf4207-bfb8-4174-a942-a2164555fb73>
   PrefabRemaps:
     []
@@ -9614,6 +9769,25 @@
     - !<own> ebc63fd7-d599-405f-be15-c81bd7791e75
   Components:
     []
+- !<ScriptComponent/90e8628d-03b9-4108-9ad9-a642e1221481>
+  PrefabRemaps:
+    []
+  Name: GestureRule
+  Enabled: true
+  ScriptAsset: !<reference> 9ed8e01e-5032-4f24-9e90-f6dc376714a3
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      jointStringA: left;wrist
+      jointStringB: left;mid-3
+      minDistance: !<float> 8.000000
+      maxDistance: !<float> 100.000000
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/9110fdbc-36d1-40d7-8f2a-1c688fb99a5f>
   PrefabRemaps:
     []
@@ -9802,6 +9976,25 @@
     - !<own> 9ad54119-c751-49dc-954f-6d86ff55ac50
   Components:
     - !<own> 1b979c9f-0d97-4c34-b306-5f060a321f9b
+- !<ScriptComponent/94d3bba1-d2e3-4fdc-bd8a-8177cd05e2a0>
+  PrefabRemaps:
+    []
+  Name: GestureRule
+  Enabled: true
+  ScriptAsset: !<reference> 9ed8e01e-5032-4f24-9e90-f6dc376714a3
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      jointStringA: left;wrist
+      jointStringB: left;index-3
+      minDistance: !<float> 8.000000
+      maxDistance: !<float> 100.000000
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/950a9560-49d8-453e-807f-9d8db7982ca6>
   PrefabRemaps:
     []
@@ -10107,7 +10300,7 @@
   PrefabRemaps:
     []
   Name: Triangle
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -10208,7 +10401,7 @@
   PrefabRemaps:
     []
   Name: Rooster
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -10236,11 +10429,34 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> 7e0c31f8-6ea4-4c96-975a-a78ed3997d1c
+    - !<own> 245def7f-13e5-4ec4-a48a-426c74c10fa5
     - !<own> f2651d04-c74c-4c19-8d01-ec3e60080ed4
     - !<own> 43aae48c-822b-4db6-ad67-5a98857fe19a
+    - !<own> 5fd18d27-5e52-493a-bbc1-074cfd64ab6f
     - !<own> 576ee237-b5ad-434d-aedd-343d64d97574
+    - !<own> 575ee28c-963f-4611-a559-f6d02856d462
   Components:
     - !<own> 0a543b2e-65c5-42b3-b863-eb6e41d2c3a2
+- !<SceneObject/a2e4299b-a0aa-49cd-8f9b-153074be4945>
+  PrefabRemaps:
+    []
+  Name: ReverseOx
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> c3a21236-66f9-46ee-80e2-6456c564ccd5
+    - !<own> c7c607e3-ce03-4421-b787-cf4bad4837c5
+    - !<own> 4c60a129-83e8-44eb-8ee8-f112ff294768
+    - !<own> 6eb63e39-5945-41d0-a48f-da5555f03be2
+    - !<own> d129dd9b-1d91-4435-8c37-83da4faad7a7
+    - !<own> 1ecde1df-9ee1-4e8d-aaf4-fc8687a25f6a
+  Components:
+    - !<own> 8921ea2e-0a70-469b-840c-11f20b1060da
 - !<SceneObject/a2ef8df4-d38d-4f27-8832-c33fd7075365>
   PrefabRemaps:
     []
@@ -10305,25 +10521,6 @@
     - !<own> 027200da-5e41-46d2-97de-330f7f7b85e3
   Components:
     []
-- !<ScriptComponent/a4ed4578-68b3-4d73-a52b-77303efed3dd>
-  PrefabRemaps:
-    []
-  Name: GestureRule
-  Enabled: true
-  ScriptAsset: !<reference> 9ed8e01e-5032-4f24-9e90-f6dc376714a3
-  ScriptInputsDefault:
-    minDistance: true
-  ScriptTypesDefault:
-    {}
-  ScriptInputs:
-    "":
-      jointStringA: right;wrist
-      jointStringB: right;thumb-3
-      minDistance: !<float> 0.000000
-      maxDistance: !<float> 4.000000
-  ScriptTypes:
-    "":
-      {}
 - !<SceneObject/a5ae8665-0028-4548-a490-f4b0177f2450>
   PrefabRemaps:
     []
@@ -10393,10 +10590,27 @@
   Children:
     - !<own> 23a16c3a-ee75-4342-9ee6-4c2d3ff4495e
     - !<own> e95c7500-48ad-4d27-8c98-c34541ff9e77
+    - !<own> 043a3c94-6758-4aba-99b4-ce2a51cf4ec7
     - !<own> 62785d5a-c460-4b22-a4f1-634558aeb369
     - !<own> 550f74fd-b34a-4961-bf7a-58f3c7c63043
   Components:
     - !<own> 6b65efca-4122-4d3c-a8b9-9fa2a56e64f8
+- !<SceneObject/a86f6086-ceb9-4999-b5cd-c415b030ae09>
+  PrefabRemaps:
+    - 2be5b5cc-d871-4393-8fa5-12795e4f954d: 43234596-ef54-49d2-9422-80f53fa7be0b
+    - a86f6086-ceb9-4999-b5cd-c415b030ae09: f2a0cf47-e26c-4b05-8521-5ac06f4fbdc9
+  Name: MassiveFireballSpell
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 2be5b5cc-d871-4393-8fa5-12795e4f954d
 - !<SceneObject/a8b8e476-936c-41b6-92ce-5efd214c2791>
   PrefabRemaps:
     []
@@ -10644,7 +10858,7 @@
 - !<ScriptComponent/afcfeba2-5ada-49d5-8cbe-3b93d00a823c>
   PrefabRemaps:
     []
-  Name: FireballSpell
+  Name: ProjectileSpell
   Enabled: true
   ScriptAsset: !<reference> 941a4ad6-08f0-4b8d-aa86-362334f35a4d
   ScriptInputsDefault:
@@ -10658,6 +10872,7 @@
         - Bird
         - Tiger
       fireball: !<reference.ObjectPrefab> e2a86e28-0032-4ad7-9b81-e6f4dde6a91a
+      projectileSpeed: !<float> 250.000000
   ScriptTypes:
     "":
       {}
@@ -10887,7 +11102,7 @@
     "":
       jointStringA: left;thumb-3
       jointStringB: left;index-3
-      minDistance: !<float> 6.000000
+      minDistance: !<float> 10.000000
       maxDistance: !<float> 100.000000
   ScriptTypes:
     "":
@@ -11068,6 +11283,21 @@
     - !<own> e45e22d4-948a-43ca-894e-b3f83bab74ab
   Components:
     []
+- !<SceneObject/b9d16a4d-fa70-4c82-a002-555b13ac73c5>
+  PrefabRemaps:
+    []
+  Name: Collider
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 10.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 681fa3ae-2dee-4dfa-b3fe-929c02ebe387
 - !<SceneObject/b9e71b49-0014-4233-a27b-6769a79bf1be>
   PrefabRemaps:
     []
@@ -11096,25 +11326,6 @@
   ScriptInputs:
     "":
       {}
-  ScriptTypes:
-    "":
-      {}
-- !<ScriptComponent/bae5a17b-4084-4dfa-859f-ca517d36959e>
-  PrefabRemaps:
-    []
-  Name: GestureRule
-  Enabled: true
-  ScriptAsset: !<reference> 9ed8e01e-5032-4f24-9e90-f6dc376714a3
-  ScriptInputsDefault:
-    minDistance: true
-  ScriptTypesDefault:
-    {}
-  ScriptInputs:
-    "":
-      jointStringA: right;wrist
-      jointStringB: right;mid-3
-      minDistance: !<float> 0.000000
-      maxDistance: !<float> 4.000000
   ScriptTypes:
     "":
       {}
@@ -11360,11 +11571,26 @@
     "":
       jointStringA: right;wrist
       jointStringB: right;mid-3
-      minDistance: !<float> 6.000000
+      minDistance: !<float> 8.000000
       maxDistance: !<float> 100.000000
   ScriptTypes:
     "":
       {}
+- !<SceneObject/c3a21236-66f9-46ee-80e2-6456c564ccd5>
+  PrefabRemaps:
+    []
+  Name: LeftIndex
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> dcf66303-335e-4aee-a1be-19f19b5d71dd
 - !<ScriptComponent/c3aa5d2b-3a3c-4398-97b8-4f1fc3f05e6b>
   PrefabRemaps:
     []
@@ -12094,6 +12320,21 @@
     - !<own> 53dc72d1-0723-410a-930b-7009c20636f9
   Components:
     []
+- !<SceneObject/c7c607e3-ce03-4421-b787-cf4bad4837c5>
+  PrefabRemaps:
+    []
+  Name: LeftMiddle
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 0e9ce325-2a38-4fe7-afa5-caeb9ecf13db
 - !<SceneObject/c9ab85b4-8e42-4bea-92a2-7e5f4ff12531>
   PrefabRemaps:
     []
@@ -12381,8 +12622,8 @@
     - !<own> e0ac29bd-113d-4541-ad2e-acc79b2966c8
     - !<own> a22c5cce-1deb-4058-8ab6-7bb04b2ee98c
     - !<own> 0fc108c5-e5a5-4dda-9d4b-50135a5f53bd
+    - !<own> a2e4299b-a0aa-49cd-8f9b-153074be4945
     - !<own> 9adb8f5c-d7fc-4146-9a83-83a4beee66ea
-    - !<own> 50f58f9a-4661-43e6-99cd-8c93fb144016
   Components:
     []
 - !<ScriptComponent/d0627cf1-e2f2-44ac-b09d-40cb730bd36d>
@@ -12404,6 +12645,21 @@
   ScriptTypes:
     "":
       {}
+- !<SceneObject/d129dd9b-1d91-4435-8c37-83da4faad7a7>
+  PrefabRemaps:
+    []
+  Name: RightIndex
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 94d3bba1-d2e3-4fdc-bd8a-8177cd05e2a0
 - !<SceneObject/d149e9b6-0560-438a-ba17-c635d54c9563>
   PrefabRemaps:
     - 045346de-6141-4af6-af6f-09f14dd81cec: 530a49a4-296a-4fd9-9e2d-442c82ae3bea
@@ -12505,9 +12761,11 @@
     - !<own> 71f0a6e0-9d1d-4fdc-82cd-51309853313e
     - !<own> bef91f03-310c-46c9-89e4-3f73804b06ec
     - !<own> 91fd1f8a-fe46-49f6-96de-fc7c8adcfcd2
+    - !<own> b9d16a4d-fa70-4c82-a002-555b13ac73c5
   Components:
     - !<own> 4f038379-f589-4c9e-a05b-985e12f293e4
     - !<own> 87969c47-4ae4-461d-b825-d7a2d4c0ee1e
+    - !<own> 6b9a0c17-74ee-4a1f-9406-277aca9a80a3
 - !<SceneObject/d24c71a9-7376-4590-880a-a772df53269e>
   PrefabRemaps:
     []
@@ -13200,21 +13458,6 @@
   Components:
     - !<own> 911c34c4-b05c-4ae4-a3b8-da5deed0d736
     - !<own> c3aa5d2b-3a3c-4398-97b8-4f1fc3f05e6b
-- !<SceneObject/d4c085b4-a55b-4074-a5ba-ec972bab80de>
-  PrefabRemaps:
-    []
-  Name: LeftThumb
-  Enabled: true
-  Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> 03d1c78a-95b6-48b7-b723-d9b9faf7bcf4
 - !<SceneObject/d4c2ada4-efa8-43d8-b27b-066d11ebe684>
   PrefabRemaps:
     []
@@ -13955,6 +14198,8 @@
       handTracker: !<reference.ScriptComponent> d0627cf1-e2f2-44ac-b09d-40cb730bd36d
       spells: !<reference.ScriptComponent[]>
         - !<reference> afcfeba2-5ada-49d5-8cbe-3b93d00a823c
+        - !<reference> 2be5b5cc-d871-4393-8fa5-12795e4f954d
+        - !<reference> 2177f8bb-d285-4d33-b447-e2960caea4a9
       comboTimeout: !<float> 3.000000
   ScriptTypes:
     "":
@@ -14454,6 +14699,25 @@
     - !<own> cae3d6b1-1d5c-4226-bac0-5c07f5a5eccf
   Components:
     []
+- !<ScriptComponent/dcf66303-335e-4aee-a1be-19f19b5d71dd>
+  PrefabRemaps:
+    []
+  Name: GestureRule
+  Enabled: true
+  ScriptAsset: !<reference> 9ed8e01e-5032-4f24-9e90-f6dc376714a3
+  ScriptInputsDefault:
+    minDistance: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      jointStringA: right;wrist
+      jointStringB: right;ring-2
+      minDistance: !<float> 0.000000
+      maxDistance: !<float> 8.000000
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/dd0623c3-3d9f-4e73-aa69-7310bf7b8bc7>
   PrefabRemaps:
     []
@@ -15940,7 +16204,7 @@
     "":
       jointStringA: right;thumb-3
       jointStringB: right;index-3
-      minDistance: !<float> 6.000000
+      minDistance: !<float> 10.000000
       maxDistance: !<float> 100.000000
   ScriptTypes:
     "":
@@ -15964,7 +16228,7 @@
   PrefabRemaps:
     []
   Name: TouchTips
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: -50.000000}
@@ -16273,25 +16537,6 @@
     - !<own> 84485d00-e38f-440a-a998-db9c625a4df7
   Components:
     []
-- !<ScriptComponent/ea153ca6-55b7-40a1-ada9-111f0297ab37>
-  PrefabRemaps:
-    []
-  Name: GestureRule
-  Enabled: true
-  ScriptAsset: !<reference> 9ed8e01e-5032-4f24-9e90-f6dc376714a3
-  ScriptInputsDefault:
-    minDistance: true
-  ScriptTypesDefault:
-    {}
-  ScriptInputs:
-    "":
-      jointStringA: left;wrist
-      jointStringB: left;thumb-3
-      minDistance: !<float> 0.000000
-      maxDistance: !<float> 4.000000
-  ScriptTypes:
-    "":
-      {}
 - !<SceneObject/ea35c8f2-6414-491b-bdc7-52079c6c36c4>
   PrefabRemaps:
     []
@@ -16352,26 +16597,6 @@
     []
   Components:
     - !<own> ce28b8dc-08da-4bf7-a5fa-282b171ab6ea
-- !<ScriptComponent/eb71db4b-583c-490b-86e7-6d57b94881a0>
-  PrefabRemaps:
-    []
-  Name: GestureManager
-  Enabled: true
-  ScriptAsset: !<reference> c9c115e6-157d-4f9b-bf9d-fa3a64ac2380
-  ScriptInputsDefault:
-    {}
-  ScriptTypesDefault:
-    {}
-  ScriptInputs:
-    "":
-      spellManager: !<reference.ScriptComponent> d9a9c33e-68bd-416c-8351-4f9089177b70
-      gestureName: ReverseOx
-      gestureDetectedTrigger: reverseox_made
-      gestureLostTrigger: reverseox_lost
-      logMessage: true
-  ScriptTypes:
-    "":
-      {}
 - !<Animation/eb860181-f0a3-4dd2-ab59-d3a29e37a9f5>
   PrefabRemaps:
     []
@@ -17535,21 +17760,6 @@
     - !<own> f8ea8dda-dbdc-4998-855e-4e15fff924bb
   Components:
     []
-- !<SceneObject/faf18ed9-63f6-4a6d-80c4-49481ecf9bce>
-  PrefabRemaps:
-    []
-  Name: LeftMiddle
-  Enabled: true
-  Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> 589a0620-9e5c-42a9-85c2-1b896cf7d952
 - !<ScriptComponent/fb5c721f-ff16-4ff8-8224-04b0161de327>
   PrefabRemaps:
     []
