@@ -1,0 +1,17 @@
+- !<AnimationMixerLayer/4eb7b8f8-654e-438b-a204-94e44b87b22a>
+  PackagePath: ""
+  Layer: animation
+  Name: lower_body
+  Weight: 0.000000
+  SpeedRatio: 1.000000
+  From: 46.000000
+  To: 90.000000
+  Offset: 0.000000
+  FPS: 30.000000
+  NumCycles: -1
+  Reversed: false
+  Disabled: true
+  PostInfinity: Cycle
+  BlendMode: Default
+  ScaleMode: Multiply
+  RangeType: FrameIndex

@@ -1,0 +1,64 @@
+- !<ObjectPrefab/e68bac5c-bc43-4c1c-9518-eeb2dd9d2cbe>
+  PackagePath: ""
+  objects:
+    - !<own> b3a1c616-a387-46b5-b69d-d2f95e88d020
+  LazyLoading: false
+  RetainAssets: true
+- !<RenderMeshVisual/1c435e84-5e3d-4d33-9b5b-2995724f9ece>
+  PrefabRemaps:
+    []
+  Name: Mesh
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 881bab1e-8888-4af8-b82f-702c97c769a4
+  Mesh: !<reference> c23b537d-7e41-4735-a0e4-1f2e4572ee50
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  RayTracing: !<RayTracingVisualSettings/00000000-0000-0000-0000-000000000000>
+    Reflections:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+      planar:
+        enabled: false
+        roughHarden: -1.000000
+        roughCurve: -1.000000
+    IndirectDiffuse:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    AmbientOcclusion:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    Shadows:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    Material: !<reference> 00000000-0000-0000-0000-000000000000
+    HideFromCamera: false
+- !<SceneObject/b3a1c616-a387-46b5-b69d-d2f95e88d020>
+  PrefabRemaps:
+    []
+  Name: Fireball2
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 25.145092, y: 25.145092, z: 25.145092}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 1c435e84-5e3d-4d33-9b5b-2995724f9ece

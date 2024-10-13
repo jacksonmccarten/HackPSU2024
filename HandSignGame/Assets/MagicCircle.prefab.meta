@@ -1,0 +1,79 @@
+- !<AssetImportMetadata/4236aa72-c0c4-4925-a247-74deadc35a73>
+  ImportedAssetIds:
+    ObjectPrefab: !<reference> 239d7e47-61e4-4587-90b6-20d0f7fa38d1
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> 239d7e47-61e4-4587-90b6-20d0f7fa38d1
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    ObjectPrefab: !<own> f40c4217-c2cb-4fbf-97d9-f1ce325c1944
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/7f032b5a-14f5-452e-9eee-44872b705485>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<SceneObject/07e216b6-d0ca-4711-9f0c-ffb1fc1a8236>
+  PrefabRemaps:
+    []
+  Name: MagicCircle
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 168.596100, y: 168.596100, z: 168.596100}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 597500b3-7987-4bee-a7b9-98f77860208a
+    - !<own> c00ec87b-a21d-4f01-a899-4b7b2d3663d0
+- !<RenderMeshVisual/597500b3-7987-4bee-a7b9-98f77860208a>
+  PrefabRemaps:
+    []
+  Name: Render Mesh Visual
+  Enabled: false
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 8a658a74-cc85-43a6-a041-232963de82ad
+  Mesh: !<reference> 341819c0-f408-45fc-ba60-e41f48f0f6b5
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<ObjectPrefab/5e769fbf-a45c-43c2-ac2d-4d805c3341e6>
+  PackagePath: ""
+  objects:
+    - !<own> 07e216b6-d0ca-4711-9f0c-ffb1fc1a8236
+  LazyLoading: false
+  RetainAssets: true
+- !<Image/c00ec87b-a21d-4f01-a899-4b7b2d3663d0>
+  PrefabRemaps:
+    []
+  Name: Image
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Fit
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> df308cbe-59d6-4431-8e55-d8a761c8fa49
+  FlipX: false
+  FlipY: false
+  Pivot: {x: 0.000000, y: 0.000000}
+- !<ObjectPrefabAssetData/f40c4217-c2cb-4fbf-97d9-f1ce325c1944>
+  SourceRemaps:
+    - 5aac34ac-e745-45a5-8882-13081545ebe6: 07e216b6-d0ca-4711-9f0c-ffb1fc1a8236
+    - 93687972-3f83-4c96-8604-b217505e0918: c00ec87b-a21d-4f01-a899-4b7b2d3663d0
+    - aeaffe1a-872c-4f7e-adc7-7dcd2677ce61: 597500b3-7987-4bee-a7b9-98f77860208a
+  SourceState: !<own> 5e769fbf-a45c-43c2-ac2d-4d805c3341e6

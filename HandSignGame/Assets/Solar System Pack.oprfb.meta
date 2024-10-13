@@ -1,0 +1,943 @@
+- !<AssetImportMetadata/16a35cec-dbfa-4610-be89-6729a3073d00>
+  ImportedAssetIds:
+    .hidden/Earth Material: !<reference> 722bff9e-1ffd-4f75-b624-d11acb236587
+    .hidden/Saturn Rings Material: !<reference> 540ccebe-df3c-46ec-ba9a-b0ad8f48d27d
+    0048cd85a4bc3df4: !<reference> 10326ca6-8c14-4c51-8244-30a9d31d4914
+    05278cc105bb35ef: !<reference> 794be559-c09e-4b6e-9fd8-b809a25dd13c
+    0ba677d7e9236ad8: !<reference> ff6fb445-213f-4b2b-af36-e81d3707a58e
+    1044136307169fe6: !<reference> 16d5eb17-5fca-4f72-91b6-dba9c3c4fc9f
+    27438ca280bededb: !<reference> dc114c84-f5d8-4be5-aa91-26cd035b2431
+    2a0f44700b948c68: !<reference> 96acd0c4-dd8b-4dd3-811c-1b31847cb9a1
+    309adfc6217ef733: !<reference> e77259bd-866f-4286-90a1-0af3b782b959
+    38c141830f9aff57: !<reference> d7909162-8e3f-4c3e-b8f0-1e43573cc074
+    3d915a7ccf0e91a2: !<reference> 8cfdc3d9-94f7-46e9-8c16-b0fa5e1b0846
+    4683fa4a5ea1c62a: !<reference> 1b4af900-f154-466a-856d-be27b6bc7f34
+    509dde86e4bde1a0: !<reference> 9d8644ab-8877-4781-b01e-b1b4e51e9f38
+    5312bc95e3e9faf7: !<reference> d1efe201-c737-445d-b598-7f7ba2ced786
+    5b22463e1738b2da: !<reference> 1c2cfa10-dcaf-4dfe-8ddb-131e44823acf
+    5f47422433a89f89: !<reference> fd114080-8d03-46bd-b411-fbbdb17183d2
+    606284b560760f2e: !<reference> 8f834878-150e-46ed-b079-d888981b01d1
+    770b8f87a47f21b8: !<reference> 6b1d3b10-ad07-45c8-9829-c9888b855ba5
+    7e0bfc4154a06677: !<reference> e6909565-3a18-4604-aa16-168c43f3cc9a
+    Solar System Pack Resources/Materials/Earth Material: !<reference> 0b22f59e-e2ce-476f-924d-472f20ec8af7
+    Solar System Pack Resources/Materials/Earth Material|Earth Material|GraphPassInfo: !<reference> 4310f131-2083-4ee4-957c-084f7252a73c
+    Solar System Pack Resources/Materials/Jupiter Material: !<reference> bc45a023-9248-42ff-8f4a-353945540b46
+    Solar System Pack Resources/Materials/Jupiter Material|Jupiter Material|GraphPassInfo: !<reference> 9db743ae-1e86-42af-90ef-ed30476b0d2e
+    Solar System Pack Resources/Materials/Mars Material: !<reference> b62f01dc-1582-4444-837c-69d9ba2d43df
+    Solar System Pack Resources/Materials/Mars Material|Mars Material|GraphPassInfo: !<reference> b36d6a80-c14c-4b52-8550-9f6e041746bc
+    Solar System Pack Resources/Materials/Mercury Material: !<reference> 87a5632a-a200-490a-8f79-aed16c279e01
+    Solar System Pack Resources/Materials/Mercury Material|Mercury Material|GraphPassInfo: !<reference> 5ae2e412-faa5-4247-b2ac-c225f937d27e
+    Solar System Pack Resources/Materials/Moon Material: !<reference> 1ab4a52b-cacd-4a89-8663-9eb3dc36a1fa
+    Solar System Pack Resources/Materials/Moon Material|Moon Material|GraphPassInfo: !<reference> 3288e361-c71f-4028-a2a5-3fae0ed7e166
+    Solar System Pack Resources/Materials/Neptune Material: !<reference> c5caac37-63db-4e8b-8157-c0064052a9bb
+    Solar System Pack Resources/Materials/Neptune Material|Neptune Material|GraphPassInfo: !<reference> 11a35cfd-4a49-412b-bd72-31b9287e0738
+    Solar System Pack Resources/Materials/Saturn Rings Material: !<reference> c69d5d24-8027-426a-955c-a3e6cc3e7f82
+    Solar System Pack Resources/Materials/Saturn Rings Material|Saturn Rings Material|GraphPassInfo: !<reference> edd0beb9-d861-46c6-8a08-3a81988a20a8
+    Solar System Pack Resources/Materials/Saturon Material: !<reference> 3ba38371-b6f3-4ffa-899b-62e45b0d20d2
+    Solar System Pack Resources/Materials/Saturon Material|Saturon Material|GraphPassInfo: !<reference> e6acbe16-8736-4e22-a8d6-1db50f256eba
+    Solar System Pack Resources/Materials/Sun Material: !<reference> 881bab1e-8888-4af8-b82f-702c97c769a4
+    Solar System Pack Resources/Materials/Sun Material|Sun Material|GraphPassInfo: !<reference> 84ae653f-d108-45f6-a49a-ba2f879449da
+    Solar System Pack Resources/Materials/Uranos Rings Material: !<reference> 3859cc90-f98d-4e64-ac59-e2c57406d707
+    Solar System Pack Resources/Materials/Uranos Rings Material|Uranos Rings Material|GraphPassInfo: !<reference> bc61a3dd-34c0-4534-ac47-74bab3aa32dc
+    Solar System Pack Resources/Materials/Uranus Material: !<reference> be59db8b-9ea9-4d5c-a860-aa90bf3ef123
+    Solar System Pack Resources/Materials/Uranus Material|Uranus Material|GraphPassInfo: !<reference> 4b44eaba-e629-4378-8fe1-d06ed448dea9
+    Solar System Pack Resources/Materials/Venus Material: !<reference> f807a499-f804-4056-9022-36284836eb2b
+    Solar System Pack Resources/Materials/Venus Material|Venus Material|GraphPassInfo: !<reference> f5f7f300-61ee-4f4c-9a7e-e5382f16e6c6
+    Solar System Pack Resources/Solar_System_Pack/Meshes/Mesh: !<reference> c23b537d-7e41-4735-a0e4-1f2e4572ee50
+    Solar System Pack Resources/Solar_System_Pack/Meshes/Mesh 10: !<reference> 07a95aa0-b17e-4c72-a5a5-524dea10194f
+    Solar System Pack Resources/Solar_System_Pack/Meshes/Mesh 2: !<reference> 779108e2-5746-4daf-8dcf-ea79edf71c16
+    Solar System Pack Resources/Solar_System_Pack/Meshes/Mesh 3: !<reference> 5ced4576-02e4-40c7-bc81-bb04068649b5
+    Solar System Pack Resources/Solar_System_Pack/Meshes/Mesh 4: !<reference> 8fd76e78-4051-49c8-bd1f-0f6b78bd1aaf
+    Solar System Pack Resources/Solar_System_Pack/Meshes/Mesh 5: !<reference> 52904e35-9722-42ad-a204-61e94d0fe3e6
+    Solar System Pack Resources/Solar_System_Pack/Meshes/Mesh 6: !<reference> 66912835-9717-43c1-83bc-e7416f470fe7
+    Solar System Pack Resources/Solar_System_Pack/Meshes/Mesh 7: !<reference> 34e8788c-9ecd-4c56-8942-c8c835cb8a66
+    Solar System Pack Resources/Solar_System_Pack/Meshes/Mesh 8: !<reference> db4b5335-02f0-4015-a92e-10edb5f3be5c
+    Solar System Pack Resources/Solar_System_Pack/Meshes/Mesh 9: !<reference> d37e9557-0c37-4f34-897d-8554c7049368
+    Solar System Pack Resources/Solar_System_Pack/Meshes/Sphere: !<reference> da89c8fa-e893-47fd-a334-1dadfe54c387
+    Solar System Pack Resources/Solar_System_Pack/Meshes/Sphere 2: !<reference> a0f8906b-0b3c-48f9-85c5-2d10c7f4074c
+    Solar System Pack Resources/Textures/Earth/Earth_Params: !<reference> 1ab40bb4-a0c4-43f9-b7a7-2dbfa4bf0564
+    Solar System Pack Resources/Textures/Earth/Earth_base: !<reference> 5316608a-582d-4137-bdef-188775666323
+    Solar System Pack Resources/Textures/Earth/Earth_normal: !<reference> 9161fc21-2861-4bab-82cd-5d1c4da8120b
+    Solar System Pack Resources/Textures/Jupiter/Jupiter_Params: !<reference> 95bd7188-90aa-4a7c-941b-5c2554669337
+    Solar System Pack Resources/Textures/Jupiter/Jupiter_base: !<reference> 0cfcb432-89e3-45d0-9a60-9b5d499481ed
+    Solar System Pack Resources/Textures/Jupiter/Jupiter_normal: !<reference> 548c279c-c109-47a2-857e-24db8c702f99
+    Solar System Pack Resources/Textures/Mars/Mars_Params: !<reference> ce85785b-578e-44d2-9873-0d4490fd56bd
+    Solar System Pack Resources/Textures/Mars/Mars_base: !<reference> 8515864a-a8d2-4949-adb2-8cd6648e3491
+    Solar System Pack Resources/Textures/Mars/Mars_normal: !<reference> 1f1e1ece-3119-4b67-bb38-e9c1e6e13ce8
+    Solar System Pack Resources/Textures/Mercury/Mercury_Params: !<reference> 2f812615-fa31-4092-9fa5-2730721bd42f
+    Solar System Pack Resources/Textures/Mercury/Mercury_base: !<reference> cbe6a302-380e-4a5a-8940-3e8acb3069d8
+    Solar System Pack Resources/Textures/Mercury/Mercury_normal: !<reference> 815f8c44-31ef-4883-9b50-3f791686e6d5
+    Solar System Pack Resources/Textures/Moon/Moon_Params: !<reference> 28abaa9f-111e-482b-8582-d654fb9d4278
+    Solar System Pack Resources/Textures/Moon/Moon_base: !<reference> f85267c5-4b25-4868-aeff-dc416faf69ad
+    Solar System Pack Resources/Textures/Moon/Moon_normal: !<reference> f82d1867-45cd-481b-b9dd-8c5ea4013161
+    Solar System Pack Resources/Textures/Neptune/Neptune_Params: !<reference> 7e788adb-75bf-4b08-aa9a-b986d9739cb7
+    Solar System Pack Resources/Textures/Neptune/Neptune_base: !<reference> d177cc1a-da69-4eb8-acef-c43c2da75d99
+    Solar System Pack Resources/Textures/Neptune/Neptune_normal: !<reference> f5c4a9b9-5c54-4290-87e7-fe86416beb7f
+    Solar System Pack Resources/Textures/Saturon/Saturn_Ring_base: !<reference> 2d080d57-e65e-41ae-8a7d-63018332be20
+    Solar System Pack Resources/Textures/Saturon/Saturn_base: !<reference> fd97e979-b9b0-4994-8b12-78002b7609f4
+    Solar System Pack Resources/Textures/Saturon/Saturn_normal: !<reference> 76cbec4c-b58d-4d16-a65f-9b53ef8e52d9
+    Solar System Pack Resources/Textures/Saturon/Saturon_Params: !<reference> dc4d2197-5025-45f6-9f30-593c7fc24bd1
+    Solar System Pack Resources/Textures/Sun/Sun_Params: !<reference> beed28f8-eca6-47dc-8bdc-a8df7a16d28d
+    Solar System Pack Resources/Textures/Sun/Sun_base: !<reference> bc3ac68c-ae12-4494-bdde-7fdfb6537145
+    Solar System Pack Resources/Textures/Sun/Sun_normal: !<reference> e08bb7af-02ca-43e6-abfb-5dc2b1ded745
+    Solar System Pack Resources/Textures/Uranus/Uranus_Params: !<reference> bf91b3c0-cc12-4671-bc02-311c92f7c92e
+    Solar System Pack Resources/Textures/Uranus/Uranus_Ring_base: !<reference> 47905215-788c-4a0b-bb4b-8e41b5c4aee6
+    Solar System Pack Resources/Textures/Uranus/Uranus_base: !<reference> 5bdd247a-0dbb-4ef9-874f-45b77049ebfa
+    Solar System Pack Resources/Textures/Uranus/Uranus_normal: !<reference> f0f26faa-2be5-49c7-82b4-00e5181e3710
+    Solar System Pack Resources/Textures/Venus/Venus_Params: !<reference> b7c3303e-54b4-4a4a-a880-a04a619155a6
+    Solar System Pack Resources/Textures/Venus/Venus_base: !<reference> ef12b4b1-3b1c-4903-b9a1-412248506890
+    Solar_System_Pack__PLACE_IN_OBJECTS_PANEL: !<reference> fe1d956a-5c54-4f87-8547-0515d1833bcc
+    a72d0c2bd70fd190: !<reference> e239a6d3-dccf-4c5e-ac97-50eb9349408f
+    b1315dff1a0fcebd: !<reference> 57c849f8-e441-4502-9ef1-aa8418b345f9
+    bfefc306d0f883ba: !<reference> b1a67c74-1e0a-4960-823c-32ee1dcd2d78
+    c2601bcfc1aa299c: !<reference> 1c343aab-f5a4-47da-bba6-bb844515f587
+    c801a36fd1d0b860: !<reference> f1b559dc-2f8f-4c79-b3b9-f7a2f8479870
+    ccf77f57a1a282e1: !<reference> c0a16838-fee6-47f8-a079-591cb72a53d3
+    dbae284d67718c27: !<reference> 11b8ff34-22a4-42f5-b27a-72a02634b437
+    e0a21db58d89bed5: !<reference> 2d855b23-6a24-4b5d-b727-b211684d3dca
+    e56c5f782dc88e81: !<reference> c3c51197-2e49-4ee8-a9f2-fc4ddaffb7c3
+    ea4ad19cb8dc5126: !<reference> 2c6ae765-1afa-40e2-9c7a-7072c656aa51
+    fc331eef8c9a1f74: !<reference> 2bf9efce-f339-4716-9d2f-5f7d3f94ebd8
+    ff985c7692e64280: !<reference> 31be2c3c-2c54-47b4-a6ea-3411a4340700
+  ImporterName: LensCoreImporter
+  PrimaryAsset: !<reference> fe1d956a-5c54-4f87-8547-0515d1833bcc
+  PackageType: LegacyPackage
+  PackagePolicy: ShouldBeUnpacked
+  AssetDataMap:
+    Solar_System_Pack__PLACE_IN_OBJECTS_PANEL: !<own> 856d86ed-0844-496f-9298-df15f24d16f4
+  DependentFiles:
+    []
+  ImporterSettings: !<LensCoreImporterSettings/9f7b3ed4-9442-4d18-b41b-e43420a3b8b1>
+    PersistentIdGenerationAlgorithm: DescriptorBased
+  CompressionSettings: !<ComplexCompressionSettings/0a1f495c-4939-450e-9fb6-a253456daaee>
+    Presets:
+      Performance Compression: !<SingleCompressionSettings/fd514d56-426c-4d79-bdd0-5610f90e1930>
+        CompressorName: Performance
+        CompressionSettings: !<TextureCompressionSettings/b0e5218d-78be-432d-9c37-bd46c1875f96>
+          Level: Medium
+      None Compression: !<SingleCompressionSettings/e6b36635-89f0-44a9-8a63-f502429c12f7>
+        CompressorName: None
+        CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+    ExtensionMappings:
+      mesh: None Compression
+      png: Performance Compression
+    Overrides:
+      Solar System Pack Resources/Textures/Saturon/Saturn_normal: None Compression
+- !<SceneObject/0d6aaf78-15d9-4150-aed4-89830fe318e6>
+  PrefabRemaps:
+    []
+  Name: Saturn
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -1.050000, y: -1.050000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 0.300000, y: 0.300000, z: 0.300000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 3f2bd34d-790c-4d5b-ae9d-7192c338bcbf
+  Components:
+    - !<own> 934ac7c9-02e8-4c42-a86e-a8ba24022726
+- !<SceneObject/1b68ce7c-b4db-4fe9-8c3a-f24fe44c2065>
+  PrefabRemaps:
+    []
+  Name: Venus
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 1.050000, y: 1.050000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 0.300000, y: 0.300000, z: 0.300000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 36c98ee1-fae9-432a-8dc5-7a976661331d
+- !<RenderMeshVisual/1e730ce7-261c-4dac-aa6b-9bd5fdd94e49>
+  PrefabRemaps:
+    []
+  Name: Mesh
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 87a5632a-a200-490a-8f79-aed16c279e01
+  Mesh: !<reference> 779108e2-5746-4daf-8dcf-ea79edf71c16
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  RayTracing: !<RayTracingVisualSettings/00000000-0000-0000-0000-000000000000>
+    Reflections:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+      planar:
+        enabled: false
+        roughHarden: -1.000000
+        roughCurve: -1.000000
+    IndirectDiffuse:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    AmbientOcclusion:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    Shadows:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    Material: !<reference> 00000000-0000-0000-0000-000000000000
+    HideFromCamera: false
+- !<SceneObject/2111678b-19e1-4ec2-a948-7edc0346571c>
+  PrefabRemaps:
+    []
+  Name: Uranus
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -1.500000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 0.300000, y: 0.300000, z: 0.300000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 3565a449-d784-4624-a035-c592e084a9a8
+  Components:
+    - !<own> aa65aa66-48e6-49d3-b7d4-72e8f9dc7de6
+- !<SceneObject/2f6d96f1-78dc-48a1-b82f-f95bc5e593e3>
+  PrefabRemaps:
+    []
+  Name: Mercury
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 1.500000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 0.300000, y: 0.300000, z: 0.300000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 1e730ce7-261c-4dac-aa6b-9bd5fdd94e49
+- !<SceneObject/3565a449-d784-4624-a035-c592e084a9a8>
+  PrefabRemaps:
+    []
+  Name: Uranus Ring
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 5.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 0.400000, y: 0.400000, z: 0.400000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 492e4145-a9a1-405d-86a4-818c9c938aa2
+- !<RenderMeshVisual/36c98ee1-fae9-432a-8dc5-7a976661331d>
+  PrefabRemaps:
+    []
+  Name: Mesh
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> f807a499-f804-4056-9022-36284836eb2b
+  Mesh: !<reference> 66912835-9717-43c1-83bc-e7416f470fe7
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  RayTracing: !<RayTracingVisualSettings/00000000-0000-0000-0000-000000000000>
+    Reflections:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+      planar:
+        enabled: false
+        roughHarden: -1.000000
+        roughCurve: -1.000000
+    IndirectDiffuse:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    AmbientOcclusion:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    Shadows:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    Material: !<reference> 00000000-0000-0000-0000-000000000000
+    HideFromCamera: false
+- !<SceneObject/3f2bd34d-790c-4d5b-ae9d-7192c338bcbf>
+  PrefabRemaps:
+    []
+  Name: Saturn Ring
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 5.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 0.166667, y: 0.166667, z: 0.166667}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> af40d248-2aa9-4964-9a78-b79f376d2c73
+- !<RenderMeshVisual/492e4145-a9a1-405d-86a4-818c9c938aa2>
+  PrefabRemaps:
+    []
+  Name: Sphere.006
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 3859cc90-f98d-4e64-ac59-e2c57406d707
+  Mesh: !<reference> da89c8fa-e893-47fd-a334-1dadfe54c387
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  RayTracing: !<RayTracingVisualSettings/00000000-0000-0000-0000-000000000000>
+    Reflections:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+      planar:
+        enabled: false
+        roughHarden: -1.000000
+        roughCurve: -1.000000
+    IndirectDiffuse:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    AmbientOcclusion:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    Shadows:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    Material: !<reference> 00000000-0000-0000-0000-000000000000
+    HideFromCamera: false
+- !<SceneObject/4f63d99e-14e5-4d1b-9da5-2f55100289fd>
+  PrefabRemaps:
+    []
+  Name: Earth
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 1.500000, y: 0.000000, z: 0.000000}
+    rotation: {x: -180.000000, y: 50.000015, z: -180.000000}
+    scale: {x: 0.300000, y: 0.300000, z: 0.300000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 64466d3e-65d3-47c7-85d8-496ea4053c09
+- !<RenderMeshVisual/60ef0dac-a25b-46bb-88cb-6339b9081abf>
+  PrefabRemaps:
+    []
+  Name: Mesh
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> c5caac37-63db-4e8b-8157-c0064052a9bb
+  Mesh: !<reference> 52904e35-9722-42ad-a204-61e94d0fe3e6
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  RayTracing: !<RayTracingVisualSettings/00000000-0000-0000-0000-000000000000>
+    Reflections:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+      planar:
+        enabled: false
+        roughHarden: -1.000000
+        roughCurve: -1.000000
+    IndirectDiffuse:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    AmbientOcclusion:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    Shadows:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    Material: !<reference> 00000000-0000-0000-0000-000000000000
+    HideFromCamera: false
+- !<RenderMeshVisual/6175ed64-0634-46db-956c-5e2e945fc6ef>
+  PrefabRemaps:
+    []
+  Name: Mesh
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> bc45a023-9248-42ff-8f4a-353945540b46
+  Mesh: !<reference> 5ced4576-02e4-40c7-bc81-bb04068649b5
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  RayTracing: !<RayTracingVisualSettings/00000000-0000-0000-0000-000000000000>
+    Reflections:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+      planar:
+        enabled: false
+        roughHarden: -1.000000
+        roughCurve: -1.000000
+    IndirectDiffuse:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    AmbientOcclusion:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    Shadows:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    Material: !<reference> 00000000-0000-0000-0000-000000000000
+    HideFromCamera: false
+- !<SceneObject/626daddb-d0aa-4f77-981d-53a1305d9864>
+  PrefabRemaps:
+    []
+  Name: Mars
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 1.050000, y: -1.050000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 0.300000, y: 0.300000, z: 0.300000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> e4e00f38-06a3-401b-bb05-3625b6107bc4
+- !<RenderMeshVisual/64466d3e-65d3-47c7-85d8-496ea4053c09>
+  PrefabRemaps:
+    []
+  Name: Mesh
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 0b22f59e-e2ce-476f-924d-472f20ec8af7
+  Mesh: !<reference> 8fd76e78-4051-49c8-bd1f-0f6b78bd1aaf
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  RayTracing: !<RayTracingVisualSettings/00000000-0000-0000-0000-000000000000>
+    Reflections:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+      planar:
+        enabled: false
+        roughHarden: -1.000000
+        roughCurve: -1.000000
+    IndirectDiffuse:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    AmbientOcclusion:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    Shadows:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    Material: !<reference> 00000000-0000-0000-0000-000000000000
+    HideFromCamera: false
+- !<SceneObject/671b651a-bd99-4c1c-9ce1-61c88e3d403b>
+  PrefabRemaps:
+    []
+  Name: Sun
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> ea677588-e0c1-45f6-aded-67242ced2193
+- !<SceneObject/6c237133-ce40-4a1b-bf47-ddb5b8a34e09>
+  PrefabRemaps:
+    []
+  Name: Scenes
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 742f51a1-9714-4078-923c-1aeab8abf8bc
+  Components:
+    []
+- !<SceneObject/7119d580-f083-475d-9049-fe55f8288df8>
+  PrefabRemaps:
+    []
+  Name: Uranus
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 2111678b-19e1-4ec2-a948-7edc0346571c
+  Components:
+    []
+- !<SceneObject/742f51a1-9714-4078-923c-1aeab8abf8bc>
+  PrefabRemaps:
+    []
+  Name: Scene
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 671b651a-bd99-4c1c-9ce1-61c88e3d403b
+    - !<own> 2f6d96f1-78dc-48a1-b82f-f95bc5e593e3
+    - !<own> 1b68ce7c-b4db-4fe9-8c3a-f24fe44c2065
+    - !<own> 4f63d99e-14e5-4d1b-9da5-2f55100289fd
+    - !<own> 626daddb-d0aa-4f77-981d-53a1305d9864
+    - !<own> f3da5422-bb65-4458-9660-aa8c92c4b83b
+    - !<own> c1934d95-2b34-4014-a0b8-5b4260d2ee07
+    - !<own> 7119d580-f083-475d-9049-fe55f8288df8
+    - !<own> 7a88466c-a673-49d1-ae3c-642ed6c8a205
+    - !<own> bfd5ea9d-ed84-4a96-904a-c7aa2cf852ba
+  Components:
+    []
+- !<SceneObject/7a88466c-a673-49d1-ae3c-642ed6c8a205>
+  PrefabRemaps:
+    []
+  Name: Neptune
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -1.050000, y: 1.050000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 0.300000, y: 0.300000, z: 0.300000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 60ef0dac-a25b-46bb-88cb-6339b9081abf
+- !<ObjectPrefabAssetData/856d86ed-0844-496f-9298-df15f24d16f4>
+  SourceRemaps:
+    - 10326ca6-8c14-4c51-8244-30a9d31d4914: 6175ed64-0634-46db-956c-5e2e945fc6ef
+    - 11b8ff34-22a4-42f5-b27a-72a02634b437: 671b651a-bd99-4c1c-9ce1-61c88e3d403b
+    - 16d5eb17-5fca-4f72-91b6-dba9c3c4fc9f: ea677588-e0c1-45f6-aded-67242ced2193
+    - 1b4af900-f154-466a-856d-be27b6bc7f34: 492e4145-a9a1-405d-86a4-818c9c938aa2
+    - 1c2cfa10-dcaf-4dfe-8ddb-131e44823acf: 36c98ee1-fae9-432a-8dc5-7a976661331d
+    - 1c343aab-f5a4-47da-bba6-bb844515f587: 7a88466c-a673-49d1-ae3c-642ed6c8a205
+    - 2bf9efce-f339-4716-9d2f-5f7d3f94ebd8: f2bd2b3f-906a-4921-bab6-1fc09690355c
+    - 2c6ae765-1afa-40e2-9c7a-7072c656aa51: aa65aa66-48e6-49d3-b7d4-72e8f9dc7de6
+    - 2d855b23-6a24-4b5d-b727-b211684d3dca: 1e730ce7-261c-4dac-aa6b-9bd5fdd94e49
+    - 31be2c3c-2c54-47b4-a6ea-3411a4340700: a3859893-50eb-4409-a3e2-6f08408e738b
+    - 57c849f8-e441-4502-9ef1-aa8418b345f9: 2f6d96f1-78dc-48a1-b82f-f95bc5e593e3
+    - 6b1d3b10-ad07-45c8-9829-c9888b855ba5: e4e00f38-06a3-401b-bb05-3625b6107bc4
+    - 794be559-c09e-4b6e-9fd8-b809a25dd13c: 0d6aaf78-15d9-4150-aed4-89830fe318e6
+    - 8cfdc3d9-94f7-46e9-8c16-b0fa5e1b0846: bfd5ea9d-ed84-4a96-904a-c7aa2cf852ba
+    - 8f834878-150e-46ed-b079-d888981b01d1: f3da5422-bb65-4458-9660-aa8c92c4b83b
+    - 96acd0c4-dd8b-4dd3-811c-1b31847cb9a1: af40d248-2aa9-4964-9a78-b79f376d2c73
+    - 9d8644ab-8877-4781-b01e-b1b4e51e9f38: 64466d3e-65d3-47c7-85d8-496ea4053c09
+    - b1a67c74-1e0a-4960-823c-32ee1dcd2d78: 6c237133-ce40-4a1b-bf47-ddb5b8a34e09
+    - c0a16838-fee6-47f8-a079-591cb72a53d3: 7119d580-f083-475d-9049-fe55f8288df8
+    - c3c51197-2e49-4ee8-a9f2-fc4ddaffb7c3: c1934d95-2b34-4014-a0b8-5b4260d2ee07
+    - d1efe201-c737-445d-b598-7f7ba2ced786: 1b68ce7c-b4db-4fe9-8c3a-f24fe44c2065
+    - d7909162-8e3f-4c3e-b8f0-1e43573cc074: 2111678b-19e1-4ec2-a948-7edc0346571c
+    - dc114c84-f5d8-4be5-aa91-26cd035b2431: 742f51a1-9714-4078-923c-1aeab8abf8bc
+    - e239a6d3-dccf-4c5e-ac97-50eb9349408f: 626daddb-d0aa-4f77-981d-53a1305d9864
+    - e6909565-3a18-4604-aa16-168c43f3cc9a: 3f2bd34d-790c-4d5b-ae9d-7192c338bcbf
+    - e77259bd-866f-4286-90a1-0af3b782b959: 4f63d99e-14e5-4d1b-9da5-2f55100289fd
+    - f1b559dc-2f8f-4c79-b3b9-f7a2f8479870: 3565a449-d784-4624-a035-c592e084a9a8
+    - fd114080-8d03-46bd-b411-fbbdb17183d2: 60ef0dac-a25b-46bb-88cb-6339b9081abf
+    - ff6fb445-213f-4b2b-af36-e81d3707a58e: 934ac7c9-02e8-4c42-a86e-a8ba24022726
+  SourceState: !<own> f6a6f7f2-e06b-4c56-9b27-c4cf917fc6e7
+- !<RenderMeshVisual/934ac7c9-02e8-4c42-a86e-a8ba24022726>
+  PrefabRemaps:
+    []
+  Name: Mesh
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 3ba38371-b6f3-4ffa-899b-62e45b0d20d2
+  Mesh: !<reference> 07a95aa0-b17e-4c72-a5a5-524dea10194f
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  RayTracing: !<RayTracingVisualSettings/00000000-0000-0000-0000-000000000000>
+    Reflections:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+      planar:
+        enabled: false
+        roughHarden: -1.000000
+        roughCurve: -1.000000
+    IndirectDiffuse:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    AmbientOcclusion:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    Shadows:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    Material: !<reference> 00000000-0000-0000-0000-000000000000
+    HideFromCamera: false
+- !<RenderMeshVisual/a3859893-50eb-4409-a3e2-6f08408e738b>
+  PrefabRemaps:
+    []
+  Name: Mesh
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 1ab4a52b-cacd-4a89-8663-9eb3dc36a1fa
+  Mesh: !<reference> db4b5335-02f0-4015-a92e-10edb5f3be5c
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  RayTracing: !<RayTracingVisualSettings/00000000-0000-0000-0000-000000000000>
+    Reflections:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+      planar:
+        enabled: false
+        roughHarden: -1.000000
+        roughCurve: -1.000000
+    IndirectDiffuse:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    AmbientOcclusion:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    Shadows:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    Material: !<reference> 00000000-0000-0000-0000-000000000000
+    HideFromCamera: false
+- !<RenderMeshVisual/aa65aa66-48e6-49d3-b7d4-72e8f9dc7de6>
+  PrefabRemaps:
+    []
+  Name: Mesh
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> be59db8b-9ea9-4d5c-a860-aa90bf3ef123
+  Mesh: !<reference> d37e9557-0c37-4f34-897d-8554c7049368
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  RayTracing: !<RayTracingVisualSettings/00000000-0000-0000-0000-000000000000>
+    Reflections:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+      planar:
+        enabled: false
+        roughHarden: -1.000000
+        roughCurve: -1.000000
+    IndirectDiffuse:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    AmbientOcclusion:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    Shadows:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    Material: !<reference> 00000000-0000-0000-0000-000000000000
+    HideFromCamera: false
+- !<RenderMeshVisual/af40d248-2aa9-4964-9a78-b79f376d2c73>
+  PrefabRemaps:
+    []
+  Name: Sphere.005
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> c69d5d24-8027-426a-955c-a3e6cc3e7f82
+  Mesh: !<reference> a0f8906b-0b3c-48f9-85c5-2d10c7f4074c
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  RayTracing: !<RayTracingVisualSettings/00000000-0000-0000-0000-000000000000>
+    Reflections:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+      planar:
+        enabled: false
+        roughHarden: -1.000000
+        roughCurve: -1.000000
+    IndirectDiffuse:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    AmbientOcclusion:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    Shadows:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    Material: !<reference> 00000000-0000-0000-0000-000000000000
+    HideFromCamera: false
+- !<SceneObject/bfd5ea9d-ed84-4a96-904a-c7aa2cf852ba>
+  PrefabRemaps:
+    []
+  Name: Moon
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 2.200000, y: 0.000000, z: 0.000000}
+    rotation: {x: -180.000000, y: 50.000015, z: -180.000000}
+    scale: {x: 0.300000, y: 0.300000, z: 0.300000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> a3859893-50eb-4409-a3e2-6f08408e738b
+- !<SceneObject/c1934d95-2b34-4014-a0b8-5b4260d2ee07>
+  PrefabRemaps:
+    []
+  Name: Saturn
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 0d6aaf78-15d9-4150-aed4-89830fe318e6
+  Components:
+    []
+- !<RenderMeshVisual/e4e00f38-06a3-401b-bb05-3625b6107bc4>
+  PrefabRemaps:
+    []
+  Name: Mesh
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> b62f01dc-1582-4444-837c-69d9ba2d43df
+  Mesh: !<reference> 34e8788c-9ecd-4c56-8942-c8c835cb8a66
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  RayTracing: !<RayTracingVisualSettings/00000000-0000-0000-0000-000000000000>
+    Reflections:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+      planar:
+        enabled: false
+        roughHarden: -1.000000
+        roughCurve: -1.000000
+    IndirectDiffuse:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    AmbientOcclusion:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    Shadows:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    Material: !<reference> 00000000-0000-0000-0000-000000000000
+    HideFromCamera: false
+- !<RenderMeshVisual/ea677588-e0c1-45f6-aded-67242ced2193>
+  PrefabRemaps:
+    []
+  Name: Mesh
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 881bab1e-8888-4af8-b82f-702c97c769a4
+  Mesh: !<reference> c23b537d-7e41-4735-a0e4-1f2e4572ee50
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  RayTracing: !<RayTracingVisualSettings/00000000-0000-0000-0000-000000000000>
+    Reflections:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+      planar:
+        enabled: false
+        roughHarden: -1.000000
+        roughCurve: -1.000000
+    IndirectDiffuse:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    AmbientOcclusion:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    Shadows:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    Material: !<reference> 00000000-0000-0000-0000-000000000000
+    HideFromCamera: false
+- !<SceneObject/f2bd2b3f-906a-4921-bab6-1fc09690355c>
+  PrefabRemaps:
+    []
+  Name: Solar_System_Pack
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 10.000000, y: 10.000000, z: 10.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 6c237133-ce40-4a1b-bf47-ddb5b8a34e09
+  Components:
+    []
+- !<SceneObject/f3da5422-bb65-4458-9660-aa8c92c4b83b>
+  PrefabRemaps:
+    []
+  Name: Jupiter
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: -1.500000, z: 0.000000}
+    rotation: {x: 0.000000, y: -89.972031, z: 0.000000}
+    scale: {x: 0.300000, y: 0.300000, z: 0.300000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 6175ed64-0634-46db-956c-5e2e945fc6ef
+- !<ObjectPrefab/f6a6f7f2-e06b-4c56-9b27-c4cf917fc6e7>
+  PackagePath: Solar_System_Pack__PLACE_IN_OBJECTS_PANEL
+  objects:
+    - !<own> f2bd2b3f-906a-4921-bab6-1fc09690355c
+  LazyLoading: false
+  RetainAssets: true

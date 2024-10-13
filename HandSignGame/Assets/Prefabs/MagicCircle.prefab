@@ -1,0 +1,59 @@
+- !<ObjectPrefab/27e3bb3f-0155-41ff-86d0-5cea24b8379e>
+  PackagePath: ""
+  objects:
+    - !<own> 88b0d72c-f59e-4dd5-93e9-89f2079122eb
+  LazyLoading: false
+  RetainAssets: true
+- !<SceneObject/88b0d72c-f59e-4dd5-93e9-89f2079122eb>
+  PrefabRemaps:
+    []
+  Name: MagicCircle
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 168.596100, y: 168.596100, z: 168.596100}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> c0dffafb-902e-4576-8c70-4aef6cd48f0e
+    - !<own> a0172825-91d1-47d5-aeec-c68cb9b550c1
+- !<Image/a0172825-91d1-47d5-aeec-c68cb9b550c1>
+  PrefabRemaps:
+    []
+  Name: Image
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Fit
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> df308cbe-59d6-4431-8e55-d8a761c8fa49
+  FlipX: false
+  FlipY: false
+  Pivot: {x: 0.000000, y: 0.000000}
+- !<RenderMeshVisual/c0dffafb-902e-4576-8c70-4aef6cd48f0e>
+  PrefabRemaps:
+    []
+  Name: Render Mesh Visual
+  Enabled: false
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 8a658a74-cc85-43a6-a041-232963de82ad
+  Mesh: !<reference> 341819c0-f408-45fc-ba60-e41f48f0f6b5
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}

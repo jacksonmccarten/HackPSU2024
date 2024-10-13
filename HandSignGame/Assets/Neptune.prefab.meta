@@ -1,0 +1,83 @@
+- !<AssetImportMetadata/2785ac12-827d-45f2-ae02-874d32a8e77b>
+  ImportedAssetIds:
+    ObjectPrefab: !<reference> ce2b07b3-018c-4610-a99a-32c9c14425cb
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> ce2b07b3-018c-4610-a99a-32c9c14425cb
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    ObjectPrefab: !<own> a33064d0-8a68-44f3-afb1-5f4c191d0120
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/1813cbd9-742f-464e-824d-3356c651a43c>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<RenderMeshVisual/1606874f-6cf3-42df-8f11-598b9e58bec3>
+  PrefabRemaps:
+    []
+  Name: Mesh
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> c5caac37-63db-4e8b-8157-c0064052a9bb
+  Mesh: !<reference> 52904e35-9722-42ad-a204-61e94d0fe3e6
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  RayTracing: !<RayTracingVisualSettings/00000000-0000-0000-0000-000000000000>
+    Reflections:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+      planar:
+        enabled: false
+        roughHarden: -1.000000
+        roughCurve: -1.000000
+    IndirectDiffuse:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    AmbientOcclusion:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    Shadows:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    Material: !<reference> 00000000-0000-0000-0000-000000000000
+    HideFromCamera: false
+- !<SceneObject/18ca3b39-96c3-421c-8b85-613c71362607>
+  PrefabRemaps:
+    []
+  Name: Neptune
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -1.050000, y: 1.050000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 0.300000, y: 0.300000, z: 0.300000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 1606874f-6cf3-42df-8f11-598b9e58bec3
+- !<ObjectPrefab/50d3a450-1029-439b-8b0f-a7d0f0e6f90c>
+  PackagePath: ""
+  objects:
+    - !<own> 18ca3b39-96c3-421c-8b85-613c71362607
+  LazyLoading: false
+  RetainAssets: true
+- !<ObjectPrefabAssetData/a33064d0-8a68-44f3-afb1-5f4c191d0120>
+  SourceRemaps:
+    - 5ddb2e94-0111-4c63-90fe-2ff2ef8cf538: 18ca3b39-96c3-421c-8b85-613c71362607
+    - 703f1e9a-a26f-4ab5-898c-d4744aebbb3f: 1606874f-6cf3-42df-8f11-598b9e58bec3
+  SourceState: !<own> 50d3a450-1029-439b-8b0f-a7d0f0e6f90c
