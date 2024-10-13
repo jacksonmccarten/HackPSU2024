@@ -1033,6 +1033,25 @@
     LineSpacing: 1.000000
     CapitalizationOverride: None
   DepthTest: false
+- !<ScriptComponent/066a510b-999d-464f-a82d-b049c6fea383>
+  PrefabRemaps:
+    []
+  Name: GestureRule
+  Enabled: true
+  ScriptAsset: !<reference> 9ed8e01e-5032-4f24-9e90-f6dc376714a3
+  ScriptInputsDefault:
+    minDistance: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      jointStringA: right;thumb-3
+      jointStringB: left;thumb-3
+      minDistance: !<float> 0.000000
+      maxDistance: !<float> 4.000000
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/073b0810-14f0-493d-b42c-b29078ac4668>
   PrefabRemaps:
     []
@@ -1809,6 +1828,26 @@
     []
   Components:
     - !<own> 2872c2bd-791d-47ef-a5e0-acc8e7a17cd0
+- !<ScriptComponent/0a543b2e-65c5-42b3-b863-eb6e41d2c3a2>
+  PrefabRemaps:
+    []
+  Name: GestureManager
+  Enabled: true
+  ScriptAsset: !<reference> c9c115e6-157d-4f9b-bf9d-fa3a64ac2380
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      spellManager: !<reference.ScriptComponent> d9a9c33e-68bd-416c-8351-4f9089177b70
+      gestureName: Diamond
+      gestureDetectedTrigger: diamond_made
+      gestureLostTrigger: diamond_lost
+      logMessage: true
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/0b00aadd-8bca-490e-9ab2-a12a4a1b04c4>
   PrefabRemaps:
     []
@@ -4165,6 +4204,21 @@
   BlendNormals: false
   BlendShapes:
     {}
+- !<SceneObject/43aae48c-822b-4db6-ad67-5a98857fe19a>
+  PrefabRemaps:
+    []
+  Name: LeftThumbToIndex
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> b50fb975-3b03-4d53-873e-c8a670aa2dff
 - !<SceneObject/43f97a9e-e1e5-4d79-8daf-5705b11bb525>
   PrefabRemaps:
     []
@@ -5557,6 +5611,21 @@
     - !<own> 71f0e242-b7b6-4182-936d-0567fb29c400
   Components:
     []
+- !<SceneObject/576ee237-b5ad-434d-aedd-343d64d97574>
+  PrefabRemaps:
+    []
+  Name: RightThumbToIndex
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> e2400e7f-31d2-4d25-847b-17e16cf0fa5a
 - !<SceneObject/5775df9a-f580-4a89-9e75-484596209294>
   PrefabRemaps:
     []
@@ -7773,6 +7842,21 @@
     - !<own> d149e9b6-0560-438a-ba17-c635d54c9563
   Components:
     []
+- !<SceneObject/7e0c31f8-6ea4-4c96-975a-a78ed3997d1c>
+  PrefabRemaps:
+    []
+  Name: Thumbs
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 066a510b-999d-464f-a82d-b049c6fea383
 - !<SceneObject/7e6dde67-75f5-4d45-aa7a-479727078c42>
   PrefabRemaps:
     []
@@ -9623,6 +9707,24 @@
     - !<own> 55e7569a-a5cf-4a72-888b-2b906154a800
   Components:
     - !<own> a7529ce0-bf18-4668-8b92-0c865192f2f0
+- !<SceneObject/a22c5cce-1deb-4058-8ab6-7bb04b2ee98c>
+  PrefabRemaps:
+    []
+  Name: Diamond
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 7e0c31f8-6ea4-4c96-975a-a78ed3997d1c
+    - !<own> f2651d04-c74c-4c19-8d01-ec3e60080ed4
+    - !<own> 43aae48c-822b-4db6-ad67-5a98857fe19a
+    - !<own> 576ee237-b5ad-434d-aedd-343d64d97574
+  Components:
+    - !<own> 0a543b2e-65c5-42b3-b863-eb6e41d2c3a2
 - !<SceneObject/a2ef8df4-d38d-4f27-8832-c33fd7075365>
   PrefabRemaps:
     []
@@ -10221,6 +10323,25 @@
     - !<own> 3e34be5b-b54d-4b08-8cb6-f0b2d8ad5298
   Components:
     - !<own> 4b7d2743-2589-429d-837f-ac7eda7bf496
+- !<ScriptComponent/b50fb975-3b03-4d53-873e-c8a670aa2dff>
+  PrefabRemaps:
+    []
+  Name: GestureRule
+  Enabled: true
+  ScriptAsset: !<reference> 9ed8e01e-5032-4f24-9e90-f6dc376714a3
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      jointStringA: left;thumb-3
+      jointStringB: left;index-3
+      minDistance: !<float> 6.000000
+      maxDistance: !<float> 100.000000
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/b555d03e-8e15-4d13-83d3-051103a6c07e>
   PrefabRemaps:
     []
@@ -11611,6 +11732,7 @@
     - !<own> a1bab5ef-55da-4d8d-86c4-3d6583c5864f
     - !<own> a851a8e4-d316-4711-a716-9ac76c2e6ceb
     - !<own> e0ac29bd-113d-4541-ad2e-acc79b2966c8
+    - !<own> a22c5cce-1deb-4058-8ab6-7bb04b2ee98c
   Components:
     []
 - !<ScriptComponent/d0627cf1-e2f2-44ac-b09d-40cb730bd36d>
@@ -13111,6 +13233,26 @@
     - !<own> d5c45872-afe6-404e-8492-0c4c32cd76ef
   Components:
     []
+- !<ScriptComponent/d89fd889-89ce-4f84-af58-d0294a0fdd34>
+  PrefabRemaps:
+    []
+  Name: GestureRule
+  Enabled: true
+  ScriptAsset: !<reference> 9ed8e01e-5032-4f24-9e90-f6dc376714a3
+  ScriptInputsDefault:
+    minDistance: true
+    maxDistance: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      jointStringA: right;index-3
+      jointStringB: left;index-3
+      minDistance: !<float> 0.000000
+      maxDistance: !<float> 0.000000
+  ScriptTypes:
+    "":
+      {}
 - !<ScriptComponent/d9a5470f-8dbb-44ff-9046-e39f2e18b484>
   PrefabRemaps:
     []
@@ -15120,6 +15262,25 @@
     - !<own> 53a9c11f-0138-4045-9f2b-53e96245831e
   Components:
     []
+- !<ScriptComponent/e2400e7f-31d2-4d25-847b-17e16cf0fa5a>
+  PrefabRemaps:
+    []
+  Name: GestureRule
+  Enabled: true
+  ScriptAsset: !<reference> 9ed8e01e-5032-4f24-9e90-f6dc376714a3
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      jointStringA: right;thumb-3
+      jointStringB: right;index-3
+      minDistance: !<float> 6.000000
+      maxDistance: !<float> 100.000000
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/e37897d8-ef28-4211-92b3-1157db568c6a>
   PrefabRemaps:
     []
@@ -16276,6 +16437,21 @@
     []
   Components:
     []
+- !<SceneObject/f2651d04-c74c-4c19-8d01-ec3e60080ed4>
+  PrefabRemaps:
+    []
+  Name: Indexes
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> d89fd889-89ce-4f84-af58-d0294a0fdd34
 - !<RenderMeshVisual/f2a6f5bb-dc9f-4f99-9625-98832a1db12f>
   PrefabRemaps:
     []
