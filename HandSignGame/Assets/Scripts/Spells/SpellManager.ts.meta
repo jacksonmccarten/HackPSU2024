@@ -1,0 +1,43 @@
+- !<AssetImportMetadata/8bc3d5ac-48fc-4be6-b851-cbcc107449f1>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> a55f1b0a-23fd-4382-bb37-c9d02136181b
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> a55f1b0a-23fd-4382-bb37-c9d02136181b
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    TypeScriptAsset: !<own> a20a7ba0-befd-4b72-9d53-5beafe8c0426
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/1d566430-985f-4d83-a59b-1ade4d541a59>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/a20a7ba0-befd-4b72-9d53-5beafe8c0426>
+  SvgIcon: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 00000000-0000-0000-0000-000000000000
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    comboTimeout: false
+    handTracker: false
+    spells: false
+  ScriptTypesHidden:
+    {}
+  DefaultScriptInputs:
+    - handTracker: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      spells: !<MappingBased.Spell[]>
+        []
+      comboTimeout: !<float> 3.000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - // @input Component.ScriptComponent handTracker
+    - "// @input Component.ScriptComponent[] spells"
+    - // @input float comboTimeout = 3

@@ -1,0 +1,40 @@
+- !<ObjectPrefab/31c09d58-3e0f-41af-b4ec-a6dcfa892426>
+  PackagePath: ""
+  objects:
+    - !<own> f2a0cf47-e26c-4b05-8521-5ac06f4fbdc9
+  LazyLoading: false
+  RetainAssets: true
+- !<ScriptComponent/43234596-ef54-49d2-9422-80f53fa7be0b>
+  PrefabRemaps:
+    []
+  Name: FireballSpell
+  Enabled: true
+  ScriptAsset: !<reference> 941a4ad6-08f0-4b8d-aa86-362334f35a4d
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      cam: !<reference.SceneObject> 00000000-0000-0065-0000-000000000064
+      gestures: !<string[]>
+        - TouchTips
+      fireball: !<reference.ObjectPrefab> e2a86e28-0032-4ad7-9b81-e6f4dde6a91a
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/f2a0cf47-e26c-4b05-8521-5ac06f4fbdc9>
+  PrefabRemaps:
+    []
+  Name: FireballSpell
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 43234596-ef54-49d2-9422-80f53fa7be0b

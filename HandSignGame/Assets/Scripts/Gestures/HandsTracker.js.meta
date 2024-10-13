@@ -24,13 +24,17 @@
   CurrentVisibility: Editable
   MaxVisibility: Editable
   ScriptInputsHidden:
+    boneIndicator: false
     leftHandTracking: false
     rightHandTracking: false
+    showBones: false
   ScriptTypesHidden:
     {}
   DefaultScriptInputs:
     - leftHandTracking: !<reference.ObjectTracking3D> 00000000-0000-0000-0000-000000000000
       rightHandTracking: !<reference.ObjectTracking3D> 00000000-0000-0000-0000-000000000000
+      showBones: false
+      boneIndicator: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}

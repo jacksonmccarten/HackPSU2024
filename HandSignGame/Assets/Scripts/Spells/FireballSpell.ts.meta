@@ -1,0 +1,43 @@
+- !<AssetImportMetadata/6cad0009-ed5a-44b7-82c6-fc179fbb36d3>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 941a4ad6-08f0-4b8d-aa86-362334f35a4d
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 941a4ad6-08f0-4b8d-aa86-362334f35a4d
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    TypeScriptAsset: !<own> 15c57ead-a6c0-4d0f-aa2f-54c9f3a8b528
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/71db4212-a0e0-44b2-bc88-a93c783252e6>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/15c57ead-a6c0-4d0f-aa2f-54c9f3a8b528>
+  SvgIcon: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 00000000-0000-0000-0000-000000000000
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    cam: false
+    fireball: false
+    gestures: false
+  ScriptTypesHidden:
+    {}
+  DefaultScriptInputs:
+    - cam: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      fireball: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
+      gestures: !<string[]>
+        []
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - // @input SceneObject cam
+    - "// @input string[] gestures"
+    - // @input Asset.ObjectPrefab fireball

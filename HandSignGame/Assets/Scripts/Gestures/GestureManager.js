@@ -1,6 +1,13 @@
-//@input string gestureDetectedTrigger
-//@input string gestureLostTrigger
-//@input bool logMessage
+// @input Component.ScriptComponent spellManager
+// @input string gestureName
+ 
+// @ui {"widget":"separator"}
+// @input string gestureDetectedTrigger
+// @input string gestureLostTrigger
+
+// @ui {"widget":"separator"}
+// @input bool logMessage
+
 
 var gestureRules = [];
 var gestureMade = false;
@@ -13,6 +20,8 @@ var lostGestureTriggered = false;
 
 var triggerTimerMax = 0.2;
 
+var getCenterPoint;
+
 initialize();
 
 function initialize() {
@@ -21,6 +30,8 @@ function initialize() {
             gestureRules.push(script.getSceneObject().getChild(i).getComponent("Component.ScriptComponent"));
         }
     }
+
+    getCenterPoint = global.handTracking().api.getCenterPoint;
 
     script.createEvent("UpdateEvent").bind(onUpdate);
 }
@@ -66,16 +77,21 @@ function triggerGesture(isStarting) {
     var triggerName = isStarting ? script.gestureDetectedTrigger : script.gestureLostTrigger;
     
     global.behaviorSystem.sendCustomTrigger(triggerName);
-    
+
+    if (isStarting) {
+        script.spellManager.onGestureMade(script.gestureName);
+    }
+
     if (script.logMessage) {
         print("Triggering Gesture " + script.getSceneObject() + " : " + triggerName);
     }
 }
 
 function checkIfAllWithinRange() {
-    var isInRange = true;    
+    var isInRange = true;
+    
     for (var i = 0; i < gestureRules.length; i++) {
-        if (!gestureRules[i].api.isWithinThreshold()) {
+        if (!gestureRules[i].api.isWithinRange()) {
             isInRange = false;
             break;
         }

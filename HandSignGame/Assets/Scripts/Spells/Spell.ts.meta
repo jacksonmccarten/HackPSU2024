@@ -1,0 +1,40 @@
+- !<AssetImportMetadata/60c720fb-511c-48f0-93e2-88e3b04418da>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 57c12249-4e15-4602-a8eb-9d066fe0591e
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 57c12249-4e15-4602-a8eb-9d066fe0591e
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    TypeScriptAsset: !<own> 6081d96c-a459-46fa-a4cc-283013689119
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/a9cc678b-4e45-4c88-83e4-9f0ad8124429>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/6081d96c-a459-46fa-a4cc-283013689119>
+  SvgIcon: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 00000000-0000-0000-0000-000000000000
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    cam: false
+    gestures: false
+  ScriptTypesHidden:
+    {}
+  DefaultScriptInputs:
+    - cam: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      gestures: !<string[]>
+        []
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - // @input SceneObject cam
+    - "// @input string[] gestures"

@@ -1,0 +1,40 @@
+- !<ObjectPrefab/a6443d05-8154-4b1c-a81b-3ea64bde47e3>
+  PackagePath: ""
+  objects:
+    - !<own> fdc32e1f-ac8f-4b32-9663-5d510b4be299
+  LazyLoading: false
+  RetainAssets: true
+- !<ScriptComponent/24d19fa3-ce7a-4ddc-97e8-57f20987fac8>
+  PrefabRemaps:
+    []
+  Name: SpellManager
+  Enabled: true
+  ScriptAsset: !<reference> a55f1b0a-23fd-4382-bb37-c9d02136181b
+  ScriptInputsDefault:
+    comboTimeout: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      handTracker: !<reference.ScriptComponent> d0627cf1-e2f2-44ac-b09d-40cb730bd36d
+      spells: !<reference.ScriptComponent[]>
+        - !<reference> afcfeba2-5ada-49d5-8cbe-3b93d00a823c
+      comboTimeout: !<float> 3.000000
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/fdc32e1f-ac8f-4b32-9663-5d510b4be299>
+  PrefabRemaps:
+    []
+  Name: SpellManager
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 24d19fa3-ce7a-4ddc-97e8-57f20987fac8
