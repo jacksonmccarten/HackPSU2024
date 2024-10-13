@@ -4,11 +4,11 @@
     - !<own> 00000000-0000-0065-0000-000000000064
     - !<own> 0005641c-028d-459a-0000-000000014b4d
     - !<own> dc32cb61-132c-4e5a-8c5d-a8e95cfd5c47
+    - !<own> adea452e-205c-4c46-982f-0fc01ca041b2
     - !<own> 00088a0c-6bcd-4e2e-8e1e-8b530033539e
     - !<own> c3455caa-e8a9-46c8-9984-657a69057d3c
     - !<own> 6d0929cc-8427-4def-bc74-f804cebe96ed
     - !<own> a86f6086-ceb9-4999-b5cd-c415b030ae09
-    - !<own> bb0a2880-ed23-4792-b985-68bf76bd6414
     - !<own> 68b61ff0-8158-47bf-9a4e-075cb395be37
     - !<own> 738d6e8a-2bd9-4661-a263-5ed632924216
     - !<own> 0fd71c1a-d34e-4931-9810-cc9f7343c9af
@@ -2351,27 +2351,6 @@
   BlendNormals: false
   BlendShapes:
     {}
-- !<ScriptComponent/14f9d160-ddf3-43e8-aab6-d815ff69fdad>
-  PrefabRemaps:
-    []
-  Name: HealSpell
-  Enabled: true
-  ScriptAsset: !<reference> a96ef4ea-8d73-4d84-b665-9501fc3c68ea
-  ScriptInputsDefault:
-    {}
-  ScriptTypesDefault:
-    {}
-  ScriptInputs:
-    "":
-      cam: !<reference.SceneObject> 00000000-0000-0065-0000-000000000064
-      gestures: !<string[]>
-        - Bird
-        - Diamond
-        - Bird
-      skeleton: !<MappingBased.Skeleton> 5d535749-c80d-4734-b2ce-16ef9f2d2970
-  ScriptTypes:
-    "":
-      {}
 - !<SceneObject/150e3c83-3ad2-4889-9641-d746d88fed46>
   PrefabRemaps:
     []
@@ -6376,41 +6355,6 @@
   Components:
     - !<own> 454df6d1-cdf0-4b2e-b480-4ba7d21f1a51
     - !<own> 87826452-d99c-46fa-bfb6-ef90300cff59
-- !<ScriptComponent/5d535749-c80d-4734-b2ce-16ef9f2d2970>
-  PrefabRemaps:
-    []
-  Name: Skeleton
-  Enabled: true
-  ScriptAsset: !<reference> d5b2365c-30ca-45f3-a10a-0735a2eec3a9
-  ScriptInputsDefault:
-    {}
-  ScriptTypesDefault:
-    {}
-  ScriptInputs:
-    "":
-      {}
-  ScriptTypes:
-    "":
-      {}
-- !<ScriptComponent/5dbf2090-fac9-403d-97aa-f6b6afce0938>
-  PrefabRemaps:
-    []
-  Name: GestureRule
-  Enabled: true
-  ScriptAsset: !<reference> 9ed8e01e-5032-4f24-9e90-f6dc376714a3
-  ScriptInputsDefault:
-    minDistance: true
-  ScriptTypesDefault:
-    {}
-  ScriptInputs:
-    "":
-      jointStringA: right;thumb-1
-      jointStringB: left;thumb-1
-      minDistance: !<float> 0.000000
-      maxDistance: !<float> 4.000000
-  ScriptTypes:
-    "":
-      {}
 - !<SceneObject/5e09c4c8-2ed1-48f4-9d2a-78c4f9d7faac>
   PrefabRemaps:
     []
@@ -6988,7 +6932,7 @@
   Enabled: true
   Shape: !<Cylinder/00000000-0000-0000-0000-000000000000>
     Axis: Y
-    Length: 20.000000
+    Length: 25.000000
     Radius: 6.000000
   Matter: !<reference> 00000000-0000-0000-0000-000000000000
   Filter: !<reference> 00000000-0000-0000-0000-000000000000
@@ -6999,7 +6943,7 @@
   RotationTension: 30.000000
   ForceCompound: false
   Intangible: false
-  ShowCollider: true
+  ShowCollider: false
 - !<SceneObject/682c7d5d-9fee-442d-9345-285f664df5ed>
   PrefabRemaps:
     []
@@ -7244,8 +7188,8 @@
   Intangible: false
   ShowCollider: false
   Dynamic: true
-  BodySetting: Mass
-  BodySettingValue: 20.000000
+  BodySetting: Density
+  BodySettingValue: 1.000000
   Damping: 0.000000
   AngularDamping: 0.000000
 - !<Animation/6c9f3677-8a18-40a7-9212-e8f57aea43c2>
@@ -9423,7 +9367,7 @@
   PrefabRemaps:
     []
   Name: component_61
-  Enabled: false
+  Enabled: true
   Layers:
     - !<reference> 7b49a832-7cde-4f1c-98fd-816fc7ed44de
     - !<reference> 4eb7b8f8-654e-438b-a204-94e44b87b22a
@@ -9618,21 +9562,6 @@
     - !<own> fdd52ac5-0c46-437e-ad95-b1b4a417f016
   Components:
     []
-- !<SceneObject/8b2c17cd-dea0-49e9-affa-5fc0b082182d>
-  PrefabRemaps:
-    []
-  Name: Thumb1s
-  Enabled: true
-  Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> 5dbf2090-fac9-403d-97aa-f6b6afce0938
 - !<SceneObject/8b333038-2a77-4d59-87cc-a3cd0278c079>
   PrefabRemaps:
     []
@@ -10701,7 +10630,6 @@
     - !<own> 23a16c3a-ee75-4342-9ee6-4c2d3ff4495e
     - !<own> e95c7500-48ad-4d27-8c98-c34541ff9e77
     - !<own> 043a3c94-6758-4aba-99b4-ce2a51cf4ec7
-    - !<own> 8b2c17cd-dea0-49e9-affa-5fc0b082182d
     - !<own> 62785d5a-c460-4b22-a4f1-634558aeb369
     - !<own> 550f74fd-b34a-4961-bf7a-58f3c7c63043
   Components:
@@ -10862,6 +10790,21 @@
     - !<own> e024eb0f-5113-429b-b2d4-bb8a39cbb05e
   Components:
     []
+- !<SceneObject/adea452e-205c-4c46-982f-0fc01ca041b2>
+  PrefabRemaps:
+    []
+  Name: TestScript
+  Enabled: false
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> b85f9a8f-2c83-47a4-b268-3328ed4ba7b4
 - !<SceneObject/ae8c0a9e-8795-427b-b505-dbdd8194fdf2>
   PrefabRemaps:
     []
@@ -11314,6 +11257,22 @@
   BlendNormals: false
   BlendShapes:
     {}
+- !<ScriptComponent/b85f9a8f-2c83-47a4-b268-3328ed4ba7b4>
+  PrefabRemaps:
+    []
+  Name: TestScript
+  Enabled: true
+  ScriptAsset: !<reference> 1ae173ab-7c4c-48bb-8aa3-ca3bc0d5d255
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      fireball: !<reference.ObjectPrefab> e2a86e28-0032-4ad7-9b81-e6f4dde6a91a
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/b94038c7-ab11-4fd9-a954-e3e063bb5739>
   PrefabRemaps:
     []
@@ -11410,21 +11369,6 @@
   ScriptTypes:
     "":
       {}
-- !<SceneObject/bb0a2880-ed23-4792-b985-68bf76bd6414>
-  PrefabRemaps:
-    []
-  Name: HealSpell
-  Enabled: true
-  Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> 14f9d160-ddf3-43e8-aab6-d815ff69fdad
 - !<SceneObject/bb8e50c6-f57b-4404-8d94-76a38e78efce>
   PrefabRemaps:
     []
@@ -12862,7 +12806,6 @@
     - !<own> 4f038379-f589-4c9e-a05b-985e12f293e4
     - !<own> 87969c47-4ae4-461d-b825-d7a2d4c0ee1e
     - !<own> 6b9a0c17-74ee-4a1f-9406-277aca9a80a3
-    - !<own> 5d535749-c80d-4734-b2ce-16ef9f2d2970
 - !<SceneObject/d24c71a9-7376-4590-880a-a772df53269e>
   PrefabRemaps:
     []
@@ -14287,7 +14230,7 @@
   Enabled: true
   ScriptAsset: !<reference> a55f1b0a-23fd-4382-bb37-c9d02136181b
   ScriptInputsDefault:
-    {}
+    comboTimeout: true
   ScriptTypesDefault:
     {}
   ScriptInputs:
@@ -14297,7 +14240,7 @@
         - !<reference> afcfeba2-5ada-49d5-8cbe-3b93d00a823c
         - !<reference> 2be5b5cc-d871-4393-8fa5-12795e4f954d
         - !<reference> 2177f8bb-d285-4d33-b447-e2960caea4a9
-        - !<reference> 14f9d160-ddf3-43e8-aab6-d815ff69fdad
+      comboTimeout: !<float> 3.000000
   ScriptTypes:
     "":
       {}

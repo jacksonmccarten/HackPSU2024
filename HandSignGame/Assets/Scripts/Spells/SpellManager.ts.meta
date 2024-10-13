@@ -24,6 +24,7 @@
   CurrentVisibility: Editable
   MaxVisibility: Editable
   ScriptInputsHidden:
+    comboTimeout: false
     handTracker: false
     spells: false
   ScriptTypesHidden:
@@ -39,3 +40,4 @@
   InputLines:
     - // @input Component.ScriptComponent handTracker
     - "// @input Component.ScriptComponent[] spells"
+    - // @input float comboTimeout = 3
