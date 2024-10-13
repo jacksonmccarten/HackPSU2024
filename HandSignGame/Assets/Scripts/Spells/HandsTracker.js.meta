@@ -1,0 +1,36 @@
+- !<AssetImportMetadata/a4f2132e-b115-49c8-8f62-13b2dd52a8c0>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> 8533d331-5e6d-407c-baf3-c4fb7aa40ffd
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> 8533d331-5e6d-407c-baf3-c4fb7aa40ffd
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    JavaScriptAsset: !<own> b7c90181-92d0-4c16-b0f7-236f06de3ed2
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/0f9190ee-f1a4-4284-ad20-98774921e9c2>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/b7c90181-92d0-4c16-b0f7-236f06de3ed2>
+  SvgIcon: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 00000000-0000-0000-0000-000000000000
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    leftHandTracking: false
+    rightHandTracking: false
+  ScriptTypesHidden:
+    {}
+  DefaultScriptInputs:
+    - leftHandTracking: !<reference.ObjectTracking3D> 00000000-0000-0000-0000-000000000000
+      rightHandTracking: !<reference.ObjectTracking3D> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}

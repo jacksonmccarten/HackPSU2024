@@ -1,0 +1,42 @@
+- !<AssetImportMetadata/2ce9d334-16db-4d26-892f-def80baf27ce>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> 9ed8e01e-5032-4f24-9e90-f6dc376714a3
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> 9ed8e01e-5032-4f24-9e90-f6dc376714a3
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    JavaScriptAsset: !<own> 7e794524-a723-4953-80b4-9a6e2f713918
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/2bf185e7-36db-46d8-a0e2-8fe74b3b3441>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/7e794524-a723-4953-80b4-9a6e2f713918>
+  SvgIcon: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 00000000-0000-0000-0000-000000000000
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    jointStringA: false
+    jointStringB: false
+    maxDistance: false
+    minDistance: false
+  ScriptTypesHidden:
+    {}
+  DefaultScriptInputs:
+    - jointA: ""
+      jointB: ""
+      minDistance: !<float> 0.000000
+      maxDistance: !<float> 0.000000
+      jointStringA: ""
+      jointStringB: ""
+  ScriptTypes:
+    -
+      {}
