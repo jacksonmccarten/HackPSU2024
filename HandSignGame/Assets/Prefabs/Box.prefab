@@ -1,0 +1,41 @@
+- !<ObjectPrefab/cf101b8a-6959-49d9-bb9a-12ba44edfa58>
+  PackagePath: ""
+  objects:
+    - !<own> e92bc0d6-f299-4e3a-8206-2554706b63b5
+  LazyLoading: false
+  RetainAssets: true
+- !<RenderMeshVisual/5e793bd3-2cce-4375-9d42-b72fb36eb2e4>
+  PrefabRemaps:
+    []
+  Name: Render Mesh Visual
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 52a874c1-9d94-4d86-9a08-8aef9db12948
+  Mesh: !<reference> e542623c-1432-4bfa-881d-a28905bd9e57
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/e92bc0d6-f299-4e3a-8206-2554706b63b5>
+  PrefabRemaps:
+    []
+  Name: Box
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -2.587425, y: -6.169746, z: -46.067459}
+    rotation: {x: -4.043272, y: -0.077434, z: -3.220068}
+    scale: {x: 15.725279, y: 15.833977, z: 3.292345}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 5e793bd3-2cce-4375-9d42-b72fb36eb2e4
